@@ -41,9 +41,6 @@ public class Topic_01_Variable {
 	public void setStudentName(String stdName) {
 		this.studentName = stdName;
 	}
-	
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> branch 'master' of https://github.com/quanganhplus/hybrid-framework-nopcommerce
+
+

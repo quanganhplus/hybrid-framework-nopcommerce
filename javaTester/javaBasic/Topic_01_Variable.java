@@ -42,4 +42,8 @@ public class Topic_01_Variable {
 		this.studentName = stdName;
 	}
 	
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> branch 'master' of https://github.com/quanganhplus/hybrid-framework-nopcommerce

@@ -31,9 +31,15 @@ public class Topic_04_Operator {
 		}
 		
 		String address = "Ho Chi Minh";
-		if (address != "Ha Noi") {
-			System.out.println("Address is the same");
+		if (address != "Ha Noi" && address != "Da Nang") {
+			System.out.println("Address is not the same");
 		}
+		
+		//Tam nguyên : =  ?  :
+		boolean status = (address == "Ha Noi") ? true : false;
+		System.out.println(status);
+		
+		
 	}
 
 }

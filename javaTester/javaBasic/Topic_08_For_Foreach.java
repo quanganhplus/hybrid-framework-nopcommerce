@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-	public class Topic_08_For_foreach {
+	public class Topic_08_For_Foreach {
 	WebDriver driver;
 		
 	@Test

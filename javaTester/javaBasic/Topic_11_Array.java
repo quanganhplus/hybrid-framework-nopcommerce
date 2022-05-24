@@ -13,6 +13,12 @@ public class Topic_11_Array {
 		for (int i = 0; i < studentName.length; i++) {
 			System.out.println(studentName[i]);
 		}
+		
+		//foreach ko kết hợp vs điều kiện
+		for (String std : studentName) {
+			System.out.println(std);
+		}
+		
 	}
 
 }

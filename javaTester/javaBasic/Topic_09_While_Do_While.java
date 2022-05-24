@@ -10,7 +10,7 @@ public class Topic_09_While_Do_While {
 	
 	public static void main(String[] args) {
 		
-		TC_04_While();
+		TC_06_While();
 		
 	}
 
@@ -52,7 +52,7 @@ public class Topic_09_While_Do_While {
 		} while (number < 100);		
 	}
 	
-	@Test
+	//@Test
 	public static void TC_04_While() {
 		int numberA = scanner.nextInt();
 		int numberB = scanner.nextInt();
@@ -63,5 +63,31 @@ public class Topic_09_While_Do_While {
 			} 
 			numberA++;
 		}
+	}
+	
+	//@Test
+	public static void TC_05_While() {
+		int numberA = scanner.nextInt();
+		int i = 0;
+		
+		while (numberA > 0) {
+			if (numberA % 2 != 0) {
+				i += numberA;	
+			} 
+			numberA--;
+		}
+		System.out.println(i);
+	}
+	
+	@Test
+	public static void TC_06_While() {
+		int numberA = scanner.nextInt();
+		int i = 1;
+		
+		while (numberA > 0) {
+			i *= numberA;
+			numberA--;
+		}
+		System.out.println(i);
 	}
 }

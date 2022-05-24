@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 		public class Topic_07_Switch_Case {
@@ -14,8 +15,8 @@ import org.testng.annotations.Test;
 			String projectPath = System.getProperty("user.dir");
 			Scanner scanner = new Scanner(System.in);
 			
-		//@Parameters("browser")
-		//@Test
+		@Parameters("browser")
+		@Test
 		public void TC_01(String browserName) {		
 			driver = getBrowserDriver(browserName);			
 			System.out.println(browserName);
@@ -53,7 +54,7 @@ import org.testng.annotations.Test;
 			}
 		}
 		
-		@Test
+		//@Test
 		public void TC_03() {
 			int number = scanner.nextInt();
 			

@@ -1,24 +1,32 @@
 package javaBasic;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Topic_11_Array {
 
 	public static void main(String[] args) {
-		
-		int[] student = {5, 18, 22, 8, 10};
-		
-		//Lấy ra phần tử đầu tiên
-		System.out.println(student[0]);
-		
-		String studentName[] = {"Nam", "Anh", "Tuấn"};
+
+		// Cố định
+		String studentName[] = { "Nam", "Anh", "Long" };
 		for (int i = 0; i < studentName.length; i++) {
-			System.out.println(studentName[i]);
+			if (studentName[i].equals("Long")) {
+				System.out.println("Click vào Long");
+			}
 		}
-		
-		//foreach ko kết hợp vs điều kiện
+
+		// Động
+		ArrayList<String> stdName = new ArrayList<String>();
+
+		// khi chạy code mới add (Runtime)
 		for (String std : studentName) {
-			System.out.println(std);
+			stdName.add(std);
 		}
-		
+
+		String std_Name = Arrays.toString(studentName);
+		System.out.println(std_Name);
+
+		// [Nam, Anh, Long]
 	}
 
 }

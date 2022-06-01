@@ -317,6 +317,7 @@ public class BasePage {
 	}
 
 	public void waitForElementClickable(WebDriver driver, String xpathLocator) {
+		System.out.println("Driver at Wait for element clickable = " + driver.toString());
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
 	}

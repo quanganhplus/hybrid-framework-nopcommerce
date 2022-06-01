@@ -14,18 +14,29 @@ import pageObjects.HomePageObject;
 import pageObjects.RegisterPageObject;
 
 public class Level_03_Page_Object {
-	WebDriver driver;
-	String emailAddress;
-	String projectPath = System.getProperty("user.dir");
+	private WebDriver driver;
+	private String firstName, lastName, emailAddress, password, confirmPassword;
+	private String projectPath = System.getProperty("user.dir");
+	private HomePageObject homePage;
+	private RegisterPageObject registerPage;
 
 	@BeforeClass
 	public void beforeClass() {
 		System.setProperty("webdriver.gecko.driver", projectPath + ".//browserDrivers//geckodriver.exe");
 		driver = new FirefoxDriver();
+		System.out.println("Driver at Class test = " + driver.toString());
 
-		emailAddress = "quanganh" + generateFakeNumber() + "@gmail.com";
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
+
+		homePage = new HomePageObject(driver);
+		registerPage = new RegisterPageObject(driver);
+
+		firstName = "quang anh";
+		lastName = "trinh";
+		emailAddress = "quanganh" + generateFakeNumber() + "@gmail.com";
+		password = "123456";
+		confirmPassword = "123456";
 	}
 
 	@Test
@@ -50,11 +61,11 @@ public class Level_03_Page_Object {
 		homePage.clickToRegisterLink();
 
 		System.out.println("Register Page - Step 02: Input to required fields");
-		registerPage.inputToFistnameTextbox("quang anh");
-		registerPage.inputToLastNameTextbox("trinh");
+		registerPage.inputToFistnameTextbox(firstName);
+		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox("123@456#%*");
-		registerPage.inputToPasswordTextbox("123456");
-		registerPage.inputToConfirmPasswordTextbox("123456");
+		registerPage.inputToPasswordTextbox(password);
+		registerPage.inputToConfirmPasswordTextbox(confirmPassword);
 
 		System.out.println("Register Page - Step 03: Click to Register button");
 		registerPage.clickToRegisterButton();
@@ -69,11 +80,11 @@ public class Level_03_Page_Object {
 		homePage.clickToRegisterLink();
 
 		System.out.println("Register Page - Step 02: Input to required fields");
-		registerPage.inputToFistnameTextbox("quang anh");
-		registerPage.inputToLastNameTextbox("trinh");
+		registerPage.inputToFistnameTextbox(firstName);
+		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(emailAddress);
-		registerPage.inputToPasswordTextbox("123456");
-		registerPage.inputToConfirmPasswordTextbox("123456");
+		registerPage.inputToPasswordTextbox(password);
+		registerPage.inputToConfirmPasswordTextbox(confirmPassword);
 
 		System.out.println("Register Page - Step 03: Click to Register button");
 		registerPage.clickToRegisterButton();
@@ -91,11 +102,11 @@ public class Level_03_Page_Object {
 		homePage.clickToRegisterLink();
 
 		System.out.println("Register Page - Step 02: Input to required fields");
-		registerPage.inputToFistnameTextbox("quang anh");
-		registerPage.inputToLastNameTextbox("trinh");
+		registerPage.inputToFistnameTextbox(firstName);
+		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(emailAddress);
-		registerPage.inputToPasswordTextbox("123456");
-		registerPage.inputToConfirmPasswordTextbox("123456");
+		registerPage.inputToPasswordTextbox(password);
+		registerPage.inputToConfirmPasswordTextbox(confirmPassword);
 
 		System.out.println("Register Page - Step 03: Click to Register button");
 		registerPage.clickToRegisterButton();
@@ -110,8 +121,8 @@ public class Level_03_Page_Object {
 		homePage.clickToRegisterLink();
 
 		System.out.println("Register Page - Step 02: Input to required fields");
-		registerPage.inputToFistnameTextbox("quang anh");
-		registerPage.inputToLastNameTextbox("trinh");
+		registerPage.inputToFistnameTextbox(firstName);
+		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(emailAddress);
 		registerPage.inputToPasswordTextbox("123");
 		registerPage.inputToConfirmPasswordTextbox("123");
@@ -120,7 +131,7 @@ public class Level_03_Page_Object {
 		registerPage.clickToRegisterButton();
 
 		System.out.println("Register Page - Step 04: Verify error message dispalyed");
-		Assert.assertEquals(registerPage.getErrorMessageAtPasswordTextbox(), "Password must meet the following rules:\\nmust have at least 6 characters");
+		Assert.assertEquals(registerPage.getErrorMessageAtPasswordTextbox(), "Password must meet the following rules:\nmust have at least 6 characters");
 	}
 
 	@Test
@@ -129,10 +140,10 @@ public class Level_03_Page_Object {
 		homePage.clickToRegisterLink();
 
 		System.out.println("Register Page - Step 02: Input to required fields");
-		registerPage.inputToFistnameTextbox("quang anh");
-		registerPage.inputToLastNameTextbox("trinh");
+		registerPage.inputToFistnameTextbox(firstName);
+		registerPage.inputToLastNameTextbox(lastName);
 		registerPage.inputToEmailTextbox(emailAddress);
-		registerPage.inputToPasswordTextbox("123456");
+		registerPage.inputToPasswordTextbox(password);
 		registerPage.inputToConfirmPasswordTextbox("654321");
 
 		System.out.println("Register Page - Step 03: Click to Register button");
@@ -152,6 +163,4 @@ public class Level_03_Page_Object {
 		return rand.nextInt(9999);
 	}
 
-	HomePageObject homePage;
-	RegisterPageObject registerPage;
 }

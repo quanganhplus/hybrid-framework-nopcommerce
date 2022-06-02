@@ -10,7 +10,6 @@ public class HomePageObject extends BasePage {
 
 	public HomePageObject(WebDriver driver) {
 		this.driver = driver;
-		System.out.println("Driver at HomePage Object = " + driver.toString());
 	}
 
 	public void clickToRegisterLink() {

@@ -116,7 +116,7 @@ public class Level_03_Page_Object {
 
 	@Test
 	public void Register_05_Password_Less_Than_6_Chars() {
-		System.out.println("Home Page - Step 01: Click to Register link");
+		System.out.println("Register_05 - Step 01: Click to Register link");
 		homePage.clickToRegisterLink();
 
 		System.out.println("Register_05 - Step 02: Input to required fields");

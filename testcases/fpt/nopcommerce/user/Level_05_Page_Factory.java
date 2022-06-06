@@ -1,34 +1,31 @@
 package fpt.nopcommerce.user;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import commons.BaseTest;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.RegisterPageObject;
 
-public class Level_03_Page_Object_02_Login {
+public class Level_05_Page_Factory extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, invalidEmail, notFoundEmail, validEmail, validPassword, incorrectPassword;
-	private String projectPath = System.getProperty("user.dir");
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
 	private LoginPageObject loginPage;
 
+	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", projectPath + ".//browserDrivers//geckodriver.exe");
-		driver = new FirefoxDriver();
+	public void beforeClass(String browserName) {
+		driver = getBrowserDriver(browserName);
 
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://demo.nopcommerce.com/");
 		homePage = new HomePageObject(driver);
 
 		firstName = "quang anh";
@@ -60,7 +57,6 @@ public class Level_03_Page_Object_02_Login {
 		System.out.println("Pre-Condition - Step 05: Click to Logout link");
 		registerPage.clickToLogoutLink();
 
-		// Click logout thì bussiness nó sẽ quay về homePage
 		homePage = new HomePageObject(driver);
 	}
 
@@ -147,6 +143,8 @@ public class Level_03_Page_Object_02_Login {
 		homePage = new HomePageObject(driver);
 
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
+
+		homePage.clickToMyAccountLink();
 	}
 
 	@AfterClass

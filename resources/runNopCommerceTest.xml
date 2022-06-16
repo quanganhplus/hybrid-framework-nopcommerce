@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce">
 
-  <test name="Run on Firefox">
-  	<parameter name="browser" value="firefox"/>
+  <test name="Run on CHROME">
+  	<parameter name="browser" value="chrome"/>
     <classes>
       <class name="fpt.nopcommerce.user.Level_06_Page_Generator_Manager_III"/>
     </classes>

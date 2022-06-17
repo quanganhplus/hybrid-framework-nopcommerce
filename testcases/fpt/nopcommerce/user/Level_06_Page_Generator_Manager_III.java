@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
-import pageObjects.MyAccountPageObject;
+import pageObjects.CustomerInfoPageObject;
 import pageObjects.PageGeneratorManager;
 import pageObjects.RegisterPageObject;
 
@@ -20,7 +20,7 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
 	private LoginPageObject loginPage;
-	private MyAccountPageObject myAccountPage;
+	private CustomerInfoPageObject customerInfoPage;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -128,9 +128,8 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 
-		myAccountPage = homePage.clickToMyAccountLink();
-
-		myAccountPage.clickToNewletterCheckbox();
+		customerInfoPage = homePage.clickToMyAccountLink();
+		Assert.assertTrue(customerInfoPage.isCustomerInfoPageDisplayed());
 	}
 
 	@AfterClass

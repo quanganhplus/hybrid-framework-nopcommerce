@@ -4,7 +4,7 @@
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="fpt.nopcommerce.user.Level_06_Page_Generator_Manager_III"/>
+      <class name="fpt.nopcommerce.user.Level_07_Switch_Page"/>
     </classes>
   </test> 
   

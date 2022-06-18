@@ -8,16 +8,16 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserLoginPageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_I extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, invalidEmail, notFoundEmail, validEmail, validPassword, incorrectPassword;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -25,7 +25,7 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 		driver = getBrowserDriver(browserName);
 
 		// 1
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 		firstName = "quang anh";
 		lastName = "trinh";
@@ -36,10 +36,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 		incorrectPassword = "654321";
 
 		System.out.println("Pre-Condition - Step 01: Click to Register link");
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		// 2
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		System.out.println("Pre-Condition - Step 02: Input to required fields");
 		registerPage.inputToFistnameTextbox(firstName);
@@ -59,15 +59,15 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 
 		// Click logout thì bussiness nó sẽ quay về homePage
 		// 3
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 	}
 
 	@Test
 	public void Login_01_Empty_Data() {
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 
 		// 4
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.clickToLoginButton();
 
@@ -76,10 +76,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 
 	@Test
 	public void Login_02_Invalid_Email() {
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 
 		// 5
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextbox(invalidEmail);
 
@@ -91,10 +91,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 
 	@Test
 	public void Login_03_Email_Not_Found() {
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 
 		// 6
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextbox(notFoundEmail);
 
@@ -105,10 +105,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 
 	@Test
 	public void Login_04_Existing_Email_Emty_Password() {
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 
 		// 7
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextbox(validEmail);
 
@@ -121,10 +121,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 
 	@Test
 	public void Login_05_Existing_Email_Incorrect_Password() {
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 
 		// 8
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextbox(validEmail);
 
@@ -137,10 +137,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 
 	@Test
 	public void Login_06_Valid_Email_Password() {
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 
 		// 9
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.inputToEmailTextbox(validEmail);
 
@@ -149,7 +149,7 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 		loginPage.clickToLoginButton();
 
 		// 10
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 	}

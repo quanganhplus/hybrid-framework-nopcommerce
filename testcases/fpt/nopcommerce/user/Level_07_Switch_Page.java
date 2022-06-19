@@ -91,13 +91,6 @@ public class Level_07_Switch_Page extends BaseTest {
 		myProductReviewPage = rewardPointPage.openMyProductReviewPage(driver);
 	}
 
-	@Test
-	public void User_05_Switch_Role() {
-		// Role User -> Role Admin
-
-		// Role Admin -> Role User
-	}
-
 	@AfterClass
 	public void afterClass() {
 

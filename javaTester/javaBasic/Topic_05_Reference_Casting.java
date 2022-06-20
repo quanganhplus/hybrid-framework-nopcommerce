@@ -1,8 +1,5 @@
 package javaBasic;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-
 public class Topic_05_Reference_Casting {
 	public String studentName;
 
@@ -38,11 +35,6 @@ public class Topic_05_Reference_Casting {
 
 		firstStudent.showStudentName();
 		secondStudent.showStudentName();
-
-		WebDriver driver = null;
-		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-
-		String homrePageTitle = (String) jsExecutor.executeScript("return document.title");
 	}
 
 }

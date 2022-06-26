@@ -8,6 +8,7 @@ public abstract class Computer {
 	}
 
 	// Abstract Method
+	// ko có phần thân (body)
 	// khung để cho các class con kế thừa nó phải override lại (implement lại)
 	public abstract void showComputerRam();
 }

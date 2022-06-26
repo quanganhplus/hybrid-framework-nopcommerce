@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce">
 
+	<parameter name = "environment" value="PRODUCTION" />
+	
+  <test name="Run on FIREFOX">
+  	<parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="fpt.nopcommerce.user.Level_09_Dynamic_Locator"/>
+    </classes>
+  </test> 
+
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="fpt.nopcommerce.user.Level_09_Dynamic_Locator"/>
+    </classes>
+  </test> 
+
+  <test name="Run on EDGE">
+  	<parameter name="browser" value="edge"/>
     <classes>
       <class name="fpt.nopcommerce.user.Level_09_Dynamic_Locator"/>
     </classes>

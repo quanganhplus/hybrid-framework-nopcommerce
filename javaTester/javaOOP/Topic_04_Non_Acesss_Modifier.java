@@ -1,6 +1,6 @@
 package javaOOP;
 
-public final class Topic_05_Non_Acesss_Modifier {
+public final class Topic_04_Non_Acesss_Modifier {
 	// Static: Variable/ Method
 	// Dùng cho tất cả instance/ object
 	// Phạm vi cho toàn bộ system sử dụng nó
@@ -21,7 +21,7 @@ public final class Topic_05_Non_Acesss_Modifier {
 		browserName = "Safari";
 		System.out.println(browserName);
 
-		Topic_05_Non_Acesss_Modifier obj = new Topic_05_Non_Acesss_Modifier();
+		Topic_04_Non_Acesss_Modifier obj = new Topic_04_Non_Acesss_Modifier();
 		System.out.println(obj.severName);
 
 		// ko đc phép gán lại

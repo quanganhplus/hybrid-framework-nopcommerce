@@ -13,12 +13,12 @@ public class Testing extends Computer {
 		// truy cập trực tiếp từ tên class
 		// ko cần tạo instance/ object
 		// ko nên lạm dụng các biến static
-		System.out.println(Topic_05_Non_Acesss_Modifier.browserName);
+		System.out.println(Topic_04_Non_Acesss_Modifier.browserName);
 
-		Topic_05_Non_Acesss_Modifier obj = new Topic_05_Non_Acesss_Modifier();
+		Topic_04_Non_Acesss_Modifier obj = new Topic_04_Non_Acesss_Modifier();
 		System.out.println(obj.colorCar);
 
-		Topic_05_Non_Acesss_Modifier.sendkeyToElement("Link");
+		Topic_04_Non_Acesss_Modifier.sendkeyToElement("Link");
 	}
 
 	@Override

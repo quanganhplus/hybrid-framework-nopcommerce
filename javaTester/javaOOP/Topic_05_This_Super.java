@@ -11,6 +11,11 @@ public class Topic_05_This_Super extends BaseOOP {
 	// private long shortTimeout = 15;
 	private long longTimeout = 45;
 
+	public Topic_05_This_Super() {
+		super("Chrome");
+		System.out.println("Contructor cuar Class con");
+	}
+
 	public void setImplicitWait() {
 		long shortTimeout = 15;
 
@@ -30,6 +35,6 @@ public class Topic_05_This_Super extends BaseOOP {
 	}
 
 	public static void main(String[] args) {
-
+		// Topic_05_This_Super topic = new Topic_05_This_Super();
 	}
 }

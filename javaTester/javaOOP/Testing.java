@@ -1,29 +1,16 @@
 package javaOOP;
 
-public class Testing extends Computer {
+public class Testing {
 
 	public static void main(String[] args) {
-		System.out.println(Topic_02_Variable_Property.studentAdress);
+		Topic_06_Getter_Setter topic = new Topic_06_Getter_Setter();
 
-		Topic_02_Variable_Property.studentAdress = "London";
-		System.out.println(Topic_02_Variable_Property.studentAdress);
+		// Happy case
+		topic.setPersonName("quang anh");
+		System.out.println(topic.getPersonName());
 
-		Topic_03_Method.showCarColor();
-
-		// truy cập trực tiếp từ tên class
-		// ko cần tạo instance/ object
-		// ko nên lạm dụng các biến static
-		System.out.println(Topic_04_Non_Acesss_Modifier.browserName);
-
-		Topic_04_Non_Acesss_Modifier obj = new Topic_04_Non_Acesss_Modifier();
-		System.out.println(obj.colorCar);
-
-		Topic_04_Non_Acesss_Modifier.sendkeyToElement("Link");
-	}
-
-	@Override
-	public void showComputerRam() {
-		// TODO Auto-generated method stub
-
+		// Unhappy case
+		topic.setPersonName("");
+		System.out.println(topic.getPersonName());
 	}
 }

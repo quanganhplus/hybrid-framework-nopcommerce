@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class HandleException {
+public class ExceptionType {
 	WebDriver driver;
 
 	// @Test

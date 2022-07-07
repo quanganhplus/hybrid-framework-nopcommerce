@@ -47,13 +47,19 @@ public class BaseTest {
 			// Cốc cốc browser trừ đi 5-6 version ra chrome driver
 			WebDriverManager.chromedriver().driverVersion("101.0.4951.41").setup();
 			ChromeOptions options = new ChromeOptions();
-			options.setBinary("C:\\Program Files\\CocCoc\\Browser\\Application\\browser.exe");
+
+			if (GlobalConstants.OS_NAME.startsWith("Windows")) {
+				options.setBinary("C:\\Program Files\\CocCoc\\Browser\\Application\\browser.exe");
+			} else {
+				options.setBinary("...");
+			}
+
 			driver = new ChromeDriver(options);
 		} else {
 			throw new BrowserNotSupport(browserName);
 		}
 
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(GlobalConstants.USER_PAGE_URL);
 		return driver;
 	}

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="NopCommerce">
+<suite name="JQuery DataTable">
+
+<!-- 	<parameter name = "url" value = "https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/"/> -->
 
 	<parameter name = "url" value = "https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/"/>
 	
   <test name="Run on FIREFOX">
   	<parameter name="browser" value="firefox"/>
     <classes>
-      <class name="fpt.jquery.datatable.Level_10_DataTable_DataGird"/>
+      <class name="fpt.jquery.Level_10_DataTable_DataGird"/>
     </classes>
   </test> 
     

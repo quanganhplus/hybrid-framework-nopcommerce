@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="JQuery Upload">
+
+	<parameter name = "url" value = "https://blueimp.github.io/jQuery-File-Upload/"/>
+	
+  <test name="Run on FIREFOX">
+  	<parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="fpt.jquery.Level_11_Upload_Files"/>
+    </classes>
+  </test> 
+    
+</suite> 

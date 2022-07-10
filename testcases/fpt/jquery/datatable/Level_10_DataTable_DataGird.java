@@ -63,7 +63,7 @@ public class Level_10_DataTable_DataGird extends BaseTest {
 		homePage.sleepInSecond(2);
 	}
 
-	@Test
+	// @Test
 	public void Table_03_Enter_To_Header() {
 		// Đọc dữ liệu của file country.txt
 		// Lưu vào 1 List<String> = Expected Value = expectedAllCountryValues
@@ -72,6 +72,60 @@ public class Level_10_DataTable_DataGird extends BaseTest {
 		actualAllCountryValues = homePage.getValueEachRowAtAllPage();
 
 		// Assert.assertEquals(actualAllCountryValues, expectedAllCountryValues);
+	}
+
+	@Test
+	public void Table_04_Action_At_Any_Row() {
+		homePage.clickDemoLoadData();
+		homePage.sleepInSecond(2);
+
+		// Value để nhập liệu
+		// Cloum name: Album/ Artis/ Year
+		// Row number : tại row nào
+		// Ex: Nhập vào textbox tại dòng số 3 / 5 / 2
+		homePage.enterToTextBoxByColumnNameAtRowNumber("Album", "1", "Michael 97");
+
+		homePage.enterToTextBoxByColumnNameAtRowNumber("Artist", "1", "Michael Jackson");
+
+		homePage.enterToTextBoxByColumnNameAtRowNumber("Year", "1", "1997");
+
+		homePage.enterToTextBoxByColumnNameAtRowNumber("Price", "1", "200");
+
+		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "US");
+
+		// BlackPink
+		homePage.enterToTextBoxByColumnNameAtRowNumber("Album", "5", "Boombayah");
+
+		homePage.enterToTextBoxByColumnNameAtRowNumber("Artist", "5", "BlackPink");
+
+		homePage.enterToTextBoxByColumnNameAtRowNumber("Year", "5", "2022");
+
+		homePage.enterToTextBoxByColumnNameAtRowNumber("Price", "5", "350");
+
+		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "5", "Korea");
+
+		// Checkbox or unCheckbox
+		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?", "3");
+		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?", "5");
+
+		homePage.uncheckToCheckboxByColumnNameAtRowNumber("With Poster?", "1");
+		homePage.uncheckToCheckboxByColumnNameAtRowNumber("With Poster?", "2");
+		homePage.uncheckToCheckboxByColumnNameAtRowNumber("With Poster?", "4");
+
+		// Remove button or Insert button or Up/Down button
+		homePage.clickToButtonByRowNumber("1", "Remove Current Row");
+
+		homePage.clickToButtonByRowNumber("1", "Insert Row Above");
+
+		homePage.clickToButtonByRowNumber("1", "Move Up");
+
+		homePage.clickToButtonByRowNumber("5", "Remove Current Row");
+		homePage.clickToButtonByRowNumber("4", "Remove Current Row");
+		homePage.clickToButtonByRowNumber("3", "Remove Current Row");
+		homePage.clickToButtonByRowNumber("2", "Remove Current Row");
+		homePage.clickToButtonByRowNumber("1", "Remove Current Row");
+
+		homePage.sleepInSecond(3);
 	}
 
 	@AfterClass

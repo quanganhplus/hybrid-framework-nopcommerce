@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce">
 	
-  <test name="Run on PhantomJS">
-  	<parameter name="browser" value="phantom"/>
+  <test name="Run on FIREFOX">
+  	<parameter name="browser" value="firefox"/>
     <classes>
-      <class name="fpt.nopcommerce.user.Level_06_Page_Generator_Manager_III"/>
+      <class name="fpt.nopcommerce.user.Level_08_Switch_Role"/>
     </classes>
   </test> 
     

@@ -1,12 +1,15 @@
 package commons;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -117,6 +120,7 @@ public class BasePage {
 
 	public By getByLocator(String locatorType) {
 		By by = null;
+		// System.out.println("Locator type = " + locatorType);
 		if (locatorType.startsWith("id=") || locatorType.startsWith("ID=") || locatorType.startsWith("Id=")) {
 			by = By.id(locatorType.substring(3));
 		} else if (locatorType.startsWith("class=") || locatorType.startsWith("CLASS=") || locatorType.startsWith("Class=")) {
@@ -271,11 +275,51 @@ public class BasePage {
 	}
 
 	public boolean isElementDisplayed(WebDriver driver, String locatorType) {
-		return getWebElement(driver, locatorType).isDisplayed();
+		try {
+			// Tìm thấy element:
+			// Case 1: Displayed - trả về true
+			// Case 2: Undisplayed - trả về false
+			return getWebElement(driver, locatorType).isDisplayed();
+		} catch (NoSuchElementException e) {
+			// Case 3: Undisplayed - trả về false
+			return false;
+		}
+
 	}
 
 	public boolean isElementDisplayed(WebDriver driver, String locatorType, String... dynamicValues) {
 		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)).isDisplayed();
+	}
+
+	// Case 2 + 3
+	public boolean isElementUndisplayed(WebDriver driver, String locator) {
+		System.out.println("Start time = " + new Date().toString());
+
+		overrideImplicitTimeout(driver, shortTimeout);
+		List<WebElement> elements = getListWebElement(driver, locator);
+
+		// Nếu như mình gán = 5 apply cho tất cả các step về sau đó : findElement/ findElements
+		overrideImplicitTimeout(driver, longTimeout);
+
+		if (elements.size() == 0) {
+			System.out.println("Case 3 - Element ko có trong DOM");
+			System.out.println("End time = " + new Date().toString());
+			return true;
+			// Nó có kích thước = 1 (Có trong DOM)
+			// Ko được hiển thị
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			System.out.println("Case 2 - Element có trong DOM nhưng ko visible/ displayed");
+			System.out.println("End time = " + new Date().toString());
+			return true;
+		} else {
+			System.out.println("Case 1 - Element có trong DOM và visible");
+			System.out.println("End time = " + new Date().toString());
+			return false;
+		}
+	}
+
+	public void overrideImplicitTimeout(WebDriver driver, long timeOut) {
+		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
 	}
 
 	public boolean isElementEnabled(WebDriver driver, String locatorType) {
@@ -409,6 +453,16 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorType)));
 	}
 
+	/*
+	 * Wait for element undispalyed in DOM or not in DOM and override implicit timeout
+	 */
+	public void waitForElementUndisplayed(WebDriver driver, String locatorType) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, shortTimeout);
+		overrideImplicitTimeout(driver, shortTimeout);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorType)));
+		overrideImplicitTimeout(driver, longTimeout);
+	}
+
 	public void waitForAllElementInvisible(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.invisibilityOfAllElements(getListWebElement(driver, locatorType)));
@@ -497,5 +551,6 @@ public class BasePage {
 	}
 
 	private long longTimeout = GlobalConstants.LONG_TIMEOUT;
+	private long shortTimeout = GlobalConstants.SHORT_TIMEOUT;
 
 }

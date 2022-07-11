@@ -31,4 +31,14 @@ public class LoginPageObject extends BasePage {
 		return isElementDisplayed(driver, LoginPageUI.CONFIRM_EMAIL_ADDRESS_TEXTBOX);
 	}
 
+	public void clickCloseIconAtRegisterForm() {
+		waitForElementVisible(driver, LoginPageUI.CLOSE_ICON_AT_REGISTER_FORM);
+		clickToElement(driver, LoginPageUI.CLOSE_ICON_AT_REGISTER_FORM);
+	}
+
+	public boolean isConfirmEmailAdressTextboxUnDisplayed() {
+		waitForElementUndisplayed(driver, LoginPageUI.CONFIRM_EMAIL_ADDRESS_TEXTBOX);
+		return isElementUndisplayed(driver, LoginPageUI.CONFIRM_EMAIL_ADDRESS_TEXTBOX);
+	}
+
 }

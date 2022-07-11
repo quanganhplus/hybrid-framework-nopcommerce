@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Facebook">
+
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+	</listeners>
+	
+	<parameter name = "url" value = "https://www.facebook.com/"/>
+	
+  <test name="Run on FIREFOX">
+  	<parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="fpt.facebook.register.Level_13_Element_Undisplayed"/>
+    </classes>
+  </test> 
+    
+</suite> 

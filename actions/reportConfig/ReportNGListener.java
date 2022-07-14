@@ -38,9 +38,14 @@ public class ReportNGListener implements ITestListener {
 		Object testClass = result.getInstance();
 		WebDriver webDriver = ((BaseTest) testClass).getDriverInstance();
 
-		String screenshotPath = captureScreenshot(webDriver, result.getName());
+		String screenshotPath = captureScreenshotBase64(webDriver, result.getName());
 		Reporter.getCurrentTestResult();
-		Reporter.log("<br><a target=\"_blank\" href=\"file:///" + screenshotPath + "\">" + "<img src=\"file:///" + screenshotPath + "\" " + "height='100' width='150'/> " + "</a></br>");
+		// Image file
+		// Reporter.log("<br><a target=\"_blank\" href=\"file:///" + screenshotPath + "\">" + "<img src=\"file:///" + screenshotPath + "\" " + "height='100' width='150'/> " + "</a></br>");
+
+		// Base64
+		Reporter.log("<br><a href=\"data:image/png;base64," + screenshotPath + "\">" + "<img src=\"data:image/png;base64," + screenshotPath + "\" " + "height='100' width='150'/> " + "</a></br>");
+
 		Reporter.setCurrentTestResult(null);
 
 	}
@@ -57,6 +62,10 @@ public class ReportNGListener implements ITestListener {
 			System.out.println("Exception while taking screenshot: " + e.getMessage());
 			return e.getMessage();
 		}
+	}
+
+	public String captureScreenshotBase64(WebDriver driver, String screenshotName) {
+		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
 	}
 
 	@Override

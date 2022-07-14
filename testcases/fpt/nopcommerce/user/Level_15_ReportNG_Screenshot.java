@@ -68,6 +68,9 @@ public class Level_15_ReportNG_Screenshot extends BaseTest {
 
 	@Test
 	public void User_02_Login() {
+		log.info("Register -> Login - Step 00: Click to Logout link");
+		homePage = registerPage.clickToLogoutLink();
+
 		log.info("Login - Step 01: Navigate to Login page");
 		loginPage = homePage.openLoginPage();
 

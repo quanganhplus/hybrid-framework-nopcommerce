@@ -49,15 +49,10 @@
 	<classpathentry kind="lib" path="libReportNG/guice-3.0.jar"/>
 	<classpathentry kind="lib" path="libReportNG/reportng-1.1.4.jar"/>
 	<classpathentry kind="lib" path="libReportNG/velocity-1.4.jar"/>
-	<classpathentry kind="lib" path="libExtentV4/bsh-2.0b4.jar"/>
-	<classpathentry kind="lib" path="libExtentV4/bson-3.3.0.jar"/>
-	<classpathentry kind="lib" path="libExtentV4/extentreports-4.0.9.jar"/>
-	<classpathentry kind="lib" path="libExtentV4/freemarker-2.3.23.jar"/>
-	<classpathentry kind="lib" path="libExtentV4/httpclient-4.5.2.jar"/>
-	<classpathentry kind="lib" path="libExtentV4/httpcore-4.4.4.jar"/>
-	<classpathentry kind="lib" path="libExtentV4/httpmime-4.5.2.jar"/>
-	<classpathentry kind="lib" path="libExtentV4/jcommander-1.48.jar"/>
-	<classpathentry kind="lib" path="libExtentV4/mongodb-driver-3.3.0.jar"/>
-	<classpathentry kind="lib" path="libExtentV4/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="libExtentV5/extentreports-5.0.8.jar"/>
+	<classpathentry kind="lib" path="libExtentV5/freemarker-2.3.30.jar"/>
+	<classpathentry kind="lib" path="libExtentV5/lombok-1.18.12.jar"/>
+	<classpathentry kind="lib" path="libExtentV5/reactive-streams-1.0.3.jar"/>
+	<classpathentry kind="lib" path="libExtentV5/rxjava-3.0.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

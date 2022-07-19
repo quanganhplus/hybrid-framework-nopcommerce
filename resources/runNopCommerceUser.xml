@@ -14,7 +14,7 @@
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="fpt.nopcommerce.user.Level_15_ExtentV4"/>
+      <class name="fpt.nopcommerce.user.Level_15_ExtentV5"/>
     </classes>
   </test> 
     

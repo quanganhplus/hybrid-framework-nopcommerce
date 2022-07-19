@@ -1,85 +1,57 @@
 package reportConfig;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import static reportConfig.ExtentTestManager.getTest;
 
-import org.testng.IReporter;
-import org.testng.IResultMap;
-import org.testng.ISuite;
-import org.testng.ISuiteResult;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
+import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.Reporter;
-import org.testng.xml.XmlSuite;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentTestListener implements IReporter {
-	private ExtentReports extent;
-	private ExtentHtmlReporter htmlReport;
+import commons.BaseTest;
+
+public class ExtentTestListener extends BaseTest implements ITestListener {
+	private static String getTestMethodName(ITestResult iTestResult) {
+		return iTestResult.getMethod().getConstructorOrMethod().getName();
+	}
 
 	@Override
-	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
-		htmlReport = new ExtentHtmlReporter(System.getProperty("user.dir") + "/extentV4/ExtentReport.html");
-		htmlReport.config().setTheme(Theme.DARK);
-		htmlReport.config().enableTimeline(true);
-		htmlReport.config().setDocumentTitle("Nopcomerce HTML Report");
-		htmlReport.config().setReportName("Nopcomerce HTML Report");
-		htmlReport.config().setEncoding("utf-8");
-		extent = new ExtentReports();
-		extent.attachReporter(htmlReport);
-
-		for (ISuite suite : suites) {
-			Map<String, ISuiteResult> result = suite.getResults();
-
-			for (ISuiteResult r : result.values()) {
-				ITestContext context = r.getTestContext();
-
-				buildTestNodes(context.getFailedTests(), Status.FAIL);
-				buildTestNodes(context.getSkippedTests(), Status.SKIP);
-				buildTestNodes(context.getPassedTests(), Status.PASS);
-			}
-		}
-
-		for (String s : Reporter.getOutput()) {
-			s = s + "<br>";
-			extent.setTestRunnerOutput(s);
-		}
-
-		extent.flush();
+	public void onStart(ITestContext iTestContext) {
+		iTestContext.setAttribute("WebDriver", this.getDriverInstance());
 	}
 
-	private void buildTestNodes(IResultMap tests, Status status) {
-		ExtentTest test;
-
-		if (tests.size() > 0) {
-			for (ITestResult result : tests.getAllResults()) {
-				test = extent.createTest(result.getMethod().getMethodName());
-
-				for (String group : result.getMethod().getGroups())
-					test.assignCategory(group);
-
-				if (result.getThrowable() != null) {
-					test.log(status, result.getThrowable());
-				} else {
-					test.log(status, "Test " + status.toString().toLowerCase() + "ed");
-				}
-
-				test.getModel().setStartTime(getTime(result.getStartMillis()));
-				test.getModel().setEndTime(getTime(result.getEndMillis()));
-			}
-		}
+	@Override
+	public void onFinish(ITestContext iTestContext) {
+		ExtentManager.extentReports.flush();
 	}
 
-	private Date getTime(long millis) {
-		Calendar calendar = Calendar.getInstance();
-		calendar.setTimeInMillis(millis);
-		return calendar.getTime();
+	@Override
+	public void onTestStart(ITestResult iTestResult) {
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult iTestResult) {
+		getTest().log(Status.PASS, "Test passed");
+	}
+
+	@Override
+	public void onTestFailure(ITestResult iTestResult) {
+		Object testClass = iTestResult.getInstance();
+		WebDriver driver = ((BaseTest) testClass).getDriverInstance();
+		String base64Screenshot = "data:image/png;base64," + ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+		getTest().log(Status.FAIL, "Test Failed", getTest().addScreenCaptureFromBase64String(base64Screenshot).getModel().getMedia().get(0));
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult iTestResult) {
+		getTest().log(Status.SKIP, "Test Skipped");
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
+		getTest().log(Status.FAIL, "Test Failed with percentage" + getTestMethodName(iTestResult));
 	}
 }

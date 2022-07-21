@@ -443,3 +443,9 @@
 [2022-07-14 23:38:09,024] Login - Step 03: Enter to Password textbox with value is '123456'
 [2022-07-14 23:38:09,163] Login - Step 04: Click to 'Login' button
 [2022-07-14 23:38:09,898] Login - Step 05: Verify 'My Account' link is displayed
+[2022-07-21 16:56:00,108] Login - Step 01: Navigate to Login page
+[2022-07-21 16:56:00,921] Login - Step 02: Enter to Email textbox with value is 'null'
+[2022-07-21 17:02:27,322] Login - Step 01: Navigate to Login page
+[2022-07-21 17:02:28,000] Login - Step 02: Enter to Email textbox with value is 'quanganh4056@gmail.com'
+[2022-07-21 17:02:28,222] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-07-21 17:02:28,371] Login - Step 04: Click to 'Login' button

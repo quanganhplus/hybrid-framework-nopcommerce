@@ -39,7 +39,7 @@
 	<classpathentry kind="lib" path="libWebDriverManager/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/slf4j-api-1.7.32.jar"/>
 	<classpathentry kind="lib" path="libWebDriverManager/webdrivermanager-5.0.2.jar"/>
-	<classpathentry kind="lib" path="libSelenium/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="libSelenium/selenium-server-standalone-3.141.59.jar" sourcepath="libSelenium/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="libSelenium/testng-6.14.3.jar" sourcepath="libSelenium/testng-6.14.3-sources.jar"/>
 	<classpathentry kind="lib" path="libLog4j/commons-lang3-3.8.1.jar"/>
 	<classpathentry kind="lib" path="libLog4j/commons-logging-1.2.jar"/>

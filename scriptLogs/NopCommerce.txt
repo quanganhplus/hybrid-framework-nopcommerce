@@ -1,0 +1,4 @@
+[2022-07-21 17:02:27,322] Login - Step 01: Navigate to Login page
+[2022-07-21 17:02:28,000] Login - Step 02: Enter to Email textbox with value is 'quanganh4056@gmail.com'
+[2022-07-21 17:02:28,222] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-07-21 17:02:28,371] Login - Step 04: Click to 'Login' button

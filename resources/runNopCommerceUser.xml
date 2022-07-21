@@ -15,7 +15,9 @@
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="fpt.nopcommerce.user.Level_15_Allure"/>
+<!--     	Trigger Common Register run first -->
+      <class name="fpt.nopcommerce.common.Common_01_Register"/>
+      <class name="fpt.nopcommerce.user.Level_16_Share_Data"/>
     </classes>
   </test> 
     

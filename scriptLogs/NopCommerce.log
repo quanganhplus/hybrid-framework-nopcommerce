@@ -449,3 +449,43 @@
 [2022-07-21 17:02:28,000] Login - Step 02: Enter to Email textbox with value is 'quanganh4056@gmail.com'
 [2022-07-21 17:02:28,222] Login - Step 03: Enter to Password textbox with value is '123456'
 [2022-07-21 17:02:28,371] Login - Step 04: Click to 'Login' button
+[2022-07-22 08:44:14,799] Login - Step 01: Navigate to Login page
+[2022-07-22 08:44:15,600] Login - Step 02: Enter to Email textbox with value is 'quanganh560@gmail.com'
+[2022-07-22 08:44:15,829] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-07-22 08:44:16,009] Login - Step 04: Click to 'Login' button
+[2022-07-22 10:45:58,609] Login - Step 01: Navigate to Login page
+[2022-07-22 10:46:01,760] Login - Step 02: Enter to Email textbox with value is 'quanganh3508@gmail.com'
+[2022-07-22 10:46:01,985] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-07-22 10:46:02,120] Login - Step 04: Click to 'Login' button
+[2022-07-22 10:47:41,669] Login - Step 01: Navigate to Login page
+[2022-07-22 10:47:42,236] Login - Step 02: Enter to Email textbox with value is 'quanganh618@gmail.com'
+[2022-07-22 10:47:42,376] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-07-22 10:47:42,506] Login - Step 04: Click to 'Login' button
+[2022-07-22 14:55:45,477] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-22 14:55:47,210] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-22 14:55:50,426] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-22 14:55:51,021]  -------------------------- PASSED -------------------------- 
+[2022-07-22 15:13:17,674] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-22 15:13:18,228] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-22 15:13:21,336] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-22 15:13:21,850]  -------------------------- PASSED -------------------------- 
+[2022-07-22 15:15:11,006] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-22 15:15:11,622] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-22 15:15:14,710] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-22 15:15:15,289]  -------------------------- PASSED -------------------------- 
+[2022-07-22 15:33:04,124] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-22 15:33:04,718] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-22 15:33:07,826] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-22 15:33:08,277]  -------------------------- PASSED -------------------------- 
+[2022-07-22 15:38:02,367] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-22 15:38:03,019] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-22 15:38:06,121] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-22 15:38:06,620]  -------------------------- PASSED -------------------------- 
+[2022-07-22 15:38:50,552] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-22 15:38:51,183] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-22 15:38:54,267] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-22 15:38:54,769]  -------------------------- PASSED -------------------------- 
+[2022-07-22 15:40:09,378] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-22 15:40:10,008] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-22 15:40:13,506] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-22 15:40:13,623]  -------------------------- PASSED -------------------------- 

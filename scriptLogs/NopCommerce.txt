@@ -1,4 +1,4 @@
-[2022-07-21 17:02:27,322] Login - Step 01: Navigate to Login page
-[2022-07-21 17:02:28,000] Login - Step 02: Enter to Email textbox with value is 'quanganh4056@gmail.com'
-[2022-07-21 17:02:28,222] Login - Step 03: Enter to Password textbox with value is '123456'
-[2022-07-21 17:02:28,371] Login - Step 04: Click to 'Login' button
+[2022-07-22 15:40:09,378] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-22 15:40:10,008] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-22 15:40:13,506] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-22 15:40:13,623]  -------------------------- PASSED -------------------------- 

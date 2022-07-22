@@ -8,11 +8,11 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
-import fpt.nopcommerce.common.Common_01_Register;
+import fpt.nopcommerce.common.Common_01_Register_End_User;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 
-public class Level_16_Share_Data extends BaseTest {
+public class Level_16_Share_Data_A extends BaseTest {
 	private WebDriver driver;
 	private String emailAddress, validPassword;
 	private UserHomePageObject homePage;
@@ -24,8 +24,8 @@ public class Level_16_Share_Data extends BaseTest {
 		driver = getBrowserDriver(browserName);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 
-		emailAddress = Common_01_Register.emailAddress;
-		validPassword = Common_01_Register.password;
+		emailAddress = Common_01_Register_End_User.emailAddress;
+		validPassword = Common_01_Register_End_User.password;
 
 		log.info("Login - Step 01: Navigate to Login page");
 		loginPage = homePage.openLoginPage();

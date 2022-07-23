@@ -5,7 +5,7 @@
 		<listener class-name="commons.MethodListener"/>
 <!-- 		<listener class-name="reportConfig.ReportNGListener"/> -->
 <!-- 		<listener class-name="reportConfig.ExtentTestListener"/> -->
-		<listener class-name="reportConfig.AllureTestListener"/>
+<!-- 		<listener class-name="reportConfig.AllureTestListener"/> -->
 <!--     	<listener class-name="org.uncommons.reportng.HTMLReporter"/> -->
 <!--     	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
 	</listeners>
@@ -15,9 +15,7 @@
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
     <classes>
-<!--     	Trigger Common Register run first -->
-      <class name="fpt.nopcommerce.common.Common_01_Register_Cookie"/>
-      <class name="fpt.nopcommerce.user.Level_16_Share_Data_C"/>
+      <class name="fpt.nopcommerce.user.Level_17_Custom_Close_Driver"/>
     </classes>
   </test> 
     

@@ -8,4 +8,6 @@ public class LoginPageUI {
 
 	public static final String EMAIL_ERROR_MESSAGE = "css=span[id='Email-error']";
 	public static final String UNSUCESSFULL_ERROR_MESSAGE = "xpath=//div[contains(@class, 'validation-summary-errors')]";
+
+	public static final String STREET_ADDRESS_TEXTBOX = "xpath=//input[@id='streetaddress']";
 }

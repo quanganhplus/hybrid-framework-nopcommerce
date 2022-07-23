@@ -1,4 +1,10 @@
-[2022-07-22 15:40:09,378] Pre-Condition - Step 01: Navigate to Login page
-[2022-07-22 15:40:10,008] Pre-Condition - Step 02: Set cookie and reload page
-[2022-07-22 15:40:13,506] Pre-Condition - Step 03: Verify 'My Account' link is displayed
-[2022-07-22 15:40:13,623]  -------------------------- PASSED -------------------------- 
+[2022-07-23 17:45:53,231] Pre-Condition - Step 01: Navigate to 'Register' page
+[2022-07-23 17:45:53,812] Pre-Condition - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-07-23 17:45:53,980] Pre-Condition - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-07-23 17:45:54,135] Pre-Condition - Step 04: Enter to Email textbox with value is 'quanganh5378@gmail.com'
+[2022-07-23 17:45:54,286] Pre-Condition - Step 05: Enter to Password textbox with value is '123456'
+[2022-07-23 17:45:54,440] Pre-Condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-07-23 17:45:54,595] Pre-Condition - Step 07: Click to 'Register' button
+[2022-07-23 17:45:55,389] Pre-Condition - Step 08: Verify Register success message is displayed
+[2022-07-23 17:45:55,633] OS name = windows 10
+[2022-07-23 17:45:55,634] Driver instance name = chromedriver: chrome on windows (9cc4b6fda52c92889c1d6ffad4775cf0)

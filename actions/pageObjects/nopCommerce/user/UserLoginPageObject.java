@@ -49,4 +49,8 @@ public class UserLoginPageObject extends BasePage {
 		return clickToLoginButton();
 	}
 
+	public String getPracticeNameTextboxValue() {
+		waitForElementVisible(driver, LoginPageUI.STREET_ADDRESS_TEXTBOX);
+		return getElementValueByJsXpath(driver, LoginPageUI.STREET_ADDRESS_TEXTBOX);
+	}
 }

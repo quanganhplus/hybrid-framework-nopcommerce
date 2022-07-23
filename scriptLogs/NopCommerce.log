@@ -489,3 +489,111 @@
 [2022-07-22 15:40:10,008] Pre-Condition - Step 02: Set cookie and reload page
 [2022-07-22 15:40:13,506] Pre-Condition - Step 03: Verify 'My Account' link is displayed
 [2022-07-22 15:40:13,623]  -------------------------- PASSED -------------------------- 
+[2022-07-22 20:10:43,355] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-22 20:10:43,882] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-22 20:10:47,328] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-22 20:10:47,417]  -------------------------- PASSED -------------------------- 
+[2022-07-22 20:17:29,743] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-22 20:17:30,388] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-22 20:17:33,464] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-22 20:17:33,904]  -------------------------- PASSED -------------------------- 
+[2022-07-23 15:34:52,629] Pre-Condition - Step 01: Navigate to Login page
+[2022-07-23 15:34:53,338] Pre-Condition - Step 02: Set cookie and reload page
+[2022-07-23 15:34:56,829] Pre-Condition - Step 03: Verify 'My Account' link is displayed
+[2022-07-23 15:34:56,924]  -------------------------- PASSED -------------------------- 
+[2022-07-23 16:41:48,419] Register - Step 01: Navigate to 'Register' page
+[2022-07-23 16:41:48,976] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-07-23 16:41:49,142] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-07-23 16:41:49,269] Register - Step 04: Enter to Email textbox with value is 'quanganh1907@gmail.com'
+[2022-07-23 16:41:49,421] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-07-23 16:41:49,551] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-07-23 16:41:49,675] Register - Step 07: Click to 'Register' button
+[2022-07-23 16:41:50,454] Register - Step 08: Verify Register success message is displayed
+[2022-07-23 16:41:50,514]  -------------------------- FAILED -------------------------- 
+[2022-07-23 16:41:50,515] Register - Step 09: Click to Logout link
+[2022-07-23 16:41:51,335] Login - Step 01: Navigate to Login page
+[2022-07-23 16:41:51,868] Login - Step 02: Enter to Email textbox with value is 'quanganh1907@gmail.com'
+[2022-07-23 16:41:52,016] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-07-23 16:41:52,151] Login - Step 04: Click to 'Login' button
+[2022-07-23 16:41:52,897] Login - Step 05: Verify 'My Account' link is displayed
+[2022-07-23 16:41:52,966]  -------------------------- PASSED -------------------------- 
+[2022-07-23 16:41:52,966] Login - Step 06: Navigate to 'My Account' page
+[2022-07-23 16:41:53,481] Login - Step 07: Verify 'Customer Info' page is displayed
+[2022-07-23 16:41:53,558]  -------------------------- FAILED -------------------------- 
+[2022-07-23 16:48:50,147] Pre-Condition - Step 01: Navigate to 'Register' page
+[2022-07-23 16:48:50,725] Pre-Condition - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-07-23 16:48:50,907] Pre-Condition - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-07-23 16:48:51,060] Pre-Condition - Step 04: Enter to Email textbox with value is 'quanganh9605@gmail.com'
+[2022-07-23 16:48:51,225] Pre-Condition - Step 05: Enter to Password textbox with value is '123456'
+[2022-07-23 16:48:51,368] Pre-Condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-07-23 16:48:51,523] Pre-Condition - Step 07: Click to 'Register' button
+[2022-07-23 16:48:52,300] Pre-Condition - Step 08: Verify Register success message is displayed
+[2022-07-23 16:48:52,368]  -------------------------- FAILED -------------------------- 
+[2022-07-23 16:48:52,369] Pre-Condition - Step 09: Click to Logout link
+[2022-07-23 16:48:53,082] Pre-Condition - Step 10: Navigate to Login page
+[2022-07-23 16:48:53,582] Pre-Condition - Step 11: Enter to Email textbox with value is 'quanganh9605@gmail.com'
+[2022-07-23 16:48:53,725] Pre-Condition - Step 12: Enter to Password textbox with value is '123456'
+[2022-07-23 16:48:53,858] Pre-Condition - Step 13: Click to 'Login' button
+[2022-07-23 16:53:41,393] Pre-Condition - Step 01: Navigate to 'Register' page
+[2022-07-23 16:53:41,950] Pre-Condition - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-07-23 16:53:42,107] Pre-Condition - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-07-23 16:53:42,263] Pre-Condition - Step 04: Enter to Email textbox with value is 'quanganh5656@gmail.com'
+[2022-07-23 16:53:42,428] Pre-Condition - Step 05: Enter to Password textbox with value is '123456'
+[2022-07-23 16:53:42,569] Pre-Condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-07-23 16:53:42,692] Pre-Condition - Step 07: Click to 'Register' button
+[2022-07-23 16:53:43,474] Pre-Condition - Step 08: Verify Register success message is displayed
+[2022-07-23 16:59:53,806] Register - Step 01: Navigate to 'Register' page
+[2022-07-23 16:59:54,354] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-07-23 16:59:54,448] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-07-23 16:59:54,539] Register - Step 04: Enter to Email textbox with value is 'quanganh3125@gmail.com'
+[2022-07-23 16:59:54,648] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-07-23 16:59:54,723] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-07-23 16:59:54,800] Register - Step 07: Click to 'Register' button
+[2022-07-23 16:59:55,560] Register - Step 08: Verify Register success message is displayed
+[2022-07-23 16:59:55,611]  -------------------------- FAILED -------------------------- 
+[2022-07-23 16:59:55,611] Register - Step 09: Click to Logout link
+[2022-07-23 16:59:56,380] Login - Step 01: Navigate to Login page
+[2022-07-23 16:59:56,860] Login - Step 02: Enter to Email textbox with value is 'quanganh3125@gmail.com'
+[2022-07-23 16:59:56,956] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-07-23 16:59:57,049] Login - Step 04: Click to 'Login' button
+[2022-07-23 16:59:57,751] Login - Step 05: Verify 'My Account' link is displayed
+[2022-07-23 16:59:57,824]  -------------------------- FAILED -------------------------- 
+[2022-07-23 16:59:57,824] Login - Step 06: Navigate to 'My Account' page
+[2022-07-23 16:59:58,299] Login - Step 07: Verify 'Customer Info' page is displayed
+[2022-07-23 16:59:58,373]  -------------------------- FAILED -------------------------- 
+[2022-07-23 17:00:01,891] Pre-Condition - Step 01: Navigate to 'Register' page
+[2022-07-23 17:00:02,730] Pre-Condition - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-07-23 17:00:02,877] Pre-Condition - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-07-23 17:00:03,015] Pre-Condition - Step 04: Enter to Email textbox with value is 'quanganh3274@gmail.com'
+[2022-07-23 17:00:03,182] Pre-Condition - Step 05: Enter to Password textbox with value is '123456'
+[2022-07-23 17:00:03,306] Pre-Condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-07-23 17:00:03,436] Pre-Condition - Step 07: Click to 'Register' button
+[2022-07-23 17:00:04,297] Pre-Condition - Step 08: Verify Register success message is displayed
+[2022-07-23 17:08:20,121] Pre-Condition - Step 01: Navigate to 'Register' page
+[2022-07-23 17:08:20,706] Pre-Condition - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-07-23 17:08:20,862] Pre-Condition - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-07-23 17:08:20,995] Pre-Condition - Step 04: Enter to Email textbox with value is 'quanganh5862@gmail.com'
+[2022-07-23 17:08:21,148] Pre-Condition - Step 05: Enter to Password textbox with value is '123456'
+[2022-07-23 17:08:21,291] Pre-Condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-07-23 17:08:21,415] Pre-Condition - Step 07: Click to 'Register' button
+[2022-07-23 17:08:22,215] Pre-Condition - Step 08: Verify Register success message is displayed
+[2022-07-23 17:42:08,037] Pre-Condition - Step 01: Navigate to 'Register' page
+[2022-07-23 17:42:08,594] Pre-Condition - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-07-23 17:42:08,764] Pre-Condition - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-07-23 17:42:08,920] Pre-Condition - Step 04: Enter to Email textbox with value is 'quanganh7589@gmail.com'
+[2022-07-23 17:42:09,084] Pre-Condition - Step 05: Enter to Password textbox with value is '123456'
+[2022-07-23 17:42:09,213] Pre-Condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-07-23 17:42:09,351] Pre-Condition - Step 07: Click to 'Register' button
+[2022-07-23 17:42:10,134] Pre-Condition - Step 08: Verify Register success message is displayed
+[2022-07-23 17:42:10,347] OS name = windows 10
+[2022-07-23 17:42:10,347] Driver instance name = chromedriver: chrome on windows (e0316e8816830cb7e0fa754c69f7aeab)
+[2022-07-23 17:45:53,231] Pre-Condition - Step 01: Navigate to 'Register' page
+[2022-07-23 17:45:53,812] Pre-Condition - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-07-23 17:45:53,980] Pre-Condition - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-07-23 17:45:54,135] Pre-Condition - Step 04: Enter to Email textbox with value is 'quanganh5378@gmail.com'
+[2022-07-23 17:45:54,286] Pre-Condition - Step 05: Enter to Password textbox with value is '123456'
+[2022-07-23 17:45:54,440] Pre-Condition - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-07-23 17:45:54,595] Pre-Condition - Step 07: Click to 'Register' button
+[2022-07-23 17:45:55,389] Pre-Condition - Step 08: Verify Register success message is displayed
+[2022-07-23 17:45:55,633] OS name = windows 10
+[2022-07-23 17:45:55,634] Driver instance name = chromedriver: chrome on windows (9cc4b6fda52c92889c1d6ffad4775cf0)

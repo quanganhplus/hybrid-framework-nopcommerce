@@ -15,7 +15,7 @@
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="fpt.nopcommerce.user.Level_17_Custom_Close_Driver"/>
+      <class name="fpt.nopcommerce.user.Level_18_Pattern_Object"/>
     </classes>
   </test> 
     

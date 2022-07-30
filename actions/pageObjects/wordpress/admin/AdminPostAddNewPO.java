@@ -1,5 +1,5 @@
 package pageObjects.wordpress.admin;
 
-public class ProductSearchPageObject {
+public class AdminPostAddNewPO {
 
 }

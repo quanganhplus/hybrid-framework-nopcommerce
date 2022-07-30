@@ -1,4 +1,4 @@
-package fpt.wordpress.posts;
+package fpt.wordpress.admin;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;

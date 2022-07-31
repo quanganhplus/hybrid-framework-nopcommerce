@@ -32,9 +32,9 @@ public class AdminPostAddNewPO extends BasePage {
 		clickToElement(driver, AdminPostAddNewPageUI.PUBLISH_BUTTON);
 	}
 
-	public void clickToRePublishButton() {
-		waitForElementClickable(driver, AdminPostAddNewPageUI.REPUBLISH_BUTTON);
-		clickToElement(driver, AdminPostAddNewPageUI.REPUBLISH_BUTTON);
+	public void clickToPrePublishButton() {
+		waitForElementClickable(driver, AdminPostAddNewPageUI.PRE_PUBLISH_BUTTON);
+		clickToElement(driver, AdminPostAddNewPageUI.PRE_PUBLISH_BUTTON);
 	}
 
 	public boolean isPostPublishMessageDisplayed(String postPublishMessage) {

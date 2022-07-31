@@ -8,8 +8,8 @@
     	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
 	</listeners>
 	
-	<parameter name="urlAdmin" value="http://quanganhblog.net/wp-admin"/>
-	<parameter name="urlUser" value="http://quanganhblog.net/"/>
+	<parameter name="urlAdmin" value="https://quanganhblog.net/wp-admin"/>
+	<parameter name="urlUser" value="https://quanganhblog.net/"/>
 	
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>

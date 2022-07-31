@@ -64,8 +64,8 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		log.info("Create_Post - Step 06: Click to 'Publish' button");
 		adminPostAddNewPage.clickToPublishButton();
 
-		log.info("Create_Post - Step 07: Click to 'RePublish' button");
-		adminPostAddNewPage.clickToRePublishButton();
+		log.info("Create_Post - Step 07: Click to 'Pre_Publish' button");
+		adminPostAddNewPage.clickToPrePublishButton();
 
 		log.info("Create_Post - Step 08: Verify 'Post published.' message is displayed");
 		verifyTrue(adminPostAddNewPage.isPostPublishMessageDisplayed("Post published."));

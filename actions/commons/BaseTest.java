@@ -88,7 +88,7 @@ public class BaseTest {
 			// System.setProperty("webdriver.gecko.driver", projectPath + ".//browserDrivers//geckodriver.exe");
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
-			options.setAcceptInsecureCerts(false);
+			options.setAcceptInsecureCerts(true);
 			driver = new FirefoxDriver(options);
 		} else if (browserList == BrowserList.HEADLESS_FIREFOX) {
 			WebDriverManager.firefoxdriver().setup();

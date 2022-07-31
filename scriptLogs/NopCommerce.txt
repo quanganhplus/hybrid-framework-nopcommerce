@@ -1,16 +1,16 @@
-[2022-07-31 17:35:30,681] Pre-condition - Step 01: Open browser and admin Url
-[2022-07-31 17:35:36,160] Pre-condition - Step 02: Enter to Username textbox :quanganh
-[2022-07-31 17:35:36,374] Pre-condition - Step 03: Enter to Password textbox :Anh123456
-[2022-07-31 17:35:36,503] Pre-condition - Step 04: Click to login button
-[2022-07-31 17:35:39,917] Create_Post - Step 01: Click to 'Post' menu link
-[2022-07-31 17:35:41,769] Create_Post - Step 02: Get 'Search Post' page Url
-[2022-07-31 17:35:41,776] Create_Post - Step 03: Click to 'Add new' button
-[2022-07-31 17:35:44,781] Create_Post - Step 04: Enter to post title :Live Coding Title 44284
-[2022-07-31 17:35:46,780] Create_Post - Step 05: Enter to post body :Live Coding Body 44284
-[2022-07-31 17:35:48,809] Create_Post - Step 06: Click to 'Publish' button
-[2022-07-31 17:35:49,191] Create_Post - Step 07: Click to 'Pre_Publish' button
-[2022-07-31 17:35:49,897] Create_Post - Step 08: Verify 'Post published.' message is displayed
-[2022-07-31 17:35:51,658]  -------------------------- PASSED -------------------------- 
-[2022-07-31 17:35:51,734] Search_Post - Step 01: Open 'Search Post' page
-[2022-07-31 17:35:53,483] OS name = windows 10
-[2022-07-31 17:35:53,484] Driver instance name = chromedriver: chrome on windows (4c8f9cf6973942d431e3eb0620baeb01)
+[2022-07-31 17:42:43,258] Pre-condition - Step 01: Open browser and admin Url
+[2022-07-31 17:42:47,848] Pre-condition - Step 02: Enter to Username textbox :quanganh
+[2022-07-31 17:42:48,049] Pre-condition - Step 03: Enter to Password textbox :Anh123456
+[2022-07-31 17:42:48,179] Pre-condition - Step 04: Click to login button
+[2022-07-31 17:42:51,729] Create_Post - Step 01: Click to 'Post' menu link
+[2022-07-31 17:42:53,615] Create_Post - Step 02: Get 'Search Post' page Url
+[2022-07-31 17:42:53,624] Create_Post - Step 03: Click to 'Add new' button
+[2022-07-31 17:42:56,693] Create_Post - Step 04: Enter to post title :Live Coding Title 21612
+[2022-07-31 17:42:58,205] Create_Post - Step 05: Enter to post body :Live Coding Body 21612
+[2022-07-31 17:42:59,645] Create_Post - Step 06: Click to 'Publish' button
+[2022-07-31 17:43:00,315] Create_Post - Step 07: Click to 'Pre_Publish' button
+[2022-07-31 17:43:01,018] Create_Post - Step 08: Verify 'Post published.' message is displayed
+[2022-07-31 17:43:03,882]  -------------------------- PASSED -------------------------- 
+[2022-07-31 17:43:03,956] Search_Post - Step 01: Open 'Search Post' page
+[2022-07-31 17:43:05,701] OS name = windows 10
+[2022-07-31 17:43:05,701] Driver instance name = chromedriver: chrome on windows (b0eeb4f87add53b5027e0edb58c92ba6)

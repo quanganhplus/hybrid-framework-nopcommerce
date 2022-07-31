@@ -802,3 +802,19 @@
 [2022-07-26 14:40:50,789] MyAccount - Step 05: Verify 'Email' value is correctly
 [2022-07-26 14:40:50,868] OS name = windows 10
 [2022-07-26 14:40:50,868] Driver instance name = chromedriver: chrome on windows (6ca7694b8b04a21ecd53b2af6ea9ba2a)
+[2022-07-31 16:39:14,985] Pre-condition - Step 01: Open browser and admin Url
+[2022-07-31 16:39:21,151] Pre-condition - Step 02: Enter to Username textbox :quanganh
+[2022-07-31 16:39:21,468] Pre-condition - Step 03: Enter to Password textbox :Anh123456
+[2022-07-31 16:39:21,671] Pre-condition - Step 04: Click to login button
+[2022-07-31 16:39:25,416] Create_Post - Step 01: Click to 'Post' menu link
+[2022-07-31 16:39:27,331] Create_Post - Step 02: Get 'Search Post' page Url
+[2022-07-31 16:39:27,358] Create_Post - Step 03: Click to 'Add new' button
+[2022-07-31 16:39:32,039] Create_Post - Step 04: Enter to post title :Live Coding Title 58339
+[2022-07-31 16:39:33,976] Create_Post - Step 05: Enter to post body :Live Coding Body 58339
+[2022-07-31 16:39:35,694] Create_Post - Step 06: Click to 'Publish' button
+[2022-07-31 16:39:36,080] Create_Post - Step 07: Click to 'RePublish' button
+[2022-07-31 16:39:36,294] Create_Post - Step 08: Verify 'Post published.' message is displayed
+[2022-07-31 16:39:39,172]  -------------------------- PASSED -------------------------- 
+[2022-07-31 16:39:39,242] Search_Post - Step 01: Open 'Search Post' page
+[2022-07-31 16:39:40,998] OS name = windows 10
+[2022-07-31 16:39:40,998] Driver instance name = chromedriver: chrome on windows (497a775aeaaa347fa71917313409115d)

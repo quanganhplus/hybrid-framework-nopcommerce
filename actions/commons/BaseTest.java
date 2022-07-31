@@ -142,7 +142,7 @@ public class BaseTest {
 
 	protected int generateFakeNumber() {
 		Random rand = new Random();
-		return rand.nextInt(9999);
+		return rand.nextInt(99999);
 	}
 
 	protected boolean verifyTrue(boolean condition) {

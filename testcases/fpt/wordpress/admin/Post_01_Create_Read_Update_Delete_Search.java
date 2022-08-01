@@ -12,6 +12,8 @@ import pageObjects.wordpress.admin.AdminLoginPO;
 import pageObjects.wordpress.admin.AdminPostAddNewPO;
 import pageObjects.wordpress.admin.AdminPostSearchPO;
 import pageObjects.wordpress.admin.PageGeneratorManager;
+import pageObjects.wordpress.user.UserHomePO;
+import pageObjects.wordpress.user.UserPostDetailPO;
 
 public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 	WebDriver driver;
@@ -19,6 +21,8 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 	AdminDashboardPO adminDashboardPage;
 	AdminPostSearchPO adminPostSearchPage;
 	AdminPostAddNewPO adminPostAddNewPage;
+	UserHomePO userHomePage;
+	UserPostDetailPO userPostDetailPage;
 
 	String adminUsername = "quanganh";
 	String adminPassword = "Anh123456";
@@ -26,12 +30,17 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 	int randomNumber = generateFakeNumber();
 	String postTitle = "Live Coding Title " + randomNumber;
 	String postBody = "Live Coding Body " + randomNumber;
+	String authorName = "quanganh";
+	String urlAdmin, urlUser;
+	String currentDay = "01/08/2022";
 
-	@Parameters({ "browser", "urlAdmin" })
+	@Parameters({ "browser", "urlAdmin", "urlUser" })
 	@BeforeClass
-	public void beforeClass(String browserName, String urlAdmin) {
-		log.info("Pre-condition - Step 01: Open browser and admin Url");
-		driver = getBrowserDriver(browserName, urlAdmin);
+	public void beforeClass(String browserName, String urlAdmin, String urlUser) {
+		log.info("Pre-condition - Step 01: Open browser and Admin Url");
+		this.urlAdmin = urlAdmin;
+		this.urlUser = urlUser;
+		driver = getBrowserDriver(browserName, this.urlAdmin);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 
 		log.info("Pre-condition - Step 02: Enter to Username textbox :" + adminUsername);
@@ -72,23 +81,43 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 	}
 
 	@Test
-	public void Post_02_Search_Post() {
+	public void Post_02_Search_And_View_Post() {
 		log.info("Search_Post - Step 01: Open 'Search Post' page");
 		adminPostSearchPage = adminPostAddNewPage.openSearchPosstPageUrl(searchPostUrl);
+
+		log.info("Search_Post - Step 02: Enter to Search textbox");
+		adminPostSearchPage.enterToSearchTextbox(postTitle);
+
+		log.info("Search_Post - Step 03: Click to 'Search Posts' button");
+		adminPostSearchPage.clickToSearchPostButton();
+
+		log.info("Search_Post - Step 04: Verify Search table contains '" + postTitle + "'");
+		verifyTrue(adminPostSearchPage.isPostSearchTableDisplayed("Title", postTitle));
+
+		log.info("Search_Post - Step 05: Verify Search table contains '" + authorName + "'");
+		verifyTrue(adminPostSearchPage.isPostSearchTableDisplayed("Author", authorName));
+
+		log.info("Search_Post - Step 06: Open User Url");
+		userHomePage = adminPostSearchPage.openUserUrl(this.urlUser);
+
+		log.info("Search_Post - Step 07: Verify Post info displayed at Home page");
+		userHomePage.isPostInfoDisplayed(postTitle);
+		userHomePage.isPostInfoDisplayed(postBody);
+		userHomePage.isPostInfoDisplayed(authorName);
+		userHomePage.isPostInfoDisplayed("Posted on 01/08/2022");
+
+		log.info("Search_Post - Step 08: Click to Post title");
+
+		log.info("Search_Post - Step 09: Verify Post info displayed at Post detail page");
 	}
 
 	@Test
-	public void Post_03_View_Post() {
+	public void Post_03_Edit_Post() {
 
 	}
 
 	@Test
-	public void Post_04_View_Post() {
-
-	}
-
-	@Test
-	public void Post_05_Delete_Post() {
+	public void Post_04_Delete_Post() {
 
 	}
 

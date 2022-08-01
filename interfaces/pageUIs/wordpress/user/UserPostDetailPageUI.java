@@ -1,5 +1,5 @@
 package pageUIs.wordpress.user;
 
-public class UserPostSearchPageUI {
+public class UserPostDetailPageUI {
 
 }

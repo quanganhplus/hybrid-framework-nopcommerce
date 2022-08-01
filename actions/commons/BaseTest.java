@@ -268,4 +268,25 @@ public class BaseTest {
 			}
 		}
 	}
+
+	protected String getCurrentDate() {
+		DateTime nowUTC = new DateTime(DateTimeZone.UTC);
+		int day = nowUTC.getDayOfMonth();
+		return day + "";
+	}
+
+	protected String getCurrentMonth() {
+		DateTime now = new DateTime(DateTimeZone.UTC);
+		int month = now.getMonthOfYear();
+		return month + "";
+	}
+
+	protected String getCurrentYear() {
+		DateTime now = new DateTime(DateTimeZone.UTC);
+		return now.getYear() + "";
+	}
+
+	protected String getCurrentDay() {
+		return getCurrentDate() + "/" + getCurrentMonth() + "/" + getCurrentYear();
+	}
 }

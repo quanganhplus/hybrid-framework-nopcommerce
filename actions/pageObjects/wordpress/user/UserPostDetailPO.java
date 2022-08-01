@@ -10,4 +10,9 @@ public class UserPostDetailPO extends BasePage {
 	public UserPostDetailPO(WebDriver driver) {
 		this.driver = driver;
 	}
+
+	public boolean isPostInfoDisplayed(String postTitle) {
+
+		return false;
+	}
 }

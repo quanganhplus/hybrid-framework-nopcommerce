@@ -17,4 +17,18 @@ public class AdminPostSearchPO extends BasePage {
 		clickToElement(driver, AdminPostSearchPageUI.ADD_NEW_BUTTON);
 		return PageGeneratorManager.getAdminPostAddNewPage(driver);
 	}
+
+	public void enterToSearchTextbox(String postTitle) {
+
+	}
+
+	public void clickToSearchPostButton() {
+
+	}
+
+	public boolean isPostSearchTableDisplayed(String string, String postTitle) {
+
+		return false;
+	}
+
 }

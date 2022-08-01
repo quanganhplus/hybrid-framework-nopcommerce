@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.joda.time.DateTime;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -270,20 +271,28 @@ public class BaseTest {
 	}
 
 	protected String getCurrentDate() {
-		DateTime nowUTC = new DateTime(DateTimeZone.UTC);
+		DateTime nowUTC = new DateTime();
 		int day = nowUTC.getDayOfMonth();
-		return day + "";
+		if (day < 10) {
+			String dayValue = "0" + day;
+			return dayValue;
+		}
+		return String.valueOf(day);
 	}
 
 	protected String getCurrentMonth() {
-		DateTime now = new DateTime(DateTimeZone.UTC);
+		DateTime now = new DateTime();
 		int month = now.getMonthOfYear();
-		return month + "";
+		if (month < 10) {
+			String monthValue = "0" + month;
+			return monthValue;
+		}
+		return String.valueOf(month);
 	}
 
 	protected String getCurrentYear() {
-		DateTime now = new DateTime(DateTimeZone.UTC);
-		return now.getYear() + "";
+		DateTime now = new DateTime();
+		return String.valueOf(now.getYear());
 	}
 
 	protected String getCurrentDay() {

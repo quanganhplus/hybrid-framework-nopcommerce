@@ -32,7 +32,7 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 	String postBody = "Live Coding Body " + randomNumber;
 	String authorName = "quanganh";
 	String urlAdmin, urlUser;
-	String currentDay = "01/08/2022";
+	String currentDay = getCurrentDay();
 
 	@Parameters({ "browser", "urlAdmin", "urlUser" })
 	@BeforeClass
@@ -92,23 +92,28 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		adminPostSearchPage.clickToSearchPostButton();
 
 		log.info("Search_Post - Step 04: Verify Search table contains '" + postTitle + "'");
-		verifyTrue(adminPostSearchPage.isPostSearchTableDisplayed("Title", postTitle));
+		verifyTrue(adminPostSearchPage.isPostSearchTableDisplayed("title", postTitle));
 
 		log.info("Search_Post - Step 05: Verify Search table contains '" + authorName + "'");
-		verifyTrue(adminPostSearchPage.isPostSearchTableDisplayed("Author", authorName));
+		verifyTrue(adminPostSearchPage.isPostSearchTableDisplayed("author", authorName));
 
 		log.info("Search_Post - Step 06: Open User Url");
-		userHomePage = adminPostSearchPage.openUserUrl(this.urlUser);
+		userHomePage = adminPostSearchPage.openUserUrl(driver, this.urlUser);
 
 		log.info("Search_Post - Step 07: Verify Post info displayed at Home page");
-		userHomePage.isPostInfoDisplayed(postTitle);
-		userHomePage.isPostInfoDisplayed(postBody);
-		userHomePage.isPostInfoDisplayed(authorName);
-		userHomePage.isPostInfoDisplayed("Posted on 01/08/2022");
+		verifyTrue(userHomePage.isPostInfoDisplayed(postTitle));
+		verifyTrue(userHomePage.isPostInfoDisplayed(postBody));
+		verifyTrue(userHomePage.isPostInfoDisplayed(authorName));
+		verifyTrue(userHomePage.isPostInfoDisplayed(currentDay));
 
 		log.info("Search_Post - Step 08: Click to Post title");
+		userPostDetailPage = userHomePage.clickToPostTitle(postTitle);
 
 		log.info("Search_Post - Step 09: Verify Post info displayed at Post detail page");
+		verifyTrue(userPostDetailPage.isPostInfoDisplayed(postTitle));
+		verifyTrue(userPostDetailPage.isPostInfoDisplayed(postBody));
+		verifyTrue(userPostDetailPage.isPostInfoDisplayed(authorName));
+		verifyTrue(userPostDetailPage.isPostInfoDisplayed(currentDay));
 	}
 
 	@Test

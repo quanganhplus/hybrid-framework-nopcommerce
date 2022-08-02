@@ -30,18 +30,6 @@ import pageObjects.wordpress.user.UserHomePO;
 import pageUIs.jQuery.uploadFile.BasePageJQueryUI;
 import pageUIs.nopCommerce.user.BasePageNopComerceUI;
 
-/**
- * @author quang
- *
- */
-/**
- * @author quang
- *
- */
-/**
- * @author quang
- *
- */
 public class BasePage {
 
 	public static BasePage getBasePageOject() {
@@ -673,8 +661,8 @@ public class BasePage {
 	}
 
 	public UserHomePO openUserUrl(WebDriver driver, String urlUser) {
-
-		return null;
+		openPageUrl(driver, urlUser);
+		return pageObjects.wordpress.user.PageGeneratorManager.getUserHomePage(driver);
 	}
 
 	private long longTimeout = GlobalConstants.LONG_TIMEOUT;

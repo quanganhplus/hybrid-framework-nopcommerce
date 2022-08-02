@@ -3,6 +3,7 @@ package pageObjects.wordpress.user;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
+import pageUIs.wordpress.user.UserHomePageUI;
 
 public class UserHomePO extends BasePage {
 	WebDriver driver;
@@ -11,13 +12,30 @@ public class UserHomePO extends BasePage {
 		this.driver = driver;
 	}
 
-	public boolean isPostInfoDisplayed(String postTitle) {
+	public boolean isPostInfoDisplayedWithPostTitle(String postTitle) {
+		waitForElementVisible(driver, UserHomePageUI.POST_TITLE_TEXT, postTitle);
+		return isElementDisplayed(driver, UserHomePageUI.POST_TITLE_TEXT, postTitle);
+	}
 
-		return false;
+	public boolean isPostInfoDisplayedWithPostBody(String postTitle, String postBody) {
+		waitForElementVisible(driver, UserHomePageUI.POST_BODY_TEXT_BY_POST_TITLE, postTitle, postBody);
+		return isElementDisplayed(driver, UserHomePageUI.POST_BODY_TEXT_BY_POST_TITLE, postTitle, postBody);
+	}
+
+	public boolean isPostInfoDisplayedWithAuthorName(String postTitle, String authorName) {
+		waitForElementVisible(driver, UserHomePageUI.POST_AUTHOR_TEXT_BY_POST_TITLE, postTitle, authorName);
+		return isElementDisplayed(driver, UserHomePageUI.POST_AUTHOR_TEXT_BY_POST_TITLE, postTitle, authorName);
+	}
+
+	public boolean isPostInfoDisplayedWithCurrentDay(String postTitle, String currentDay) {
+		waitForElementVisible(driver, UserHomePageUI.POST_CURRENT_DAY_TEXT_BY_POST_TITLE, postTitle, currentDay);
+		return isElementDisplayed(driver, UserHomePageUI.POST_CURRENT_DAY_TEXT_BY_POST_TITLE, postTitle, currentDay);
 	}
 
 	public UserPostDetailPO clickToPostTitle(String postTitle) {
-
-		return null;
+		waitForElementClickable(driver, UserHomePageUI.POST_TITLE_TEXT, postTitle);
+		clickToElement(driver, UserHomePageUI.POST_TITLE_TEXT, postTitle);
+		return PageGeneratorManager.getUserPostDetailPage(driver);
 	}
+
 }

@@ -101,19 +101,19 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		userHomePage = adminPostSearchPage.openUserUrl(driver, this.urlUser);
 
 		log.info("Search_Post - Step 07: Verify Post info displayed at Home page");
-		verifyTrue(userHomePage.isPostInfoDisplayed(postTitle));
-		verifyTrue(userHomePage.isPostInfoDisplayed(postBody));
-		verifyTrue(userHomePage.isPostInfoDisplayed(authorName));
-		verifyTrue(userHomePage.isPostInfoDisplayed(currentDay));
+		verifyTrue(userHomePage.isPostInfoDisplayedWithPostTitle(postTitle));
+		verifyTrue(userHomePage.isPostInfoDisplayedWithPostBody(postTitle, postBody));
+		verifyTrue(userHomePage.isPostInfoDisplayedWithAuthorName(postTitle, authorName));
+		verifyTrue(userHomePage.isPostInfoDisplayedWithCurrentDay(postTitle, currentDay));
 
 		log.info("Search_Post - Step 08: Click to Post title");
 		userPostDetailPage = userHomePage.clickToPostTitle(postTitle);
 
 		log.info("Search_Post - Step 09: Verify Post info displayed at Post detail page");
-		verifyTrue(userPostDetailPage.isPostInfoDisplayed(postTitle));
-		verifyTrue(userPostDetailPage.isPostInfoDisplayed(postBody));
-		verifyTrue(userPostDetailPage.isPostInfoDisplayed(authorName));
-		verifyTrue(userPostDetailPage.isPostInfoDisplayed(currentDay));
+		verifyTrue(userPostDetailPage.isPostInfoDisplayedWithPostTitle(postTitle));
+		verifyTrue(userPostDetailPage.isPostInfoDisplayedWithPostBody(postTitle, postBody));
+		verifyTrue(userPostDetailPage.isPostInfoDisplayedWithAuthorName(postTitle, authorName));
+		verifyTrue(userPostDetailPage.isPostInfoDisplayedWithCurrentDay(postTitle, currentDay));
 	}
 
 	@Test

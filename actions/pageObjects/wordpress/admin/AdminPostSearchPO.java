@@ -40,4 +40,29 @@ public class AdminPostSearchPO extends BasePage {
 		return PageGeneratorManager.getAdminPostAddNewPage(driver);
 	}
 
+	public void selectPostCheckboxByTitle(String editTitle) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void selectTextItemActionDropdown(String string) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void clickToApplyButton() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public boolean isMoveToTrashMessageDisplayed(String string) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean isNoPostsFoundMessageDisplayed(String string) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

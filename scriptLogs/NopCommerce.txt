@@ -1,63 +1,63 @@
-[2022-08-03 17:14:25,183] Pre-condition - Step 01: Open browser and Admin Url
-[2022-08-03 17:14:51,066] Pre-condition - Step 02: Enter to Username textbox : quanganh
-[2022-08-03 17:14:51,767] Pre-condition - Step 03: Enter to Password textbox : Anh123456
-[2022-08-03 17:14:51,925] Pre-condition - Step 04: Click to login button
-[2022-08-03 17:15:18,048] Create_Post - Step 01: Click to 'Post' menu link
-[2022-08-03 17:15:30,892] Create_Post - Step 02: Get 'Search Post' page Url
-[2022-08-03 17:15:30,925] Create_Post - Step 03: Click to 'Add new' button
-[2022-08-03 17:15:39,618] Create_Post - Step 04: Enter to post title :Live Coding Title 5978
-[2022-08-03 17:15:41,096] Create_Post - Step 05: Enter to post body :Live Coding Body 5978
-[2022-08-03 17:15:42,811] Create_Post - Step 06: Click to 'Publish' button
-[2022-08-03 17:15:43,021] Create_Post - Step 07: Click to 'Pre_Publish' button
-[2022-08-03 17:15:43,160] Create_Post - Step 08: Verify 'Post published.' message is displayed
-[2022-08-03 17:15:52,192]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:15:53,057] Search_Post - Step 01: Open 'Search Post' page
-[2022-08-03 17:16:07,409] Search_Post - Step 02: Enter to Search textbox
-[2022-08-03 17:16:07,726] Search_Post - Step 03: Click to 'Search Posts' button
-[2022-08-03 17:16:11,557] Search_Post - Step 04: Verify Search table contains 'Live Coding Title 5978'
-[2022-08-03 17:16:12,496]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:12,497] Search_Post - Step 05: Verify Search table contains 'quanganh'
-[2022-08-03 17:16:12,607]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:12,608] Search_Post - Step 06: Open User Url
-[2022-08-03 17:16:25,176] Search_Post - Step 07: Verify Post info displayed at Home page
-[2022-08-03 17:16:25,267]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:25,343]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:25,404]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:25,483]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:25,483] Search_Post - Step 08: Click to Post title
-[2022-08-03 17:16:29,914] Search_Post - Step 09: Verify Post info displayed at Post detail page
-[2022-08-03 17:16:29,976]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:30,038]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:30,128]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:30,190]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:30,197] Edit_Post - Step 01: Open Admin Url
-[2022-08-03 17:16:35,280] Edit_Post - Step 02: Click to 'Post' menu link
-[2022-08-03 17:16:37,256] Edit_Post - Step 03: Enter to Search textbox
-[2022-08-03 17:16:37,505] Edit_Post - Step 04: Click to 'Search Posts' button
-[2022-08-03 17:16:40,293] Edit_Post - Step 05: Click to Post Title link and navigata to Edit Post page
-[2022-08-03 17:16:44,359] Edit_Post - Step 06: Enter to post title : Edit Title 5978
-[2022-08-03 17:16:45,802] Edit_Post - Step 07: Enter to post body : Edit Body 5978
-[2022-08-03 17:16:47,657] Edit_Post - Step 08: Click to 'Update' button
-[2022-08-03 17:16:48,248] Edit_Post - Step 09: Verify 'Post updated.' message is displayed
-[2022-08-03 17:16:51,464]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:51,464] Edit_Post - Step 10: Open 'Search Post' page
-[2022-08-03 17:16:55,389] Edit_Post - Step 11: Enter to Search textbox
-[2022-08-03 17:16:55,610] Edit_Post - Step 12: Click to 'Search Posts' button
-[2022-08-03 17:16:58,627] Edit_Post - Step 13: Verify Search table contains 'Edit Title 5978'
-[2022-08-03 17:16:58,733]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:58,733] Edit_Post - Step 14: Verify Search table contains 'quanganh'
-[2022-08-03 17:16:58,826]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:16:58,826] Edit_Post - Step 15: Open User Url
-[2022-08-03 17:17:00,458] Edit_Post - Step 16: Verify Post info displayed at Home page
-[2022-08-03 17:17:00,527]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:17:00,592]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:17:00,652]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:17:00,717]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:17:00,717] Edit_Post - Step 17: Click to Post title
-[2022-08-03 17:17:01,956] Edit_Post - Step 18: Verify Post info displayed at Post detail page
-[2022-08-03 17:17:02,030]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:17:02,104]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:17:02,169]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:17:02,233]  -------------------------- PASSED -------------------------- 
-[2022-08-03 17:17:02,243] OS name = windows 10
-[2022-08-03 17:17:02,244] Driver instance name = chromedriver: chrome on windows (24acbd9f32556833402ae48afa94d497)
+[2022-08-03 19:47:32,318] Pre-condition - Step 01: Open browser and Admin Url
+[2022-08-03 19:48:26,031] Pre-condition - Step 02: Enter to Username textbox : quanganh
+[2022-08-03 19:48:26,328] Pre-condition - Step 03: Enter to Password textbox : Anh123456
+[2022-08-03 19:48:26,475] Pre-condition - Step 04: Click to login button
+[2022-08-03 19:48:43,199] Create_Post - Step 01: Click to 'Post' menu link
+[2022-08-03 19:48:46,929] Create_Post - Step 02: Get 'Search Post' page Url
+[2022-08-03 19:48:46,943] Create_Post - Step 03: Click to 'Add new' button
+[2022-08-03 19:48:52,718] Create_Post - Step 04: Enter to post title :Live Coding Title 49196
+[2022-08-03 19:48:54,024] Create_Post - Step 05: Enter to post body :Live Coding Body 49196
+[2022-08-03 19:48:56,216] Create_Post - Step 06: Click to 'Publish' button
+[2022-08-03 19:48:56,552] Create_Post - Step 07: Click to 'Pre_Publish' button
+[2022-08-03 19:48:57,344] Create_Post - Step 08: Verify 'Post published.' message is displayed
+[2022-08-03 19:48:59,524]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:48:59,638] Search_Post - Step 01: Open 'Search Post' page
+[2022-08-03 19:49:01,425] Search_Post - Step 02: Enter to Search textbox
+[2022-08-03 19:49:01,630] Search_Post - Step 03: Click to 'Search Posts' button
+[2022-08-03 19:49:04,827] Search_Post - Step 04: Verify Search table contains 'Live Coding Title 49196'
+[2022-08-03 19:49:04,929]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:04,929] Search_Post - Step 05: Verify Search table contains 'quanganh'
+[2022-08-03 19:49:05,009]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:05,009] Search_Post - Step 06: Open User Url
+[2022-08-03 19:49:06,761] Search_Post - Step 07: Verify Post info displayed at Home page
+[2022-08-03 19:49:06,843]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:06,904]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:06,981]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:07,044]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:07,044] Search_Post - Step 08: Click to Post title
+[2022-08-03 19:49:08,674] Search_Post - Step 09: Verify Post info displayed at Post detail page
+[2022-08-03 19:49:08,737]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:08,831]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:08,893]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:08,955]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:08,964] Edit_Post - Step 01: Open Admin Url
+[2022-08-03 19:49:10,956] Edit_Post - Step 02: Click to 'Post' menu link
+[2022-08-03 19:49:12,740] Edit_Post - Step 03: Enter to Search textbox
+[2022-08-03 19:49:12,910] Edit_Post - Step 04: Click to 'Search Posts' button
+[2022-08-03 19:49:16,018] Edit_Post - Step 05: Click to Post Title link and navigata to Edit Post page
+[2022-08-03 19:49:19,091] Edit_Post - Step 06: Enter to post title : Edit Title 49196
+[2022-08-03 19:49:19,822] Edit_Post - Step 07: Enter to post body : Edit Body 49196
+[2022-08-03 19:49:23,051] Edit_Post - Step 08: Click to 'Update' button
+[2022-08-03 19:49:23,228] Edit_Post - Step 09: Verify 'Post updated.' message is displayed
+[2022-08-03 19:49:25,224]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:25,224] Edit_Post - Step 10: Open 'Search Post' page
+[2022-08-03 19:49:27,878] Edit_Post - Step 11: Enter to Search textbox
+[2022-08-03 19:49:28,227] Edit_Post - Step 12: Click to 'Search Posts' button
+[2022-08-03 19:49:31,348] Edit_Post - Step 13: Verify Search table contains 'Edit Title 49196'
+[2022-08-03 19:49:31,429]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:31,429] Edit_Post - Step 14: Verify Search table contains 'quanganh'
+[2022-08-03 19:49:31,504]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:31,504] Edit_Post - Step 15: Open User Url
+[2022-08-03 19:49:32,952] Edit_Post - Step 16: Verify Post info displayed at Home page
+[2022-08-03 19:49:33,018]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:33,083]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:33,151]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:33,211]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:33,211] Edit_Post - Step 17: Click to Post title
+[2022-08-03 19:49:34,815] Edit_Post - Step 18: Verify Post info displayed at Post detail page
+[2022-08-03 19:49:34,883]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:34,946]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:35,022]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:35,085]  -------------------------- PASSED -------------------------- 
+[2022-08-03 19:49:35,096] OS name = windows 10
+[2022-08-03 19:49:35,096] Driver instance name = chromedriver: chrome on windows (d9ad1fc3ad3713fd01b04eea70efe671)

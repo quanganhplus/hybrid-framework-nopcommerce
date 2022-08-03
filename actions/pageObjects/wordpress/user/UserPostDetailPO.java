@@ -31,4 +31,5 @@ public class UserPostDetailPO extends BasePage {
 		waitForElementVisible(driver, UserPostDetailPageUI.POST_CURRENT_DAY_TEXT_BY_POST_TITLE, postTitle, currentDay);
 		return isElementDisplayed(driver, UserPostDetailPageUI.POST_CURRENT_DAY_TEXT_BY_POST_TITLE, postTitle, currentDay);
 	}
+
 }

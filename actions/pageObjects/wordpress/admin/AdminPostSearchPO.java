@@ -34,4 +34,10 @@ public class AdminPostSearchPO extends BasePage {
 		return isElementDisplayed(driver, AdminPostSearchPageUI.TABLE_ROW_VALUE_BY_HEADER_INDEX, String.valueOf(headerIndex), cellValue);
 	}
 
+	public AdminPostAddNewPO clickToPostTitleLink(String postTitle) {
+		waitForElementClickable(driver, AdminPostSearchPageUI.ROW_TITLE_DETAIL_BY_TITLE_NAME, postTitle);
+		clickToElement(driver, AdminPostSearchPageUI.ROW_TITLE_DETAIL_BY_TITLE_NAME, postTitle);
+		return PageGeneratorManager.getAdminPostAddNewPage(driver);
+	}
+
 }

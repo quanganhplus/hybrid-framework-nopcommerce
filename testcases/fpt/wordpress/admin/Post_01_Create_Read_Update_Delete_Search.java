@@ -192,7 +192,7 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		adminPostSearchPage = adminDashboardPage.clickToPostMenuLink();
 
 		log.info("Delete_Post - Step 03: Enter to Search textbox");
-		adminPostSearchPage.enterToSearchTextbox(postTitle);
+		adminPostSearchPage.enterToSearchTextbox(editTitle);
 
 		log.info("Delete_Post - Step 04: Click to 'Search Posts' button");
 		adminPostSearchPage.clickToSearchPostButton();
@@ -210,7 +210,7 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		verifyTrue(adminPostSearchPage.isMoveToTrashMessageDisplayed("1 post moved to the Trash."));
 
 		log.info("Delete_Post - Step 09: Enter to Search textbox");
-		adminPostSearchPage.enterToSearchTextbox(postTitle);
+		adminPostSearchPage.enterToSearchTextbox(editTitle);
 
 		log.info("Delete_Post - Step 10: Click to 'Search Posts' button");
 		adminPostSearchPage.clickToSearchPostButton();

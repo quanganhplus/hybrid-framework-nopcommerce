@@ -315,11 +315,37 @@ public class BasePage {
 	}
 
 	// Case 2 + 3
-	public boolean isElementUndisplayed(WebDriver driver, String locator) {
+	public boolean isElementUndisplayed(WebDriver driver, String locatorType) {
 		System.out.println("Start time = " + new Date().toString());
 
 		overrideImplicitTimeout(driver, shortTimeout);
-		List<WebElement> elements = getListWebElement(driver, locator);
+		List<WebElement> elements = getListWebElement(driver, locatorType);
+
+		// Nếu như mình gán = 5 apply cho tất cả các step về sau đó : findElement/ findElements
+		overrideImplicitTimeout(driver, longTimeout);
+
+		if (elements.size() == 0) {
+			System.out.println("Case 3 - Element ko có trong DOM");
+			System.out.println("End time = " + new Date().toString());
+			return true;
+			// Nó có kích thước = 1 (Có trong DOM)
+			// Ko được hiển thị
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			System.out.println("Case 2 - Element có trong DOM nhưng ko visible/ displayed");
+			System.out.println("End time = " + new Date().toString());
+			return true;
+		} else {
+			System.out.println("Case 1 - Element có trong DOM và visible");
+			System.out.println("End time = " + new Date().toString());
+			return false;
+		}
+	}
+
+	public boolean isElementUndisplayed(WebDriver driver, String locator, String... dynamicValues) {
+		System.out.println("Start time = " + new Date().toString());
+
+		overrideImplicitTimeout(driver, shortTimeout);
+		List<WebElement> elements = getListWebElement(driver, getDynamicXpath(locator, dynamicValues));
 
 		// Nếu như mình gán = 5 apply cho tất cả các step về sau đó : findElement/ findElements
 		overrideImplicitTimeout(driver, longTimeout);
@@ -480,6 +506,11 @@ public class BasePage {
 	public void waitForElementInvisible(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locatorType)));
+	}
+
+	public void waitForElementInvisible(WebDriver driver, String locatorType, String... dynamicValues) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(getDynamicXpath(locatorType, dynamicValues))));
 	}
 
 	/*

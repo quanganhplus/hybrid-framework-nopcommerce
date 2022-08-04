@@ -39,18 +39,18 @@ public class UserHomePO extends BasePage {
 	}
 
 	public boolean isPostInfoUnDisplayedWithPostTitle(String editTitle) {
-		// TODO Auto-generated method stub
-		return false;
+		return isElementUndisplayed(driver, UserHomePageUI.POST_TITLE_TEXT, editTitle);
 	}
 
 	public void enterToSearchTextbox(String editTitle) {
-		// TODO Auto-generated method stub
-
+		waitForElementVisible(driver, UserHomePageUI.SEARCH_TEXTBOX, editTitle);
+		sendkeyToElement(driver, UserHomePageUI.SEARCH_TEXTBOX, editTitle);
 	}
 
 	public UserSearchPostPO clickToSearchButton() {
-		// TODO Auto-generated method stub
-		return null;
+		waitForElementClickable(driver, UserHomePageUI.SEARCH_BUTTON);
+		clickToElement(driver, UserHomePageUI.SEARCH_BUTTON);
+		return PageGeneratorManager.getUserSearchPostPage(driver);
 	}
 
 }

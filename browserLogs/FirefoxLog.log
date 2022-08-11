@@ -1,0 +1,34 @@
+1660228616640	geckodriver	INFO	Listening on 127.0.0.1:28151
+1660228617628	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-notifications" "--disable-geolocation" "-no-remote" "-profile" "C:\\Users\\quang\\AppData\\Local\\Temp\\rust_mozprofileJDjQvD"
+1660228618015	Marionette	INFO	Marionette enabled
+1660228618020	Marionette	INFO	Listening on port 51962
+Read port: 51962
+1660228618127	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:27:11
+isBrowserPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:47:19
+loadURI@resource://gre/modules/RemoteWebNavigation.jsm:87:56
+loadURI/<@chrome://global/content/elements/browser-custom-element.js:810:28
+_wrapURIChangeCall@chrome://global/content/elements/browser-custom-element.js:739:9
+loadURI@chrome://global/content/elements/browser-custom-element.js:809:12
+loadURI@chrome://mozapps/content/extensions/aboutaddons.js:2465:18
+render/<@chrome://mozapps/content/extensions/aboutaddons.js:2444:14
+render@chrome://mozapps/content/extensions/aboutaddons.js:2403:11
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\quang\\AppData\\Local\\Temp\\rust_mozprofileJDjQvD\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.nopcommerce.Jcaovma"Sc
+ript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a sJyanchronousv messaage fSor:" "https://demo.nopcommerce.com"
+cript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling bJaacvka Stcor iap ts yenrcrhorro:n oruess omuerscsea:g/e for:" "https://demo.nopcommerce.com"
+/gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message JavaScrifopt err:" "httror:ps:/ res/demouro.nopcomcmercee.com"
+://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/Loginconsole.warn: LoginRecipes: "getRecipes: falliMnagna bacgerParent.jsm,k to a sync linhre 136: TypeError: gRecipeManaonous message for:" "https://demo.nopcommerce.com"
+ger is null
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a sJavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+ynchronous message for:" "https://demo.nopcommerce.com"

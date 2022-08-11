@@ -28,6 +28,7 @@ public class Level_18_Pattern_Object extends BaseTest {
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
+		showBrowserConsoleLogs(driver);
 
 		firstName = "quang anh";
 		lastName = "trinh";
@@ -42,6 +43,7 @@ public class Level_18_Pattern_Object extends BaseTest {
 	public void User_01_Register() {
 		log.info("Register - Step 01: Navigate to 'Register' page");
 		registerPage = homePage.openRegisterPage();
+		showBrowserConsoleLogs(driver);
 
 		registerPage.clickToRadioButtonByLabel(driver, "Male");
 
@@ -68,6 +70,7 @@ public class Level_18_Pattern_Object extends BaseTest {
 
 		log.info("Register - Step 07: Click to 'Register' button");
 		registerPage.clickToButtonByText(driver, "Register");
+		showBrowserConsoleLogs(driver);
 
 		log.info("Register - Step 08: Verify Register success message is displayed");
 		Assert.assertEquals(registerPage.getRegisterSucessMessage(), "Your registration completed");
@@ -79,6 +82,7 @@ public class Level_18_Pattern_Object extends BaseTest {
 		log.info("Login - Step 01: Navigate to Login page");
 		homePage = registerPage.clickToLogoutLink();
 		loginPage = homePage.openLoginPage();
+		showBrowserConsoleLogs(driver);
 
 		log.info("Login - Step 02: Enter to Email textbox with value is '" + emailAddress + "'");
 		loginPage.inputToTextboxByID(driver, "Email", emailAddress);
@@ -89,6 +93,7 @@ public class Level_18_Pattern_Object extends BaseTest {
 		log.info("Login - Step 04: Click to 'Login' button");
 		loginPage.clickToButtonByText(driver, "Log in");
 		homePage = PageGeneratorManager.getUserHomePage(driver);
+		showBrowserConsoleLogs(driver);
 
 		log.info("Login - Step 05: Verify 'My Account' link is displayed");
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
@@ -114,7 +119,7 @@ public class Level_18_Pattern_Object extends BaseTest {
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		closeBrowserAndDriver();
+		// closeBrowserAndDriver();
 	}
 
 }

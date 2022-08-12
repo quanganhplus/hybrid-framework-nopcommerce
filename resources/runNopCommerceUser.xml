@@ -19,8 +19,8 @@
 <!--     </classes> -->
 <!--   </test>  -->
 	
-  <test name="Run on CHROME">
-  	<parameter name="browser" value="chrome"/>
+  <test name="Run on SAFARI">
+  	<parameter name="browser" value="safari"/>
     <classes>
       <class name="fpt.nopcommerce.user.Level_18_Pattern_Object"/>
     </classes>

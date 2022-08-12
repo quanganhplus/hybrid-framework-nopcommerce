@@ -20,6 +20,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
@@ -137,6 +138,10 @@ public class BaseTest {
 			// System.setProperty("webdriver.edge.driver", projectPath + ".//browserDrivers//msedgedriver.exe");
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+
+		} else if (browserList == BrowserList.SAFARI) {
+			WebDriverManager.safaridriver().setup();
+			driver = new SafariDriver();
 
 		} else if (browserList == BrowserList.COCCOC) {
 			// Cốc cốc browser trừ đi 5-6 version ra chrome driver

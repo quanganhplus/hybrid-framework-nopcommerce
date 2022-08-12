@@ -3197,3 +3197,123 @@
 [2022-08-11 21:45:23,117] MyAccount - Step 03: Verify 'Fist Name' value is correctly
 [2022-08-11 21:45:23,176] MyAccount - Step 04: Verify 'Last Name' value is correctly
 [2022-08-11 21:45:23,239] MyAccount - Step 05: Verify 'Email' value is correctly
+[2022-08-12 23:08:04,362] Register - Step 01: Navigate to 'Register' page
+[2022-08-12 23:08:06,029] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-12 23:08:07,111] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-12 23:08:10,870] Register - Step 04: Enter to Email textbox with value is 'quanganh50931@gmail.com'
+[2022-08-12 23:08:11,224] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-12 23:08:11,333] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-12 23:08:11,428] Register - Step 07: Click to 'Register' button
+[2022-08-12 23:08:11,717] Register - Step 08: Verify Register success message is displayed
+[2022-08-12 23:08:41,820] Login - Step 01: Navigate to Login page
+[2022-08-12 23:09:12,303] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-12 23:11:55,320] Register - Step 01: Navigate to 'Register' page
+[2022-08-12 23:11:56,561] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-12 23:11:56,723] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-12 23:11:57,029] Register - Step 04: Enter to Email textbox with value is 'quanganh37322@gmail.com'
+[2022-08-12 23:11:57,219] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-12 23:11:57,312] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-12 23:11:57,379] Register - Step 07: Click to 'Register' button
+[2022-08-12 23:11:57,421] Register - Step 08: Verify Register success message is displayed
+[2022-08-12 23:12:27,510] Login - Step 01: Navigate to Login page
+[2022-08-12 23:12:37,606] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-12 23:16:52,868] Register - Step 01: Navigate to 'Register' page
+[2022-08-12 23:16:53,766] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-12 23:16:53,964] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-12 23:16:54,292] Register - Step 04: Enter to Email textbox with value is 'quanganh21250@gmail.com'
+[2022-08-12 23:16:54,486] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-12 23:16:54,571] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-12 23:16:54,644] Register - Step 07: Click to 'Register' button
+[2022-08-12 23:16:54,692] Register - Step 08: Verify Register success message is displayed
+[2022-08-12 23:17:55,258] Login - Step 01: Navigate to Login page
+[2022-08-12 23:18:32,604] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-12 23:23:53,415] Register - Step 01: Navigate to 'Register' page
+[2022-08-12 23:23:54,123] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-12 23:23:54,267] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-12 23:23:54,643] Register - Step 04: Enter to Email textbox with value is 'quanganh1879@gmail.com'
+[2022-08-12 23:23:54,791] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-12 23:23:54,893] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-12 23:23:54,997] Register - Step 07: Click to 'Register' button
+[2022-08-12 23:23:55,973] Register - Step 08: Verify Register success message is displayed
+[2022-08-12 23:23:56,096] Login - Step 01: Navigate to Login page
+[2022-08-12 23:23:57,404] Login - Step 02: Enter to Email textbox with value is 'quanganh1879@gmail.com'
+[2022-08-12 23:23:57,528] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-12 23:23:57,623] Login - Step 04: Click to 'Login' button
+[2022-08-12 23:23:58,570] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-12 23:23:58,634] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-12 23:23:59,241] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-12 23:23:59,292] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-12 23:23:59,330] MyAccount - Step 04: Verify 'Last Name' value is correctly
+[2022-08-12 23:23:59,364] MyAccount - Step 05: Verify 'Email' value is correctly
+[2022-08-12 23:27:16,145] Register - Step 01: Navigate to 'Register' page
+[2022-08-12 23:27:16,932] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-12 23:27:17,162] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-12 23:27:17,475] Register - Step 04: Enter to Email textbox with value is 'quanganh46526@gmail.com'
+[2022-08-12 23:27:17,747] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-12 23:27:17,835] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-12 23:27:17,911] Register - Step 07: Click to 'Register' button
+[2022-08-12 23:27:17,979] Register - Step 08: Verify Register success message is displayed
+[2022-08-12 23:27:19,443] Login - Step 01: Navigate to Login page
+[2022-08-12 23:27:20,718] Login - Step 02: Enter to Email textbox with value is 'quanganh46526@gmail.com'
+[2022-08-12 23:27:21,777] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-12 23:27:21,861] Login - Step 04: Click to 'Login' button
+[2022-08-12 23:27:21,928] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-12 23:27:23,131] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-12 23:27:23,179] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-12 23:27:24,244] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-12 23:27:24,279] MyAccount - Step 04: Verify 'Last Name' value is correctly
+[2022-08-12 23:27:24,315] MyAccount - Step 05: Verify 'Email' value is correctly
+[2022-08-12 23:27:48,864] Register - Step 01: Navigate to 'Register' page
+[2022-08-12 23:27:50,066] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-12 23:27:50,268] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-12 23:27:50,573] Register - Step 04: Enter to Email textbox with value is 'quanganh91234@gmail.com'
+[2022-08-12 23:27:50,775] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-12 23:27:50,866] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-12 23:27:52,837] Register - Step 07: Click to 'Register' button
+[2022-08-12 23:27:52,906] Register - Step 08: Verify Register success message is displayed
+[2022-08-12 23:27:54,946] Login - Step 01: Navigate to Login page
+[2022-08-12 23:27:56,320] Login - Step 02: Enter to Email textbox with value is 'quanganh91234@gmail.com'
+[2022-08-12 23:27:57,443] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-12 23:27:57,522] Login - Step 04: Click to 'Login' button
+[2022-08-12 23:27:57,584] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-12 23:27:58,861] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-12 23:27:58,908] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-12 23:27:59,890] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-12 23:27:59,924] MyAccount - Step 04: Verify 'Last Name' value is correctly
+[2022-08-12 23:27:59,959] MyAccount - Step 05: Verify 'Email' value is correctly
+[2022-08-12 23:31:28,554] Register - Step 01: Navigate to 'Register' page
+[2022-08-12 23:31:29,750] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-12 23:31:29,896] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-12 23:31:30,213] Register - Step 04: Enter to Email textbox with value is 'quanganh13512@gmail.com'
+[2022-08-12 23:31:30,376] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-12 23:31:30,454] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-12 23:31:30,528] Register - Step 07: Click to 'Register' button
+[2022-08-12 23:31:30,596] Register - Step 08: Verify Register success message is displayed
+[2022-08-12 23:31:32,125] Login - Step 01: Navigate to Login page
+[2022-08-12 23:31:33,638] Login - Step 02: Enter to Email textbox with value is 'quanganh13512@gmail.com'
+[2022-08-12 23:31:34,593] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-12 23:31:34,680] Login - Step 04: Click to 'Login' button
+[2022-08-12 23:31:34,741] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-12 23:31:36,401] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-12 23:31:36,450] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-12 23:31:37,368] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-12 23:31:37,399] MyAccount - Step 04: Verify 'Last Name' value is correctly
+[2022-08-12 23:31:37,443] MyAccount - Step 05: Verify 'Email' value is correctly
+[2022-08-12 23:35:24,694] Register - Step 01: Navigate to 'Register' page
+[2022-08-12 23:35:25,781] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-12 23:35:25,910] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-12 23:35:26,191] Register - Step 04: Enter to Email textbox with value is 'quanganh31639@gmail.com'
+[2022-08-12 23:35:26,376] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-12 23:35:26,461] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-12 23:35:26,541] Register - Step 07: Click to 'Register' button
+[2022-08-12 23:35:26,608] Register - Step 08: Verify Register success message is displayed
+[2022-08-12 23:35:27,919] Login - Step 01: Navigate to Login page
+[2022-08-12 23:35:29,342] Login - Step 02: Enter to Email textbox with value is 'quanganh31639@gmail.com'
+[2022-08-12 23:35:30,417] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-12 23:35:30,505] Login - Step 04: Click to 'Login' button
+[2022-08-12 23:35:30,565] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-12 23:35:31,887] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-12 23:35:31,935] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-12 23:35:32,875] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-12 23:35:32,909] MyAccount - Step 04: Verify 'Last Name' value is correctly
+[2022-08-12 23:35:32,943] MyAccount - Step 05: Verify 'Email' value is correctly

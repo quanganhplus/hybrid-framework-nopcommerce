@@ -161,6 +161,7 @@ public class BaseTest {
 
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(GlobalConstants.USER_PAGE_URL);
+		driver.manage().window().maximize();
 		return driver;
 	}
 

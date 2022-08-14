@@ -19,10 +19,10 @@
 <!--     </classes> -->
 <!--   </test>  -->
 	
-  <test name="Run on SAFARI">
-  	<parameter name="browser" value="safari"/>
+  <test name="Run on CHROME">
+  	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="fpt.nopcommerce.user.Level_18_Pattern_Object"/>
+      <class name="fpt.nopcommerce.user.Level_20_Fake_Data"/>
     </classes>
   </test> 
     

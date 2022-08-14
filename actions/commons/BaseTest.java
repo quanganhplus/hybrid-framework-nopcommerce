@@ -86,6 +86,7 @@ public class BaseTest {
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
 			driver = new FirefoxDriver(options);
+
 		} else if (browserList == BrowserList.CHROME) {
 			// System.setProperty("webdriver.chrome.driver", projectPath + ".//browserDrivers//chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
@@ -134,6 +135,7 @@ public class BaseTest {
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
 			driver = new ChromeDriver(options);
+
 		} else if (browserList == BrowserList.EDGE) {
 			// System.setProperty("webdriver.edge.driver", projectPath + ".//browserDrivers//msedgedriver.exe");
 			WebDriverManager.edgedriver().setup();
@@ -173,28 +175,38 @@ public class BaseTest {
 			FirefoxOptions options = new FirefoxOptions();
 			options.setAcceptInsecureCerts(true);
 			driver = new FirefoxDriver(options);
+
 		} else if (browserList == BrowserList.HEADLESS_FIREFOX) {
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
 			driver = new FirefoxDriver(options);
+
 		} else if (browserList == BrowserList.CHROME) {
 			// System.setProperty("webdriver.chrome.driver", projectPath + ".//browserDrivers//chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
+
+			// bỏ log console ở selenium khi chạy chrome
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
+
 			ChromeOptions options = new ChromeOptions();
 			options.setAcceptInsecureCerts(true);
 			driver = new ChromeDriver(options);
+
 		} else if (browserList == BrowserList.HEADLESS_CHROME) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
 			options.addArguments("window-size=1920x1080");
 			driver = new ChromeDriver(options);
+
 		} else if (browserList == BrowserList.EDGE) {
 			// System.setProperty("webdriver.edge.driver", projectPath + ".//browserDrivers//msedgedriver.exe");
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+
 		} else if (browserList == BrowserList.COCCOC) {
 			// Cốc cốc browser trừ đi 5-6 version ra chrome driver
 			WebDriverManager.chromedriver().driverVersion("101.0.4951.41").setup();
@@ -207,6 +219,7 @@ public class BaseTest {
 
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(appUrl);
+		// driver.manage().window().maximize();
 		return driver;
 	}
 

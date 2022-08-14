@@ -3317,3 +3317,13 @@
 [2022-08-12 23:35:32,875] MyAccount - Step 03: Verify 'Fist Name' value is correctly
 [2022-08-12 23:35:32,909] MyAccount - Step 04: Verify 'Last Name' value is correctly
 [2022-08-12 23:35:32,943] MyAccount - Step 05: Verify 'Email' value is correctly
+[2022-08-13 21:41:12,246] OS name = windows 10
+[2022-08-13 21:41:12,247] Driver instance name = chromedriver: chrome on windows (f22f926362817f9e8588bdecd77d45a2)
+[2022-08-13 21:49:48,178] OS name = windows 10
+[2022-08-13 21:49:48,179] Driver instance name = chromedriver: chrome on windows (296ba985903f54fbefe2ec3c24f81a42)
+[2022-08-13 21:50:52,489] OS name = windows 10
+[2022-08-13 21:50:52,489] Driver instance name = chromedriver: chrome on windows (da7bac2451c1c584ada96aff9889624e)
+[2022-08-14 10:59:36,007] OS name = windows 10
+[2022-08-14 10:59:36,009] Driver instance name = chromedriver: chrome on windows (a24fbca47413e663e4765221db938b38)
+[2022-08-14 11:08:32,779] OS name = windows 10
+[2022-08-14 11:08:32,780] Driver instance name = chromedriver: chrome on windows (7d6964ea58b24b84442217e6377f70e1)

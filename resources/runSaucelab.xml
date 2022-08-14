@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suacelab - Sort">
+
+	<listeners>
+		<listener class-name="commons.MethodListener"/>
+	</listeners>
+	
+	<parameter name = "appUrl" value = "https://www.saucedemo.com/"/>
+	
+  <test name="Run on CHROME">
+  	<parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="fpt.saucelab.sort.Level_19_Sort_Asc_Desc"/>
+    </classes>
+  </test> 
+    
+</suite> 

@@ -1,6 +1,6 @@
 package fpt.nopcommerce.data;
 
-public class userData {
+public class UserData {
 	public class Register{
 		
 	}

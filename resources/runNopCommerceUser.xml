@@ -22,7 +22,7 @@
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="fpt.nopcommerce.user.Level_20_Data_Driven"/>
+      <class name="fpt.nopcommerce.user.Level_20_Internal_Data"/>
     </classes>
   </test> 
     

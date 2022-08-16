@@ -60,7 +60,6 @@
 	<classpathentry kind="lib" path="libAllure/aspectjlib-1.6.2.jar"/>
 	<classpathentry kind="lib" path="libAllure/aspectjrt-1.8.10.jar"/>
 	<classpathentry kind="lib" path="libAllure/aspectjtools-1.8.10.jar"/>
-	<classpathentry kind="lib" path="libAllure/aspectjweaver-1.8.10.jar"/>
 	<classpathentry kind="lib" path="libAllure/bsh-2.0b6.jar"/>
 	<classpathentry kind="lib" path="libAllure/byte-buddy-1.8.15.jar"/>
 	<classpathentry kind="lib" path="libAllure/commons-exec-1.3.jar"/>
@@ -80,5 +79,6 @@
 	<classpathentry kind="lib" path="libJackson/jackson-annotations-2.10.0.jar"/>
 	<classpathentry kind="lib" path="libJackson/jackson-core-2.10.0.jar"/>
 	<classpathentry kind="lib" path="libJackson/jackson-databind-2.10.0.jar"/>
+	<classpathentry kind="lib" path="libAllure/aspectjweaver-1.9.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

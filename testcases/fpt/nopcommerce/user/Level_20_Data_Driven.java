@@ -111,7 +111,7 @@ public class Level_20_Data_Driven extends BaseTest {
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		// closeBrowserAndDriver();
+		closeBrowserAndDriver();
 	}
 
 }

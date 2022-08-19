@@ -1,5 +1,7 @@
 package fpt.nopcommerce.user;
 
+import java.lang.reflect.Method;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -7,13 +9,17 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import commons.BaseTest;
 import commons.PageGeneratorManager;
 import fpt.nopcommerce.data.UserDataMapper;
+
 import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
+import reportConfig.ExtentTestManager;
 
 public class Level_20_Data_Driven extends BaseTest {
 	private WebDriver driver;
@@ -34,7 +40,9 @@ public class Level_20_Data_Driven extends BaseTest {
 	}
 
 	@Test
-	public void User_01_Register() {
+	public void User_01_Register(Method method) {
+		ExtentTestManager.startTest(method.getName(), "Register to system with valid Email and Password");
+		ExtentTestManager.getTest().log(Status.INFO, "Register - Step 01: Navigate to 'Register' page");
 		log.info("Register - Step 01: Navigate to 'Register' page");
 		registerPage = homePage.openRegisterPage();
 
@@ -70,8 +78,9 @@ public class Level_20_Data_Driven extends BaseTest {
 	}
 
 	@Test
-	public void User_02_Login() {
-
+	public void User_02_Login(Method method) {
+		ExtentTestManager.startTest(method.getName(), "Login to system successfully");
+		ExtentTestManager.getTest().log(Status.INFO, "Login - Step 01: Navigate to Login page");
 		log.info("Login - Step 01: Navigate to Login page");
 		homePage = registerPage.clickToLogoutLink();
 		loginPage = homePage.openLoginPage();
@@ -92,7 +101,8 @@ public class Level_20_Data_Driven extends BaseTest {
 	}
 
 	@Test
-	public void User_03_My_Account() {
+	public void User_03_My_Account(Method method) {
+		ExtentTestManager.startTest(method.getName(), "User_03_My_Account");
 		log.info("MyAccount - Step 01: Navigate to 'My Account' page");
 		customerInfoPage = homePage.openMyAccountPage();
 
@@ -100,7 +110,7 @@ public class Level_20_Data_Driven extends BaseTest {
 		Assert.assertTrue(customerInfoPage.isCustomerInfoPageDisplayed());
 
 		log.info("MyAccount - Step 03: Verify 'Fist Name' value is correctly");
-		Assert.assertEquals(customerInfoPage.getTextboxValueByID(driver, "FirstName"), userData.getFirstName());
+		Assert.assertEquals(customerInfoPage.getTextboxValueByID(driver, "FirstName"), "123456");
 
 		log.info("MyAccount - Step 04: Verify 'Last Name' value is correctly");
 		Assert.assertEquals(customerInfoPage.getTextboxValueByID(driver, "LastName"), userData.getLastName());

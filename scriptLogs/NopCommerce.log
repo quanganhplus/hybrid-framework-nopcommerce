@@ -74,3 +74,77 @@
 [2022-08-17 01:20:47,189] MyAccount - Step 05: Verify 'Email' value is correctly
 [2022-08-17 01:20:47,255] OS name = windows 10
 [2022-08-17 01:20:47,256] Driver instance name = chromedriver: chrome on windows (a51e2b724b4f167e402c77ecb5d8d06f)
+[2022-08-19 19:16:21,535] Register - Step 01: Navigate to 'Register' page
+[2022-08-19 19:16:22,222] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-19 19:16:22,360] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-19 19:16:22,930] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus57488@gmail.com'
+[2022-08-19 19:16:23,154] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-19 19:16:23,300] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-19 19:16:23,450] Register - Step 07: Click to 'Register' button
+[2022-08-19 19:16:24,267] Register - Step 08: Verify Register success message is displayed
+[2022-08-19 19:16:24,375] Login - Step 01: Navigate to Login page
+[2022-08-19 19:16:25,627] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus57488@gmail.com'
+[2022-08-19 19:16:25,785] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-19 19:16:25,919] Login - Step 04: Click to 'Login' button
+[2022-08-19 19:16:26,664] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-19 19:16:26,735] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-19 19:16:27,264] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-19 19:16:27,322] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-19 19:16:27,382] MyAccount - Step 04: Verify 'Last Name' value is correctly
+[2022-08-19 19:16:27,444] MyAccount - Step 05: Verify 'Email' value is correctly
+[2022-08-19 19:16:27,508] OS name = windows 10
+[2022-08-19 19:16:27,509] Driver instance name = chromedriver: chrome on windows (db61811c1d4cb00d1ca912c37672dd1d)
+[2022-08-19 19:17:39,800] Register - Step 01: Navigate to 'Register' page
+[2022-08-19 19:17:40,494] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-19 19:17:40,653] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-19 19:17:41,225] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus53543@gmail.com'
+[2022-08-19 19:17:41,451] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-19 19:17:41,578] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-19 19:17:41,732] Register - Step 07: Click to 'Register' button
+[2022-08-19 19:17:42,576] Register - Step 08: Verify Register success message is displayed
+[2022-08-19 19:17:42,683] Login - Step 01: Navigate to Login page
+[2022-08-19 19:17:43,965] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus53543@gmail.com'
+[2022-08-19 19:17:44,131] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-19 19:17:44,256] Login - Step 04: Click to 'Login' button
+[2022-08-19 19:17:45,021] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-19 19:17:45,102] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-19 19:17:45,652] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-19 19:17:45,735] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-19 19:17:45,800] OS name = windows 10
+[2022-08-19 19:17:45,800] Driver instance name = chromedriver: chrome on windows (b4492d5fe643639f5f1c550e6bc554d3)
+[2022-08-19 19:19:43,829] Register - Step 01: Navigate to 'Register' page
+[2022-08-19 19:19:44,531] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-19 19:19:44,707] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-19 19:19:45,270] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus27018@gmail.com'
+[2022-08-19 19:19:45,474] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-19 19:19:45,610] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-19 19:19:45,741] Register - Step 07: Click to 'Register' button
+[2022-08-19 19:19:46,582] Register - Step 08: Verify Register success message is displayed
+[2022-08-19 19:19:46,687] Login - Step 01: Navigate to Login page
+[2022-08-19 19:19:47,943] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus27018@gmail.com'
+[2022-08-19 19:19:48,087] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-19 19:19:48,222] Login - Step 04: Click to 'Login' button
+[2022-08-19 19:19:48,953] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-19 19:19:49,033] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-19 19:19:49,563] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-19 19:19:49,622] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-19 19:19:49,689] OS name = windows 10
+[2022-08-19 19:19:49,689] Driver instance name = chromedriver: chrome on windows (1585960134a12732842619f2a5488a66)
+[2022-08-19 19:22:27,278] Register - Step 01: Navigate to 'Register' page
+[2022-08-19 19:22:28,016] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-19 19:22:28,168] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-19 19:22:28,738] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus47272@gmail.com'
+[2022-08-19 19:22:28,958] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-19 19:22:29,078] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-19 19:22:29,219] Register - Step 07: Click to 'Register' button
+[2022-08-19 19:22:30,113] Register - Step 08: Verify Register success message is displayed
+[2022-08-19 19:22:30,221] Login - Step 01: Navigate to Login page
+[2022-08-19 19:22:31,566] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus47272@gmail.com'
+[2022-08-19 19:22:31,706] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-19 19:22:31,838] Login - Step 04: Click to 'Login' button
+[2022-08-19 19:22:32,574] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-19 19:22:32,656] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-19 19:22:33,195] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-19 19:22:33,273] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-19 19:22:33,770] OS name = windows 10
+[2022-08-19 19:22:33,771] Driver instance name = chromedriver: chrome on windows (28d8ea7091fdefcbb89918223d8b862a)

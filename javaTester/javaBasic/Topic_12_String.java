@@ -92,7 +92,6 @@ public class Topic_12_String {
 
 		helloWorld = " ";
 		System.out.println("Emty = " + helloWorld.isEmpty());
-		System.out.println("Blank = " + helloWorld.isBlank());
 
 		// Dynamic locator
 		// Đại diện cho 1 chuỗi %s

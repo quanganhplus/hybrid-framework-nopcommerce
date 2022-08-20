@@ -10,7 +10,7 @@ public class Topic_06_Getter_Setter {
 	}
 
 	public void setPersonName(String personName) {
-		if (personName == null || personName.isEmpty() || personName.isBlank()) {
+		if (personName == null || personName.isEmpty()) {
 			throw new IllegalAccessError("Tên nhập vào ko hợp lệ!");
 		} else {
 			this.personName = personName;

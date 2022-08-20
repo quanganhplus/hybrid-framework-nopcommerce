@@ -79,6 +79,6 @@
 	<classpathentry kind="lib" path="libJackson/jackson-annotations-2.10.0.jar"/>
 	<classpathentry kind="lib" path="libJackson/jackson-core-2.10.0.jar"/>
 	<classpathentry kind="lib" path="libJackson/jackson-databind-2.10.0.jar"/>
-	<classpathentry kind="lib" path="libAllure/aspectjweaver-1.9.8.jar"/>
+	<classpathentry kind="lib" path="libAllure/aspectjweaver-1.8.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

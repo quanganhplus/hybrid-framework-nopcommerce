@@ -148,3 +148,203 @@
 [2022-08-19 19:22:33,273] MyAccount - Step 03: Verify 'Fist Name' value is correctly
 [2022-08-19 19:22:33,770] OS name = windows 10
 [2022-08-19 19:22:33,771] Driver instance name = chromedriver: chrome on windows (28d8ea7091fdefcbb89918223d8b862a)
+[2022-08-21 23:16:32,949] Register - Step 01: Navigate to 'Register' page
+[2022-08-21 23:16:35,186] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-21 23:16:36,397] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-21 23:16:40,828] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus36978@gmail.com'
+[2022-08-21 23:16:42,080] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-21 23:16:43,204] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-21 23:16:44,313] Register - Step 07: Click to 'Register' button
+[2022-08-21 23:16:45,411] Register - Step 08: Verify Register success message is displayed
+[2022-08-21 23:16:46,817] Login - Step 01: Navigate to Login page
+[2022-08-21 23:16:50,175] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus36978@gmail.com'
+[2022-08-21 23:16:52,159] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-21 23:16:53,266] Login - Step 04: Click to 'Login' button
+[2022-08-21 23:16:54,358] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-21 23:16:55,663] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-21 23:16:56,748] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-21 23:16:57,672] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-21 23:16:57,709] OS name = mac os x
+[2022-08-21 23:16:57,709] Driver instance name = safaridriver: safari on mac (2354456d-0aa2-44f6-9233-d43488bb5c0a)
+[2022-08-21 23:38:49,738] OS name = mac os x
+[2022-08-21 23:38:49,742] Driver instance name = safaridriver: safari on mac (070c4788-ee74-4ba7-82b0-a6366b044016)
+[2022-08-21 23:40:10,834] Register - Step 01: Navigate to 'Register' page
+[2022-08-21 23:40:13,586] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-21 23:40:14,940] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-21 23:40:19,986] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus31143@gmail.com'
+[2022-08-21 23:40:21,591] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-21 23:40:22,973] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-21 23:40:24,201] Register - Step 07: Click to 'Register' button
+[2022-08-21 23:40:25,423] Register - Step 08: Verify Register success message is displayed
+[2022-08-21 23:40:26,820] Login - Step 01: Navigate to Login page
+[2022-08-21 23:40:30,395] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus31143@gmail.com'
+[2022-08-21 23:40:31,693] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-21 23:40:32,975] Login - Step 04: Click to 'Login' button
+[2022-08-21 23:40:34,127] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-21 23:40:35,343] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-21 23:40:36,532] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-21 23:40:37,443] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-21 23:40:37,706] OS name = mac os x
+[2022-08-21 23:40:37,706] Driver instance name = safaridriver: safari on mac (996f89d1-5c52-47dd-af1f-49a1ccd07506)
+[2022-08-21 23:45:28,883] Register - Step 01: Navigate to 'Register' page
+[2022-08-21 23:45:31,407] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-21 23:45:34,854] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-21 23:45:40,805] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus72552@gmail.com'
+[2022-08-21 23:45:42,559] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-21 23:45:44,096] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-21 23:45:45,547] Register - Step 07: Click to 'Register' button
+[2022-08-21 23:45:46,910] Register - Step 08: Verify Register success message is displayed
+[2022-08-21 23:45:48,301] Login - Step 01: Navigate to Login page
+[2022-08-21 23:45:51,947] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus72552@gmail.com'
+[2022-08-21 23:45:54,146] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-21 23:45:55,647] Login - Step 04: Click to 'Login' button
+[2022-08-21 23:45:56,984] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-21 23:45:58,510] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-21 23:46:00,285] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-21 23:46:00,508] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-21 23:46:00,833] OS name = mac os x
+[2022-08-21 23:46:00,833] Driver instance name = safaridriver: safari on mac (acfa1644-cd10-4c42-9a7d-63462aa79d11)
+[2022-08-22 00:03:53,175] Register - Step 01: Navigate to 'Register' page
+[2022-08-22 00:03:55,494] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-22 00:03:56,664] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-22 00:04:01,083] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus16996@gmail.com'
+[2022-08-22 00:04:02,301] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-22 00:04:03,402] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-22 00:04:04,516] Register - Step 07: Click to 'Register' button
+[2022-08-22 00:04:05,618] Register - Step 08: Verify Register success message is displayed
+[2022-08-22 00:04:07,079] Login - Step 01: Navigate to Login page
+[2022-08-22 00:04:10,522] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus16996@gmail.com'
+[2022-08-22 00:04:12,507] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-22 00:04:13,617] Login - Step 04: Click to 'Login' button
+[2022-08-22 00:04:14,714] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-22 00:04:16,029] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-22 00:04:17,112] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-22 00:04:18,186] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-22 00:04:18,303] OS name = mac os x
+[2022-08-22 00:04:18,303] Driver instance name = safaridriver: safari on mac (f461358f-ce7e-4c11-8415-d65c2c4f5310)
+[2022-08-22 00:16:17,668] Register - Step 01: Navigate to 'Register' page
+[2022-08-22 00:16:19,819] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-22 00:16:21,012] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-22 00:16:25,432] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus72084@gmail.com'
+[2022-08-22 00:16:26,757] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-22 00:16:27,880] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-22 00:16:28,993] Register - Step 07: Click to 'Register' button
+[2022-08-22 00:16:30,105] Register - Step 08: Verify Register success message is displayed
+[2022-08-22 00:16:31,551] Login - Step 01: Navigate to Login page
+[2022-08-22 00:16:35,106] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus72084@gmail.com'
+[2022-08-22 00:16:37,101] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-22 00:16:38,206] Login - Step 04: Click to 'Login' button
+[2022-08-22 00:16:39,308] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-22 00:16:40,718] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-22 00:16:41,801] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-22 00:16:42,728] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-22 00:16:42,954] OS name = mac os x
+[2022-08-22 00:16:42,954] Driver instance name = safaridriver: safari on mac (ceeeccfd-edce-4a9e-a10a-71f29bba2242)
+[2022-08-22 00:19:10,329] Register - Step 01: Navigate to 'Register' page
+[2022-08-22 00:19:12,724] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-22 00:19:13,918] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-22 00:19:18,316] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus14524@gmail.com'
+[2022-08-22 00:19:19,545] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-22 00:19:20,652] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-22 00:19:21,756] Register - Step 07: Click to 'Register' button
+[2022-08-22 00:19:22,865] Register - Step 08: Verify Register success message is displayed
+[2022-08-22 00:19:24,605] Login - Step 01: Navigate to Login page
+[2022-08-22 00:19:27,954] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus14524@gmail.com'
+[2022-08-22 00:19:29,931] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-22 00:19:31,036] Login - Step 04: Click to 'Login' button
+[2022-08-22 00:19:32,128] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-22 00:19:33,358] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-22 00:19:34,438] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-22 00:19:35,378] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-22 00:19:35,606] OS name = mac os x
+[2022-08-22 00:19:35,606] Driver instance name = safaridriver: safari on mac (0aa52200-7b75-4c55-a2a0-3756ecffbf18)
+[2022-08-22 00:24:25,802] Register - Step 01: Navigate to 'Register' page
+[2022-08-22 00:24:27,996] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-22 00:24:29,180] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-22 00:24:33,586] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus70545@gmail.com'
+[2022-08-22 00:24:34,811] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-22 00:24:35,926] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-22 00:24:37,030] Register - Step 07: Click to 'Register' button
+[2022-08-22 00:24:39,052] Register - Step 08: Verify Register success message is displayed
+[2022-08-22 00:24:39,175] Login - Step 01: Navigate to Login page
+[2022-08-22 00:24:42,636] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus70545@gmail.com'
+[2022-08-22 00:24:44,626] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-22 00:24:45,739] Login - Step 04: Click to 'Login' button
+[2022-08-22 00:24:46,839] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-22 00:24:48,261] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-22 00:24:49,349] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-22 00:24:50,203] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-22 00:24:50,426] OS name = mac os x
+[2022-08-22 00:24:50,426] Driver instance name = safaridriver: safari on mac (d22184b3-2958-4781-a6f0-2546740ddd01)
+[2022-08-22 00:27:28,996] Register - Step 01: Navigate to 'Register' page
+[2022-08-22 00:27:30,697] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-22 00:27:31,884] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-22 00:27:36,429] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus50160@gmail.com'
+[2022-08-22 00:27:37,628] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-22 00:27:38,766] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-22 00:27:39,917] Register - Step 07: Click to 'Register' button
+[2022-08-22 00:27:41,981] Register - Step 08: Verify Register success message is displayed
+[2022-08-22 00:27:42,096] Login - Step 01: Navigate to Login page
+[2022-08-22 00:27:45,664] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus50160@gmail.com'
+[2022-08-22 00:27:46,819] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-22 00:27:47,950] Login - Step 04: Click to 'Login' button
+[2022-08-22 00:27:49,721] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-22 00:27:49,797] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-22 00:27:51,390] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-22 00:27:51,437] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-22 00:27:52,191] OS name = mac os x
+[2022-08-22 00:27:52,191] Driver instance name = edgedriver: msedge on mac (a41e8fe0b033a3e255c5b402c7451115)
+[2022-08-22 00:46:51,711] Register - Step 01: Navigate to 'Register' page
+[2022-08-22 00:46:53,409] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-22 00:46:54,582] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-22 00:46:59,124] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus25221@gmail.com'
+[2022-08-22 00:47:00,326] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-22 00:47:01,476] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-22 00:47:02,616] Register - Step 07: Click to 'Register' button
+[2022-08-22 00:47:04,615] Register - Step 08: Verify Register success message is displayed
+[2022-08-22 00:47:04,746] Login - Step 01: Navigate to Login page
+[2022-08-22 00:47:08,307] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus25221@gmail.com'
+[2022-08-22 00:47:09,463] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-22 00:47:10,588] Login - Step 04: Click to 'Login' button
+[2022-08-22 00:47:12,572] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-22 00:47:12,648] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-22 00:47:14,347] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-22 00:47:14,399] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-22 00:47:15,136] OS name = mac os x
+[2022-08-22 00:47:15,137] Driver instance name = edgedriver: msedge on mac (6573cdb182b7e2f0219e7cdeddcaf12b)
+[2022-08-22 00:50:46,504] Register - Step 01: Navigate to 'Register' page
+[2022-08-22 00:50:48,298] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-22 00:50:49,489] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-22 00:50:54,027] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus70132@gmail.com'
+[2022-08-22 00:50:55,259] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-22 00:50:56,409] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-22 00:50:57,550] Register - Step 07: Click to 'Register' button
+[2022-08-22 00:50:59,673] Register - Step 08: Verify Register success message is displayed
+[2022-08-22 00:50:59,962] Login - Step 01: Navigate to Login page
+[2022-08-22 00:51:03,449] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus70132@gmail.com'
+[2022-08-22 00:51:04,605] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-22 00:51:05,736] Login - Step 04: Click to 'Login' button
+[2022-08-22 00:51:07,586] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-22 00:51:07,662] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-22 00:51:09,287] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-22 00:51:09,330] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-22 00:51:10,069] OS name = mac os x
+[2022-08-22 00:51:10,069] Driver instance name = edgedriver: msedge on mac (68fa98ff9698112da4e547a70ceeaceb)
+[2022-08-22 00:53:08,305] Register - Step 01: Navigate to 'Register' page
+[2022-08-22 00:53:10,128] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-22 00:53:11,301] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-22 00:53:15,850] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus16479@gmail.com'
+[2022-08-22 00:53:17,058] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-22 00:53:18,202] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-22 00:53:19,357] Register - Step 07: Click to 'Register' button
+[2022-08-22 00:53:21,269] Register - Step 08: Verify Register success message is displayed
+[2022-08-22 00:53:21,397] Login - Step 01: Navigate to Login page
+[2022-08-22 00:53:24,956] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus16479@gmail.com'
+[2022-08-22 00:53:26,108] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-22 00:53:27,234] Login - Step 04: Click to 'Login' button
+[2022-08-22 00:53:29,105] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-22 00:53:29,177] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-22 00:53:30,784] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-22 00:53:30,831] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-22 00:53:31,638] OS name = mac os x
+[2022-08-22 00:53:31,638] Driver instance name = edgedriver: msedge on mac (e7702651e11e7685980d7878af170c1e)

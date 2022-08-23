@@ -3,23 +3,24 @@
 
 	<listeners>
 		<listener class-name="commons.MethodListener"/>
-		<listener class-name="reportConfig.ReportNGListener"/>
-		<listener class-name="reportConfig.ExtentTestListener"/>
-		<listener class-name="reportConfig.AllureTestListener"/>
-    	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+<!-- 		<listener class-name="reportConfig.ReportNGListener"/> -->
+<!-- 		<listener class-name="reportConfig.ExtentTestListener"/> -->
+<!-- 		<listener class-name="reportConfig.AllureTestListener"/> -->
+<!--     	<listener class-name="org.uncommons.reportng.HTMLReporter"/> -->
+<!--     	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
 	</listeners>
 
+	<parameter name = "appUrl" value = "testing"/>
 
 <!--   <test name="Run on FIREFOX"> -->
 <!--   	<parameter name="browser" value="firefox"/> -->
 <!--     <classes> -->
-<!--       <class name="fpt.nopcommerce.user.Level_20_Data_Driven"/> -->
+<!--       <class name="fpt.liveguru.user.Level_21_Multiple_Environment"/> -->
 <!--     </classes> -->
 <!--   </test>  -->
 	
-  <test name="Run on EDGE">
-  	<parameter name="browser" value="edge"/>
+  <test name="Run on CHROME">
+  	<parameter name="browser" value="chrome"/>
     <classes>
       <class name="fpt.liveguru.user.Level_21_Multiple_Environment"/>
     </classes>

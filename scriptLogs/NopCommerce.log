@@ -348,3 +348,27 @@
 [2022-08-22 00:53:30,831] MyAccount - Step 03: Verify 'Fist Name' value is correctly
 [2022-08-22 00:53:31,638] OS name = mac os x
 [2022-08-22 00:53:31,638] Driver instance name = edgedriver: msedge on mac (e7702651e11e7685980d7878af170c1e)
+[2022-08-22 10:16:34,429] Register - Step 01: Navigate to 'Register' page
+[2022-08-22 10:16:37,831] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-22 10:16:39,149] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-22 10:16:44,116] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus23826@gmail.com'
+[2022-08-22 10:16:45,395] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-22 10:16:46,674] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-22 10:16:47,903] Register - Step 07: Click to 'Register' button
+[2022-08-22 10:16:50,923] Register - Step 08: Verify Register success message is displayed
+[2022-08-22 10:16:51,111] Login - Step 01: Navigate to Login page
+[2022-08-22 10:16:54,779] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus23826@gmail.com'
+[2022-08-22 10:16:56,019] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-22 10:16:57,231] Login - Step 04: Click to 'Login' button
+[2022-08-22 10:16:59,102] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-22 10:16:59,192] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-22 10:17:00,855] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-22 10:17:00,917] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-22 10:17:01,427] OS name = windows 10
+[2022-08-22 10:17:01,427] Driver instance name = edgedriver: msedge on windows (225d50a94786992943062f6b0b24ae8a)
+[2022-08-23 14:33:38,911] OS name = windows 10
+[2022-08-23 14:33:38,931] Driver instance name = chromedriver: chrome on windows (a381d71ff80ce80d4547132b51164e09)
+[2022-08-23 14:54:40,930] OS name = windows 10
+[2022-08-23 14:54:40,931] Driver instance name = chromedriver: chrome on windows (891aa06af6bf5cd1d4f977976d9de827)
+[2022-08-23 14:55:33,600] OS name = windows 10
+[2022-08-23 14:55:33,601] Driver instance name = chromedriver: chrome on windows (4ecb22c8816239e1480230d04c842c94)

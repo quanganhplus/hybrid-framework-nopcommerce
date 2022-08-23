@@ -192,6 +192,9 @@ public class BaseTest {
 			System.setProperty("webdriver.chrome.silentOutput", "true");
 
 			ChromeOptions options = new ChromeOptions();
+			// fake ip bằng UltaSurf-VPN
+			options.addExtensions(new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\UltraSurf-VPN-v1.7.1.crx"));
+			// fix accept SSL
 			options.setAcceptInsecureCerts(true);
 			driver = new ChromeDriver(options);
 
@@ -218,13 +221,24 @@ public class BaseTest {
 		}
 
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
-		driver.get(appUrl);
+		driver.get(getEnvironmentValue(appUrl));
 		// driver.manage().window().maximize();
 		return driver;
 	}
 
-	public WebDriver getDriverInstance() {
-		return this.driver;
+	protected String getEnvironmentValue(String environmentName) {
+		String envUrl = null;
+		EnvironmentList environmentList = EnvironmentList.valueOf(environmentName.toUpperCase());
+		if (environmentList == EnvironmentList.DEV) {
+			envUrl = "https://demo.guru99.com/v1";
+		} else if (environmentList == EnvironmentList.TESTING) {
+			envUrl = "https://demo.guru99.com/v2";
+		} else if (environmentList == EnvironmentList.STAGING) {
+			envUrl = "https://demo.guru99.com/v3";
+		} else if (environmentList == EnvironmentList.PRODUCTION) {
+			envUrl = "https://demo.guru99.com/v4";
+		}
+		return envUrl;
 	}
 
 	protected String getEnvironmentUrl(String serverName) {
@@ -238,6 +252,10 @@ public class BaseTest {
 			envUrl = "https://nopcommerce.com";
 		}
 		return envUrl;
+	}
+
+	public WebDriver getDriverInstance() {
+		return this.driver;
 	}
 
 	protected int generateFakeNumber() {

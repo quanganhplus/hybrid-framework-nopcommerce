@@ -1,8 +1,10 @@
 package environmentConfig;
 
-import org.aeonbits.owner.Config.Key;
+import org.aeonbits.owner.Config;
+import org.aeonbits.owner.Config.Sources;
 
-public interface Environment {
+@Sources({ "classpath:${env}.properties" })
+public interface Environment extends Config {
 	String osName();
 
 	@Key("app.url")

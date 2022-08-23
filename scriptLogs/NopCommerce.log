@@ -372,3 +372,41 @@
 [2022-08-23 14:54:40,931] Driver instance name = chromedriver: chrome on windows (891aa06af6bf5cd1d4f977976d9de827)
 [2022-08-23 14:55:33,600] OS name = windows 10
 [2022-08-23 14:55:33,601] Driver instance name = chromedriver: chrome on windows (4ecb22c8816239e1480230d04c842c94)
+[2022-08-23 18:45:00,894] OS name = windows 10
+[2022-08-23 18:45:00,895] Driver instance name = chromedriver: chrome on windows (414a6b8103f8bc58842ddb8e0f8752f3)
+[2022-08-23 20:59:41,792] OS name = windows 10
+[2022-08-23 20:59:41,805] Driver instance name = chromedriver: chrome on windows (e72fc9acc0e542121539f467e792847e)
+[2022-08-23 20:59:58,733] OS name = windows 10
+[2022-08-23 20:59:58,734] Driver instance name = chromedriver: chrome on windows (e5042b99ad15f4fe778a37c0bbbbd85f)
+[2022-08-23 21:03:03,146] OS name = windows 10
+[2022-08-23 21:03:03,146] Driver instance name = chromedriver: chrome on windows (51b227ac469f956aadc30b5907d86f07)
+[2022-08-23 21:05:04,988] OS name = windows 10
+[2022-08-23 21:05:04,988] Driver instance name = chromedriver: chrome on windows (f91b386f5767bc0a6e798839ffe2f6f5)
+[2022-08-23 21:26:22,374] OS name = windows 10
+[2022-08-23 21:26:22,375] Driver instance name = chromedriver: chrome on windows (0ff470fa405653f767e962484b046932)
+[2022-08-23 21:28:37,234] OS name = windows 10
+[2022-08-23 21:28:37,235] Driver instance name = chromedriver: chrome on windows (1e8320b78f33ab6e1d735f973912e327)
+[2022-08-23 21:41:34,235] Register - Step 01: Navigate to 'Register' page
+[2022-08-23 21:41:38,430] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-08-23 21:41:39,672] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-08-23 21:41:44,603] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus10381@gmail.com'
+[2022-08-23 21:41:45,906] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-08-23 21:41:47,116] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-08-23 21:41:48,345] Register - Step 07: Click to 'Register' button
+[2022-08-23 21:41:51,544] Register - Step 08: Verify Register success message is displayed
+[2022-08-23 21:41:51,659] Login - Step 01: Navigate to Login page
+[2022-08-23 21:41:56,665] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus10381@gmail.com'
+[2022-08-23 21:41:57,892] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-08-23 21:41:59,090] Login - Step 04: Click to 'Login' button
+[2022-08-23 21:42:01,365] Login - Step 05: Verify 'My Account' link is displayed
+[2022-08-23 21:42:01,448] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-08-23 21:42:03,892] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-08-23 21:42:03,978] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-08-23 21:42:04,494] OS name = windows 10
+[2022-08-23 21:42:04,494] Driver instance name = chromedriver: chrome on windows (2b69e52c5a247870cdd691ccd9e09898)
+[2022-08-23 21:43:50,615] OS name = windows 10
+[2022-08-23 21:43:50,616] Driver instance name = chromedriver: chrome on windows (9f683393c82f525ee9531dd6103736b8)
+[2022-08-23 21:51:31,773] OS name = windows 10
+[2022-08-23 21:51:31,774] Driver instance name = chromedriver: chrome on windows (687a4ab5982ed4a6a740cb73d691032c)
+[2022-08-23 21:51:49,382] OS name = windows 10
+[2022-08-23 21:51:49,383] Driver instance name = chromedriver: chrome on windows (93c898bb6f9e8b38a0008ad892cf0ecc)

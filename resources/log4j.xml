@@ -43,7 +43,7 @@
 		<appender-ref ref="testng" />
 	</category>
 
-	<category name="fpt.liveguru.user">
+	<category name="fpt.bankguru.user">
 		<priority value="all" />
 		<appender-ref ref="console" />
 		<appender-ref ref="logfile" />

@@ -100,6 +100,11 @@ public class BaseTest {
 			ChromeOptions options = new ChromeOptions();
 			options.addExtensions(file);
 
+			// fake ip bằng UltaSurf-VPN
+			// options.addExtensions(new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\UltraSurf-VPN-v1.7.1.crx"));
+			// fix accept SSL
+			options.setAcceptInsecureCerts(true);
+
 			// Disable notifications popup
 			options.addArguments("--disable-notifications");
 
@@ -193,7 +198,7 @@ public class BaseTest {
 
 			ChromeOptions options = new ChromeOptions();
 			// fake ip bằng UltaSurf-VPN
-			options.addExtensions(new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\UltraSurf-VPN-v1.7.1.crx"));
+			// options.addExtensions(new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\UltraSurf-VPN-v1.7.1.crx"));
 			// fix accept SSL
 			options.setAcceptInsecureCerts(true);
 			driver = new ChromeDriver(options);
@@ -221,7 +226,8 @@ public class BaseTest {
 		}
 
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
-		driver.get(getEnvironmentValue(appUrl));
+		driver.get(appUrl);
+		// driver.get(getEnvironmentValue(appUrl));
 		// driver.manage().window().maximize();
 		return driver;
 	}

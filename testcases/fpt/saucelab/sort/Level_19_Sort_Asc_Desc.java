@@ -56,7 +56,7 @@ public class Level_19_Sort_Asc_Desc extends BaseTest {
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		// closeBrowserAndDriver();
+		closeBrowserAndDriver();
 	}
 
 }

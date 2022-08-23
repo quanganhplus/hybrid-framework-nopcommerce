@@ -22,7 +22,7 @@
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="fpt.liveguru.user.Level_21_Multiple_Environment"/>
+      <class name="fpt.bankguru.user.Level_21_Multiple_Environment"/>
     </classes>
   </test> 
     

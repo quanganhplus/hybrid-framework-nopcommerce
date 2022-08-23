@@ -1,5 +1,6 @@
-package fpt.liveguru.user;
+package fpt.bankguru.user;
 
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -7,14 +8,20 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
+import environmentConfig.Environment;
 
 public class Level_21_Multiple_Environment extends BaseTest {
 	WebDriver driver;
+	Environment environment;
 
 	@Parameters({ "browser", "appUrl" })
 	@BeforeClass
 	public void beforeClass(String browserName, String appUrl) {
-		driver = getBrowserDriver(browserName, appUrl);
+		ConfigFactory.setProperty("env", appUrl);
+		environment = ConfigFactory.create(Environment.class);
+		driver = getBrowserDriver(browserName, environment.appUrl());
+
+		System.out.println(environment.osName());
 		System.out.println(driver.getCurrentUrl());
 	}
 

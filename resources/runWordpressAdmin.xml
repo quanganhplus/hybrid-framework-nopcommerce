@@ -17,7 +17,7 @@
   	<parameter name="browser" value="chrome"/>
   	
     <classes>
-      <class name="fpt.wordpress.admin.Post_01_Create_Read_Update_Delete_Search"/>
+      <class name="fpt.wordpress.admin.User_01_View_User"/>
     </classes>
     
 <!--     <packages> -->

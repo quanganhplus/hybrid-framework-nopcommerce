@@ -2,6 +2,8 @@ package commons;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -11,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.joda.time.DateTime;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,6 +23,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -229,6 +234,72 @@ public class BaseTest {
 		driver.get(appUrl);
 		// driver.get(getEnvironmentValue(appUrl));
 		// driver.manage().window().maximize();
+		return driver;
+	}
+
+	protected WebDriver getBrowserDriver(String browserName, String appUrl, String ipAddress, String port) {
+		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+		DesiredCapabilities capability = null;
+
+		if (browserList == BrowserList.FIREFOX) {
+			// System.setProperty("webdriver.gecko.driver", projectPath + ".//browserDrivers//geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
+			capability = DesiredCapabilities.firefox();
+			capability.setBrowserName("firefox");
+			capability.setPlatform(Platform.WINDOWS);
+
+			FirefoxOptions fOptions = new FirefoxOptions();
+			fOptions.merge(capability);
+
+		} else if (browserList == BrowserList.HEADLESS_FIREFOX) {
+			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options = new FirefoxOptions();
+			options.addArguments("--headless");
+			options.addArguments("window-size=1920x1080");
+			driver = new FirefoxDriver(options);
+
+		} else if (browserList == BrowserList.CHROME) {
+			// System.setProperty("webdriver.chrome.driver", projectPath + ".//browserDrivers//chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+			capability = DesiredCapabilities.chrome();
+			capability.setBrowserName("chrome");
+			capability.setPlatform(Platform.WINDOWS);
+
+			ChromeOptions cOptions = new ChromeOptions();
+			cOptions.merge(capability);
+
+		} else if (browserList == BrowserList.HEADLESS_CHROME) {
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			options.addArguments("window-size=1920x1080");
+			driver = new ChromeDriver(options);
+
+		} else if (browserList == BrowserList.EDGE) {
+			// System.setProperty("webdriver.edge.driver", projectPath + ".//browserDrivers//msedgedriver.exe");
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+
+		} else if (browserList == BrowserList.COCCOC) {
+			// Cốc cốc browser trừ đi 5-6 version ra chrome driver
+			WebDriverManager.chromedriver().driverVersion("101.0.4951.41").setup();
+			ChromeOptions options = new ChromeOptions();
+			options.setBinary("C:\\Program Files\\CocCoc\\Browser\\Application\\browser.exe");
+			driver = new ChromeDriver(options);
+		} else {
+			throw new RuntimeException("Browser name invalid");
+		}
+
+		try {
+			driver = new RemoteWebDriver(new URL(String.format("http://%s:%s/wd/hub", ipAddress, port)), capability);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(appUrl);
+		// driver.get(getEnvironmentValue(appUrl));
+		driver.manage().window().maximize();
 		return driver;
 	}
 

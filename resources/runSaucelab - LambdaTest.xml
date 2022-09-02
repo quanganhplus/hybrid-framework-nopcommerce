@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suacelab - Sort">
+
+	<listeners>
+		<listener class-name="commons.MethodListener"/>
+	</listeners>
+	
+	<parameter name = "appUrl" value = "https://www.saucedemo.com/"/>
+
+  <test name="Run on SAFARI">
+  	<parameter name="browser" value="Safari"/>
+  	<parameter name="browserVersion" value="15.0" />
+  	<parameter name="osName" value="MacOS Monterey" />
+    <classes>
+      <class name="fpt.nopcommerce.cloud.Level_19_Sort_Asc_Desc_LambdaTest"/>
+    </classes>
+  </test> 
+
+  <test name="Run on CHROME">
+  	<parameter name="browser" value="Chrome"/>
+  	<parameter name="browserVersion" value="105.0" />
+  	<parameter name="osName" value="Windows 11" />
+    <classes>
+      <class name="fpt.nopcommerce.cloud.Level_19_Sort_Asc_Desc_LambdaTest"/>
+    </classes>
+  </test> 
+	
+  
+    
+</suite> 

@@ -23,6 +23,18 @@ public class GlobalConstants {
 	public static final String DB_TEST_USER = "automationfc";
 	public static final String DB_TEST_PASS = "P@ssw0rld1!";
 
+	public static final String BROWSER_USERNAME = "trinhquanganh1";
+	public static final String BROWSER_AUTOMATE_KEY = "7yNx1jyJdcfVuxCmUEyo";
+	public static final String BROWSER_STACK_URL = "https://" + BROWSER_USERNAME + ":" + BROWSER_AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+
+	public static final String SAUCE_USERNAME = "oauth-quanganh.plus-4aee1";
+	public static final String SAUCE_AUTOMATE_KEY = "21e22009-58de-476d-80ac-8bdced3a69ac";
+	public static final String SAUCE_URL = "https://" + SAUCE_USERNAME + ":" + SAUCE_AUTOMATE_KEY + "@ondemand.apac-southeast-1.saucelabs.com:443/wd/hub";
+
+	public static final String LAMBDA_USERNAME = "quanganh.plus";
+	public static final String LAMBDA_AUTOMATE_KEY = "I2GZZAZc2Wgg3lY5HFZz9MNjZ2TpeJnoXyy7Hv0siOWxvGaszx";
+	public static final String LAMBDA_URL = "https://" + LAMBDA_USERNAME + ":" + LAMBDA_AUTOMATE_KEY + "@hub.lambdatest.com/wd/hub";
+
 	public static final long SHORT_TIMEOUT = 5;
 	public static final long LONG_TIMEOUT = 30;
 	public static final long RETRY_TEST_FAIL = 3;

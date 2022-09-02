@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.joda.time.DateTime;
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -299,6 +300,88 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.get(appUrl);
 		// driver.get(getEnvironmentValue(appUrl));
+		driver.manage().window().maximize();
+		return driver;
+	}
+
+	protected WebDriver getBrowserDriverBrowserstack(String browserName, String appUrl, String osName, String osVersion) {
+
+		// Configure capabilities theo link https://www.browserstack.com/automate/capabilities
+		MutableCapabilities capabilities = new MutableCapabilities();
+		capabilities.setCapability("browserName", browserName);
+		capabilities.setCapability("browserVersion", "latest");
+		HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
+		browserstackOptions.put("os", osName);
+		browserstackOptions.put("osVersion", osVersion);
+		browserstackOptions.put("resolution", "2560x1600");
+		browserstackOptions.put("projectName", "Nopcommerce");
+		browserstackOptions.put("local", "false");
+		browserstackOptions.put("seleniumVersion", "3.141.59");
+		capabilities.setCapability("bstack:options", browserstackOptions);
+		capabilities.setCapability("name", "Run on " + osName + " | " + osVersion + " | " + browserName);
+
+		try {
+			driver = new RemoteWebDriver(new URL(GlobalConstants.BROWSER_STACK_URL), capabilities);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(appUrl);
+		driver.manage().window().maximize();
+		return driver;
+	}
+
+	protected WebDriver getBrowserDriverSaucelab(String browserName, String appUrl, String osName) {
+
+		MutableCapabilities capabilities = new MutableCapabilities();
+		// đang ko lấy đc osName lên sever run Test của Saucelab (vẫn run Test đc ra browserName & browserVersion)
+		// capabilities.setCapability("platformName", osName);
+		capabilities.setCapability("browserName", browserName);
+		capabilities.setCapability("browserVersion", "latest");
+		Map<String, Object> sauceOptions = new HashMap<>();
+		sauceOptions.put("os", osName);
+		sauceOptions.put("resolution", "2560x1600");
+		sauceOptions.put("local", "false");
+		sauceOptions.put("seleniumVersion", "3.141.59");
+		capabilities.setCapability("sauce:options", sauceOptions);
+		capabilities.setCapability("name", "Run on " + osName + " | " + browserName);
+
+		try {
+			driver = new RemoteWebDriver(new URL(GlobalConstants.SAUCE_URL), capabilities);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(appUrl);
+		driver.manage().window().maximize();
+		return driver;
+	}
+
+	protected WebDriver getBrowserDriverLamdaTest(String browserName, String appUrl, String osName, String browserVersion) {
+
+		// Configure capabilities theo link https://automation.lambdatest.com/configure
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability("browserName", browserName);
+		capabilities.setCapability("version", browserVersion);
+		capabilities.setCapability("platform", osName);
+		capabilities.setCapability("resolution", "2560x1440");
+		capabilities.setCapability("build", "First Test");
+		capabilities.setCapability("name", "Sample Test");
+		capabilities.setCapability("network", true); // To enable network logs
+		capabilities.setCapability("visual", true); // To enable step by step screenshot
+		capabilities.setCapability("video", true); // To enable video recording
+		capabilities.setCapability("console", true); // To capture console logs
+
+		try {
+			driver = new RemoteWebDriver(new URL(GlobalConstants.LAMBDA_URL), capabilities);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(appUrl);
 		driver.manage().window().maximize();
 		return driver;
 	}

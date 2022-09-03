@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce - User">
 
+	<parameter name = "envName" value = "local"/>
+	<parameter name = "serverName" value = "dev"/>
+
 	<listeners>
 		<listener class-name="commons.MethodListener"/>
 		<listener class-name="reportConfig.ReportNGListener"/>
@@ -14,14 +17,14 @@
 <!--   <test name="Run on FIREFOX"> -->
 <!--   	<parameter name="browser" value="firefox"/> -->
 <!--     <classes> -->
-<!--       <class name="fpt.nopcommerce.user.Level_20_Data_Driven"/> -->
+<!--       <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/> -->
 <!--     </classes> -->
 <!--   </test>  -->
 	
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
     <classes>
-      <class name="fpt.nopcommerce.user.Level_20_Data_Driven"/>
+      <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
     </classes>
   </test> 
     

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -21,7 +22,7 @@ import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 import reportConfig.ExtentTestManager;
 
-public class Level_20_Data_Driven_BrowserStack extends BaseTest {
+public class Level_20_Data_Driven_All extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
@@ -30,10 +31,11 @@ public class Level_20_Data_Driven_BrowserStack extends BaseTest {
 	private String emailAddress;
 	UserDataMapper userData;
 
-	@Parameters({ "browser", "appUrl", "osName", "osVersion" })
+	@Parameters({ "envName", "serverName", "browser", "browserVersion", "ipAddress", "port", "osName", "osVersion" })
 	@BeforeClass
-	public void beforeClass(String browserName, String appUrl, String osName, String osVersion) {
-		driver = getBrowserDriverBrowserstack(browserName, appUrl, osName, osVersion);
+	public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("105") String browserVersion, @Optional("localhost") String ipAddress, @Optional("4444") String port, @Optional("Windows") String osName,
+			@Optional("10") String osVersion) {
+		driver = getBrowserDriver(envName, serverName, browserName, browserVersion, ipAddress, port, osName, osVersion);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 		userData = UserDataMapper.getUserData();
 		emailAddress = userData.getEmailAddress() + generateFakeNumber() + "@gmail.com";

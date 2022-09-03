@@ -5,7 +5,7 @@
 		<listener class-name="commons.MethodListener" />
 	</listeners>
 	
-	<parameter name = "url" value = "https://www.facebook.com/"/>
+	<parameter name = "serverName" value = "facebook"/>
 	
   <test name="Run on FIREFOX">
   	<parameter name="browser" value="firefox"/>

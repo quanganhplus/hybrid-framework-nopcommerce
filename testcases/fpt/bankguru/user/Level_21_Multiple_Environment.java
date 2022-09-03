@@ -4,6 +4,7 @@ import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -14,12 +15,14 @@ public class Level_21_Multiple_Environment extends BaseTest {
 	WebDriver driver;
 	Environment environment;
 
-	@Parameters({ "browser", "appUrl" })
+	@Parameters({ "envName", "serverName", "browser", "browserVersion", "ipAddress", "port", "osName", "osVersion" })
 	@BeforeClass
-	public void beforeClass(String browserName, String appUrl) {
-		ConfigFactory.setProperty("env", appUrl);
+	public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("105") String browserVersion, @Optional("localhost") String ipAddress, @Optional("4444") String port, @Optional("Windows") String osName,
+			@Optional("10") String osVersion) {
+		driver = getBrowserDriver(envName, serverName, browserName, browserVersion, ipAddress, port, osName, osVersion);
+
+		ConfigFactory.setProperty("env", serverName);
 		environment = ConfigFactory.create(Environment.class);
-		driver = getBrowserDriver(browserName, environment.appUrl());
 
 		System.out.println(environment.osName());
 		System.out.println(driver.getCurrentUrl());
@@ -52,6 +55,6 @@ public class Level_21_Multiple_Environment extends BaseTest {
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		closeBrowserAndDriver();
+		// closeBrowserAndDriver();
 	}
 }

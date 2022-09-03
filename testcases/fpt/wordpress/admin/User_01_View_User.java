@@ -26,7 +26,7 @@ public class User_01_View_User extends BaseTest {
 	public void beforeClass(String browserName, String urlAdmin) {
 		log.info("Pre-condition - Step 01: Open browser and Admin Url");
 
-		driver = getBrowserDriver(browserName, urlAdmin);
+		driver = getBrowserDriverWordpress(browserName, urlAdmin);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 
 		log.info("Pre-condition - Step 02: Enter to Username textbox : " + adminUsername);

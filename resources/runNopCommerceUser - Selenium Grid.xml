@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce - User">
 
-	<parameter name = "appUrl" value = "https://demo.nopcommerce.com/"/>
+	<parameter name = "envName" value = "grid"/>
+	<parameter name = "serverName" value = "dev"/>
 
 	<listeners>
 		<listener class-name="commons.MethodListener"/>
@@ -13,19 +14,22 @@
 	</listeners>
 
 
-<!--   <test name="Run on FIREFOX"> -->
-<!--   	<parameter name="browser" value="firefox"/> -->
-<!--     <classes> -->
-<!--       <class name="fpt.nopcommerce.user.Level_20_Data_Driven_Selenium_Grid"/> -->
-<!--     </classes> -->
-<!--   </test>  -->
+  <test name="Run on FIREFOX">
+  	<parameter name="browser" value="firefox"/>
+  	<parameter name="browserVersion" value="104"/>
+  	<parameter name="ipAddress" value="192.168.4.100" />
+    <parameter name="port" value="5555" />
+    <classes>
+      <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
+    </classes>
+  </test> 
 	
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
   	<parameter name="ipAddress" value="192.168.4.100" />
     <parameter name="port" value="5555" />
     <classes>
-      <class name="fpt.nopcommerce.user.Level_20_Data_Driven_Selenium_Grid"/>
+      <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
     </classes>
   </test> 
     

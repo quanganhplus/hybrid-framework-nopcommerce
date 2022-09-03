@@ -5,7 +5,7 @@
 		<listener class-name="commons.MethodListener"/>
 	</listeners>
 	
-	<parameter name = "appUrl" value = "https://www.saucedemo.com/"/>
+	<parameter name = "serverName" value = "saucelab"/>
 	
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>

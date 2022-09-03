@@ -1,2 +1,0 @@
-[2022-08-23 21:51:49,382] OS name = windows 10
-[2022-08-23 21:51:49,383] Driver instance name = chromedriver: chrome on windows (93c898bb6f9e8b38a0008ad892cf0ecc)

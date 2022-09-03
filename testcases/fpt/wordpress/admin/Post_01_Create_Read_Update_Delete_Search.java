@@ -44,7 +44,7 @@ public class Post_01_Create_Read_Update_Delete_Search extends BaseTest {
 		log.info("Pre-condition - Step 01: Open browser and Admin Url");
 		this.urlAdmin = urlAdmin;
 		this.urlUser = urlUser;
-		driver = getBrowserDriver(browserName, this.urlAdmin);
+		driver = getBrowserDriverWordpress(browserName, this.urlAdmin);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 
 		log.info("Pre-condition - Step 02: Enter to Username textbox : " + adminUsername);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce - User">
 
-	<parameter name = "envName" value = "browserStack"/>
+	<parameter name = "envName" value = "sauceLab"/>
 	<parameter name = "serverName" value = "dev"/>
 
 	<listeners>
@@ -14,24 +14,20 @@
 	</listeners>
 
 
-  <test name="Run on FIREFOX">
+   <test name="Run on FIREFOX">
   	<parameter name="browser" value="Firefox"/>
-  	<parameter name="osName" value="Windows" />
-    <parameter name="osVersion" value="11" />
-    <classes>
-      <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
-    </classes>
-  </test> 
-
-  <test name="Run on CHROME">
-  	<parameter name="browser" value="Chrome"/>
-  	<parameter name="osName" value="OS X" />
-    <parameter name="osVersion" value="Monterey" />
+  	<parameter name="osName" value="macOS 12" />
     <classes>
       <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
     </classes>
   </test> 
 	
-  
+  <test name="Run on CHROME">
+  	<parameter name="browser" value="Chrome"/>
+  	<parameter name="osName" value="Windows 11" />
+    <classes>
+      <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
+    </classes>
+  </test>  
     
 </suite>

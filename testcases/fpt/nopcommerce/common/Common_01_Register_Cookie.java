@@ -4,8 +4,9 @@ import java.util.Set;
 
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import commons.BaseTest;
@@ -22,10 +23,11 @@ public class Common_01_Register_Cookie extends BaseTest {
 	private UserRegisterPageObject registerPage;
 	private UserLoginPageObject loginPage;
 
-	@Parameters("browser")
-	@BeforeTest(description = "Create new common User for all Classes Test")
-	public void Register(String browserName) {
-		driver = getBrowserDriver(browserName);
+	@Parameters({ "envName", "serverName", "browser", "browserVersion", "ipAddress", "port", "osName", "osVersion" })
+	@BeforeClass
+	public void beforeClass(@Optional("local") String envName, @Optional("dev") String serverName, @Optional("chrome") String browserName, @Optional("105") String browserVersion, @Optional("localhost") String ipAddress, @Optional("4444") String port, @Optional("Windows") String osName,
+			@Optional("10") String osVersion) {
+		driver = getBrowserDriver(envName, serverName, browserName, browserVersion, ipAddress, port, osName, osVersion);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		firstName = "quang anh";
@@ -79,7 +81,7 @@ public class Common_01_Register_Cookie extends BaseTest {
 
 	}
 
-	@AfterTest
+	@AfterClass
 	public void afterTest() {
 		driver.quit();
 	}

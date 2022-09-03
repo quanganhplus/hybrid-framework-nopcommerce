@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce - User">
 
-	<parameter name = "appUrl" value = "https://demo.nopcommerce.com/"/>
+	<parameter name = "envName" value = "lambdaTest"/>
+	<parameter name = "serverName" value = "dev"/>
 
 	<listeners>
 		<listener class-name="commons.MethodListener"/>
@@ -18,7 +19,7 @@
   	<parameter name="browserVersion" value="15.0" />
   	<parameter name="osName" value="MacOS Monterey" />
     <classes>
-      <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_LambdaTest"/>
+      <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
     </classes>
   </test> 
 
@@ -27,7 +28,7 @@
   	<parameter name="browserVersion" value="105.0" />
   	<parameter name="osName" value="Windows 11" />
     <classes>
-      <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_LambdaTest"/>
+      <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
     </classes>
   </test>  
 	

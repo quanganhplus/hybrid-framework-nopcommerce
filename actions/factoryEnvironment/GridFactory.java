@@ -36,7 +36,7 @@ public class GridFactory {
 			WebDriverManager.firefoxdriver().setup();
 			capability = DesiredCapabilities.firefox();
 			capability.setBrowserName("firefox");
-			capability.setPlatform(Platform.WINDOWS);
+			capability.setPlatform(Platform.ANY);
 
 			FirefoxOptions fOptions = new FirefoxOptions();
 			fOptions.merge(capability);
@@ -53,7 +53,7 @@ public class GridFactory {
 			WebDriverManager.chromedriver().setup();
 			capability = DesiredCapabilities.chrome();
 			capability.setBrowserName("chrome");
-			capability.setPlatform(Platform.WINDOWS);
+			capability.setPlatform(Platform.ANY);
 
 			ChromeOptions cOptions = new ChromeOptions();
 			cOptions.merge(capability);

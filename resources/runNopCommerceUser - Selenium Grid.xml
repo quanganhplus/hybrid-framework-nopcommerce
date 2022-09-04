@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="NopCommerce - User">
+<suite name="NopCommerce - User" parallel="tests" thread-count="2">
 
 	<parameter name = "envName" value = "grid"/>
 	<parameter name = "serverName" value = "dev"/>
@@ -17,8 +17,8 @@
   <test name="Run on FIREFOX">
   	<parameter name="browser" value="firefox"/>
   	<parameter name="browserVersion" value="104"/>
-  	<parameter name="ipAddress" value="192.168.4.100" />
-    <parameter name="port" value="5555" />
+  	<parameter name="ipAddress" value="localhost" />
+    <parameter name="port" value="4444" />
     <classes>
       <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
     </classes>
@@ -26,8 +26,8 @@
 	
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>
-  	<parameter name="ipAddress" value="192.168.4.100" />
-    <parameter name="port" value="5555" />
+  	<parameter name="ipAddress" value="localhost" />
+    <parameter name="port" value="4444" />
     <classes>
       <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
     </classes>

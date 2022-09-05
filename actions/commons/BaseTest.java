@@ -21,7 +21,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
 
-import factoryEnvironment.BrowserList;
+import factoryBrowser.BrowserList;
 import factoryEnvironment.BrowserStackFactory;
 import factoryEnvironment.EnvironmentList;
 import factoryEnvironment.GridFactory;

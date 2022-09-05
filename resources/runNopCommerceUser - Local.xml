@@ -14,12 +14,12 @@
 	</listeners>
 
 
-<!--   <test name="Run on FIREFOX"> -->
-<!--   	<parameter name="browser" value="firefox"/> -->
-<!--     <classes> -->
-<!--       <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/> -->
-<!--     </classes> -->
-<!--   </test>  -->
+  <test name="Run on FIREFOX">
+  	<parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="fpt.nopcommerce.cloud.Level_20_Data_Driven_All"/>
+    </classes>
+  </test> 
 	
   <test name="Run on CHROME">
   	<parameter name="browser" value="chrome"/>

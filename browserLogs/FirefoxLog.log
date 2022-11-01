@@ -1,21 +1,12 @@
-1662390195227	geckodriver	INFO	Listening on 127.0.0.1:1795
-1662390196394	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-notifications" "--disable-geolocation" "-no-remote" "-profile" "C:\\Users\\quang\\AppData\\Local\\Temp\\rust_mozprofileMX9iol"
-1662390196839	Marionette	INFO	Marionette enabled
-1662390196845	Marionette	INFO	Listening on port 51003
-Read port: 51003
-1662390197113	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
-pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:11
-isBrowserPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:45:19
-loadURI@resource://gre/modules/RemoteWebNavigation.jsm:86:56
-loadURI/<@chrome://global/content/elements/browser-custom-element.js:807:28
-_wrapURIChangeCall@chrome://global/content/elements/browser-custom-element.js:736:9
-loadURI@chrome://global/content/elements/browser-custom-element.js:806:12
-loadURI@chrome://mozapps/content/extensions/aboutaddons.js:2471:18
-render/<@chrome://mozapps/content/extensions/aboutaddons.js:2450:14
-render@chrome://mozapps/content/extensions/aboutaddons.js:2409:11
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\quang\\AppData\\Local\\Temp\\rust_mozprofileMX9iol\\search.json.mozlz4", (void 0)))
+1666088348744	geckodriver	INFO	Listening on 127.0.0.1:32018
+1666088350240	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-notifications" "--disable-geolocation" "-no-remote" "-profile" "C:\\Users\\anhtq10\\AppData\\Local\\Temp\\rust_mozprofiledFgN8e"
+1666088353709	Marionette	INFO	Marionette enabled
+1666088353715	Marionette	INFO	Listening on port 53420
+Read port: 53420
+1666088354414	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\anhtq10\\AppData\\Local\\Temp\\rust_mozprofiledFgN8e\\search.json.mozlz4", (void 0)))
+[Parent 13072, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
 JavaScript error: resource://gre/modules/URIFixup.jsm, line 292: NS_ERROR_FAILURE: Should pass a non-null uri
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
-1662390226274	Marionette	INFO	Stopped listening on port 51003
+1666088391779	Marionette	INFO	Stopped listening on port 53420

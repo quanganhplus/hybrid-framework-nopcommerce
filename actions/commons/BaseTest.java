@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -183,13 +184,75 @@ public class BaseTest {
 		return driver;
 	}
 
+	protected WebDriver getBrowserDriverBankGuru(String browserName, String appUrl) {
+		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+		if (browserList == BrowserList.FIREFOX) {
+			// System.setProperty("webdriver.gecko.driver", projectPath + ".//browserDrivers//geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options = new FirefoxOptions();
+			options.setAcceptInsecureCerts(true);
+			driver = new FirefoxDriver(options);
+
+		} else if (browserList == BrowserList.HEADLESS_FIREFOX) {
+			WebDriverManager.firefoxdriver().setup();
+			FirefoxOptions options = new FirefoxOptions();
+			options.addArguments("--headless");
+			options.addArguments("window-size=1920x1080");
+			driver = new FirefoxDriver(options);
+
+		} else if (browserList == BrowserList.CHROME) {
+			// System.setProperty("webdriver.chrome.driver", projectPath + ".//browserDrivers//chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+
+			// bỏ log console ở selenium khi chạy chrome
+			System.setProperty("webdriver.chrome.args", "--disable-logging");
+			System.setProperty("webdriver.chrome.silentOutput", "true");
+
+			ChromeOptions options = new ChromeOptions();
+			// fake ip bằng UltaSurf-VPN
+			// options.addExtensions(new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\UltraSurf-VPN-v1.7.1.crx"));
+			// Chặn quảng cáo ads bằng AdBlock-extension
+			options.addExtensions(new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\AdBlock-v5.3.0.crx"));
+			// fix accept SSL
+			options.setAcceptInsecureCerts(true);
+			driver = new ChromeDriver(options);
+
+		} else if (browserList == BrowserList.HEADLESS_CHROME) {
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			options.addArguments("window-size=1920x1080");
+			driver = new ChromeDriver(options);
+
+		} else if (browserList == BrowserList.EDGE) {
+			// System.setProperty("webdriver.edge.driver", projectPath + ".//browserDrivers//msedgedriver.exe");
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+
+		} else if (browserList == BrowserList.COCCOC) {
+			// Cốc cốc browser trừ đi 5-6 version ra chrome driver
+			WebDriverManager.chromedriver().driverVersion("101.0.4951.41").setup();
+			ChromeOptions options = new ChromeOptions();
+			options.setBinary("C:\\Program Files\\CocCoc\\Browser\\Application\\browser.exe");
+			driver = new ChromeDriver(options);
+		} else {
+			throw new RuntimeException("Browser name invalid");
+		}
+
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.get(appUrl);
+		// driver.get(getEnvironmentValue(appUrl));
+		driver.manage().window().maximize();
+		return driver;
+	}
+
 	public WebDriver getDriverInstance() {
 		return this.driver;
 	}
 
 	protected int generateFakeNumber() {
 		Random rand = new Random();
-		return rand.nextInt(99999);
+		return rand.nextInt(9999);
 	}
 
 	protected boolean verifyTrue(boolean condition) {
@@ -313,7 +376,7 @@ public class BaseTest {
 	}
 
 	protected String getCurrentDate() {
-		DateTime nowUTC = new DateTime();
+		DateTime nowUTC = new DateTime(DateTimeZone.UTC);
 		int day = nowUTC.getDayOfMonth();
 		if (day < 10) {
 			String dayValue = "0" + day;
@@ -323,7 +386,7 @@ public class BaseTest {
 	}
 
 	protected String getCurrentMonth() {
-		DateTime now = new DateTime();
+		DateTime now = new DateTime(DateTimeZone.UTC);
 		int month = now.getMonthOfYear();
 		if (month < 10) {
 			String monthValue = "0" + month;
@@ -333,12 +396,12 @@ public class BaseTest {
 	}
 
 	protected String getCurrentYear() {
-		DateTime now = new DateTime();
+		DateTime now = new DateTime(DateTimeZone.UTC);
 		return String.valueOf(now.getYear());
 	}
 
 	protected String getCurrentDay() {
-		return getCurrentDate() + "/" + getCurrentMonth() + "/" + getCurrentYear();
+		return getCurrentYear() + "-" + getCurrentMonth() + "-" + getCurrentDate();
 	}
 
 	protected void showBrowserConsoleLogs(WebDriver driver) {

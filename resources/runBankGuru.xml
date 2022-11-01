@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Bank Guru">
+
+	<listeners>
+		<listener class-name="commons.MethodListener"/>
+		<listener class-name="reportConfig.ReportNGListener"/>
+    	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+	
+	<parameter name="appUrl" value="https://demo.guru99.com/v4/"/>
+  	
+	
+  	<test name="Run on CHROME">
+  	<parameter name="browser" value="chrome"/>
+  	
+    <classes>
+      <class name="fpt.bankguru.payment.Bank_01_Payment_Process"/>
+    </classes>
+    
+<!--     <packages> -->
+<!--     	<package name="fpt.wordpress.admin"/> -->
+<!--     </packages> -->
+    
+  	</test> 
+    
+</suite> 

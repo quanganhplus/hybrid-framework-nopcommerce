@@ -20,6 +20,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.bankGuru.BankGuruPageGeneratorManager;
 import pageObjects.nopCommerce.admin.AdminLoginPageObject;
 import pageObjects.nopCommerce.user.UserAddressPageObject;
 import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
@@ -28,6 +29,7 @@ import pageObjects.nopCommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointPageObject;
 import pageObjects.wordpress.admin.AdminDashboardPO;
 import pageObjects.wordpress.user.UserHomePO;
+import pageUIs.bankGuru.BasePageBankGuruUI;
 import pageUIs.jQuery.uploadFile.BasePageJQueryUI;
 import pageUIs.nopCommerce.user.BasePageNopComerceUI;
 
@@ -177,6 +179,7 @@ public class BasePage {
 	}
 
 	public void sendkeyToElement(WebDriver driver, String locatorType, String textValue) {
+		highlightElement(driver, locatorType);
 		WebElement element = getWebElement(driver, locatorType);
 		element.clear();
 		element.sendKeys(textValue);
@@ -250,6 +253,7 @@ public class BasePage {
 	}
 
 	public String getElementText(WebDriver driver, String locatorType) {
+		highlightElement(driver, locatorType);
 		return getWebElement(driver, locatorType).getText();
 	}
 
@@ -302,6 +306,7 @@ public class BasePage {
 	}
 
 	public boolean isElementDisplayed(WebDriver driver, String locatorType) {
+		highlightElement(driver, locatorType);
 		try {
 			// Tìm thấy element:
 			// Case 1: Displayed - trả về true
@@ -452,6 +457,11 @@ public class BasePage {
 		jsExecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", getWebElement(driver, locatorType));
 	}
 
+	public void removeAttributeInDOM(WebDriver driver, String locatorType, String attributeRemove, String... dynamicValues) {
+		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+		jsExecutor.executeScript("arguments[0].removeAttribute('" + attributeRemove + "');", getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
+	}
+
 	public boolean areJQueryAndJSLoadedSuccess(WebDriver driver) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
@@ -590,7 +600,8 @@ public class BasePage {
 	}
 
 	// Tối ưu ở bài học Level_09__Dynamic_Locator
-	public BasePage openPagesAtMyAccountByName(WebDriver driver, String pageName) {
+	// Số lượng page ít (20-25 pages)
+	public BasePage openPagesNopCommerceAtMyAccountByName(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, BasePageNopComerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
 		clickToElement(driver, BasePageNopComerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
 		switch (pageName) {
@@ -608,11 +619,13 @@ public class BasePage {
 	}
 
 	// Pattern Object
-	public void openPagesAtMyAccountByPageName(WebDriver driver, String pageName) {
+	// Ko cần return (quá nhiều page)
+	public void openPagesNopCommerceAtMyAccountByPageName(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, BasePageNopComerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
 		clickToElement(driver, BasePageNopComerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
 	}
 
+	// Dynamic Element Component (NopCommerce)
 	/**
 	 * Enter to dynamic Textbox by ID
 	 * <ul>
@@ -697,6 +710,64 @@ public class BasePage {
 	public String getTextboxValueByID(WebDriver driver, String textboxID) {
 		waitForElementVisible(driver, BasePageNopComerceUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
 		return getElementAttribute(driver, BasePageNopComerceUI.DYNAMIC_TEXTBOX_BY_ID, "value", textboxID);
+	}
+
+	// Dynamic Element Component (Bank Guru)
+	public BasePage openPagesBankGuruByName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, BasePageBankGuruUI.DYNAMIC_LINK, pageName);
+		clickToElement(driver, BasePageBankGuruUI.DYNAMIC_LINK, pageName);
+		switch (pageName) {
+		case "New Customer":
+			return BankGuruPageGeneratorManager.getBankGuruNewCustomerPage(driver);
+		case "Edit Customer":
+			return BankGuruPageGeneratorManager.getBankGuruEditCustomerPage(driver);
+		case "Delete Customer":
+			return BankGuruPageGeneratorManager.getBankGuruDeleteCustomerPage(driver);
+		case "New Account":
+			return BankGuruPageGeneratorManager.getBankGuruNewAccountPage(driver);
+		case "Edit Account":
+			return BankGuruPageGeneratorManager.getBankGuruEditAccountPage(driver);
+		case "Delete Account":
+			return BankGuruPageGeneratorManager.getBankGuruDeleteAccountPage(driver);
+		case "Deposit":
+			return BankGuruPageGeneratorManager.getBankGuruDepositPage(driver);
+		case "Withdrawal":
+			return BankGuruPageGeneratorManager.getBankGuruWithdrawalPage(driver);
+		case "Fund Transfer":
+			return BankGuruPageGeneratorManager.getBankGuruFundTransferPage(driver);
+		case "Balance Enquiry":
+			return BankGuruPageGeneratorManager.getBankGuruBalanceEnquiryPage(driver);
+		default:
+			throw new RuntimeException("Invalid page name at homepage area.");
+		}
+	}
+
+	public boolean isDynamicHeaderOrMessageDisplayed(WebDriver driver, String headerOrMessage) {
+		waitForElementVisible(driver, BasePageBankGuruUI.DYNAMIC_HEADER_OR_MESSAGE_DISPLAYED, headerOrMessage);
+		return isElementDisplayed(driver, BasePageBankGuruUI.DYNAMIC_HEADER_OR_MESSAGE_DISPLAYED, headerOrMessage);
+	}
+
+	public void inputToDynamicTextboxOrTextArea(WebDriver driver, String nameID, String value) {
+		waitForElementVisible(driver, BasePageBankGuruUI.DYNAMIC_TEXTBOX_TEXTAREA, nameID);
+		if (nameID.contains("dob")) {
+			removeAttributeInDOM(driver, BasePageBankGuruUI.DYNAMIC_TEXTBOX_TEXTAREA, "type", nameID);
+		}
+		sendkeyToElement(driver, BasePageBankGuruUI.DYNAMIC_TEXTBOX_TEXTAREA, value, nameID);
+	}
+
+	public void clickToDynamicButton(WebDriver driver, String buttonValue) {
+		waitForElementVisible(driver, BasePageBankGuruUI.DYNAMIC_BUTTON, buttonValue);
+		clickToElement(driver, BasePageBankGuruUI.DYNAMIC_BUTTON, buttonValue);
+	}
+
+	public String getDynamicTextIntoTable(WebDriver driver, String rowName) {
+		waitForElementVisible(driver, BasePageBankGuruUI.DYNAMIC_TEXT_INTO_TABLE, rowName);
+		return getElementText(driver, BasePageBankGuruUI.DYNAMIC_TEXT_INTO_TABLE, rowName);
+	}
+
+	public void selectDynamicDropdown(WebDriver driver, String nameID, String value) {
+		waitForElementVisible(driver, BasePageBankGuruUI.DYNAMIC_DROPDOWN, nameID);
+		selectItemInDefaultDropdown(driver, BasePageBankGuruUI.DYNAMIC_DROPDOWN, value, nameID);
 	}
 
 	// Level_08_Switch_Role

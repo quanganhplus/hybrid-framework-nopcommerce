@@ -90,37 +90,37 @@ public class Level_09_Dynamic_Locator extends BaseTest {
 	@Test
 	public void User_03_Dynamic_Page_01() {
 		// My Product Review -> Reward Point
-		rewardPointPage = (UserRewardPointPageObject) myProductReviewPage.openPagesAtMyAccountByName(driver, "Reward points");
+		rewardPointPage = (UserRewardPointPageObject) myProductReviewPage.openPagesNopCommerceAtMyAccountByName(driver, "Reward points");
 
 		// Reward Point -> Address
-		addressPage = (UserAddressPageObject) rewardPointPage.openPagesAtMyAccountByName(driver, "Addresses");
+		addressPage = (UserAddressPageObject) rewardPointPage.openPagesNopCommerceAtMyAccountByName(driver, "Addresses");
 
 		// Address -> Reward Point
-		rewardPointPage = (UserRewardPointPageObject) addressPage.openPagesAtMyAccountByName(driver, "Reward points");
+		rewardPointPage = (UserRewardPointPageObject) addressPage.openPagesNopCommerceAtMyAccountByName(driver, "Reward points");
 
 		// Reward Point -> My Product Review
-		myProductReviewPage = (UserMyProductReviewPageObject) rewardPointPage.openPagesAtMyAccountByName(driver, "My product reviews");
+		myProductReviewPage = (UserMyProductReviewPageObject) rewardPointPage.openPagesNopCommerceAtMyAccountByName(driver, "My product reviews");
 
 		// My Product Review -> Customer Info
-		customerInfoPage = (UserCustomerInfoPageObject) myProductReviewPage.openPagesAtMyAccountByName(driver, "Customer info");
+		customerInfoPage = (UserCustomerInfoPageObject) myProductReviewPage.openPagesNopCommerceAtMyAccountByName(driver, "Customer info");
 	}
 
 	@Test
 	public void User_03_Dynamic_Page_02() {
 		// Customer Info -> My Product Review
-		customerInfoPage.openPagesAtMyAccountByPageName(driver, "My product reviews");
+		customerInfoPage.openPagesNopCommerceAtMyAccountByPageName(driver, "My product reviews");
 		myProductReviewPage = PageGeneratorManager.getUserMyProductReviewPage(driver);
 
 		// My Product Review -> Reward Point
-		myProductReviewPage.openPagesAtMyAccountByPageName(driver, "Reward points");
+		myProductReviewPage.openPagesNopCommerceAtMyAccountByPageName(driver, "Reward points");
 		rewardPointPage = PageGeneratorManager.getUserRewardPointPage(driver);
 
 		// Reward Point -> Address
-		rewardPointPage.openPagesAtMyAccountByPageName(driver, "Addresses");
+		rewardPointPage.openPagesNopCommerceAtMyAccountByPageName(driver, "Addresses");
 		addressPage = PageGeneratorManager.getUserAddressPage(driver);
 
 		// Address -> Reward Point
-		addressPage.openPagesAtMyAccountByPageName(driver, "Reward points");
+		addressPage.openPagesNopCommerceAtMyAccountByPageName(driver, "Reward points");
 		rewardPointPage = PageGeneratorManager.getUserRewardPointPage(driver);
 	}
 

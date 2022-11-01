@@ -860,3 +860,796 @@ https://demo.nopcommerce.com/login?returnUrl=%2F - [DOM] Input elements should h
 [2022-09-04 01:10:36,537]  -------------------------- PASSED -------------------------- 
 [2022-09-04 01:10:36,625] OS name = windows 10
 [2022-09-04 01:10:36,625] Driver instance name = chromedriver: chrome on windows (11ae7d77ae5623756738a90e3456d785)
+[2022-09-06 09:04:52,471] Register - Step 01: Navigate to 'Register' page
+[2022-09-06 09:04:54,552] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-09-06 09:04:55,767] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-09-06 09:05:01,156] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus79153@gmail.com'
+[2022-09-06 09:05:02,383] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-09-06 09:05:03,557] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-09-06 09:05:04,715] Register - Step 07: Click to 'Register' button
+[2022-09-06 09:05:07,108] Register - Step 08: Verify Register success message is displayed
+[2022-09-06 09:05:07,289] Login - Step 01: Navigate to Login page
+[2022-09-06 09:05:12,525] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus79153@gmail.com'
+[2022-09-06 09:05:13,738] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-09-06 09:05:14,904] Login - Step 04: Click to 'Login' button
+[2022-09-06 09:05:16,711] Login - Step 05: Verify 'My Account' link is displayed
+[2022-09-06 09:05:16,812] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-09-06 09:05:18,404] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-09-06 09:05:18,465] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-09-06 09:05:18,754] OS name = windows 10
+[2022-09-06 09:05:18,755] Driver instance name = firefoxdriver: firefox on windows (48ac94b3-a46f-4b35-9cce-00802f7de7fc)
+[2022-09-20 08:36:44,874] Register - Step 01: Navigate to 'Register' page
+[2022-09-20 08:36:48,197] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-09-20 08:36:49,418] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-09-20 08:36:54,877] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus45357@gmail.com'
+[2022-09-20 08:36:56,156] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-09-20 08:36:57,365] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-09-20 08:36:58,546] Register - Step 07: Click to 'Register' button
+[2022-09-20 08:37:02,218] Register - Step 08: Verify Register success message is displayed
+[2022-09-20 08:37:02,370] Login - Step 01: Navigate to Login page
+[2022-09-20 08:37:05,988] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus45357@gmail.com'
+[2022-09-20 08:37:07,204] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-09-20 08:37:08,360] Login - Step 04: Click to 'Login' button
+[2022-09-20 08:37:10,316] Login - Step 05: Verify 'My Account' link is displayed
+[2022-09-20 08:37:10,419] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-09-20 08:37:12,124] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-09-20 08:37:12,201] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-09-20 08:37:12,450] OS name = windows 10
+[2022-09-20 08:37:12,450] Driver instance name = firefoxdriver: firefox on windows (1ff25fbe-b8f6-40d4-8040-bf3c758743b0)
+[2022-09-20 08:52:55,073] Register - Step 01: Navigate to 'Register' page
+[2022-09-20 08:52:57,041] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-09-20 08:52:58,259] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-09-20 08:53:03,650] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus2740@gmail.com'
+[2022-09-20 08:53:04,894] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-09-20 08:53:06,074] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-09-20 08:53:07,277] Register - Step 07: Click to 'Register' button
+[2022-09-20 08:53:09,228] Register - Step 08: Verify Register success message is displayed
+[2022-09-20 08:53:09,379] Login - Step 01: Navigate to Login page
+[2022-09-20 08:53:12,851] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus2740@gmail.com'
+[2022-09-20 08:53:14,035] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-09-20 08:53:15,228] Login - Step 04: Click to 'Login' button
+[2022-09-20 08:53:17,053] Login - Step 05: Verify 'My Account' link is displayed
+[2022-09-20 08:53:17,144] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-09-20 08:53:18,805] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-09-20 08:53:18,879] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-09-20 08:53:18,936] MyAccount - Step 04: Verify 'Last Name' value is correctly
+[2022-09-20 08:53:19,015] MyAccount - Step 05: Verify 'Email' value is correctly
+[2022-09-20 08:53:19,079] OS name = windows 10
+[2022-09-20 08:53:19,079] Driver instance name = firefoxdriver: firefox on windows (1ced0002-3701-4c9e-a709-e7819d227f2b)
+[2022-09-20 08:57:17,733] Register - Step 01: Navigate to 'Register' page
+[2022-09-20 08:57:20,609] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-09-20 08:57:21,839] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-09-20 08:57:27,266] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus4537@gmail.com'
+[2022-09-20 08:57:28,552] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-09-20 08:57:29,751] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-09-20 08:57:30,939] Register - Step 07: Click to 'Register' button
+[2022-09-20 08:57:32,940] Register - Step 08: Verify Register success message is displayed
+[2022-09-20 08:57:33,109] Login - Step 01: Navigate to Login page
+[2022-09-20 08:57:36,817] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus4537@gmail.com'
+[2022-09-20 08:57:37,997] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-09-20 08:57:39,165] Login - Step 04: Click to 'Login' button
+[2022-09-20 08:57:41,355] Login - Step 05: Verify 'My Account' link is displayed
+[2022-09-20 08:57:41,468] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-09-20 08:57:43,259] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-09-20 08:57:43,319] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-09-20 08:57:43,607] OS name = windows 10
+[2022-09-20 08:57:43,607] Driver instance name = firefoxdriver: firefox on windows (58e5510b-dac7-45dd-9b41-4375f7db604f)
+[2022-10-11 11:09:53,840] Register - Step 01: Navigate to 'Register' page
+[2022-10-11 11:09:56,618] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-10-11 11:09:59,581] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-10-11 11:10:05,245] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus11803@gmail.com'
+[2022-10-11 11:10:06,553] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-10-11 11:10:07,917] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-10-11 11:10:09,155] Register - Step 07: Click to 'Register' button
+[2022-10-11 11:10:10,969] Register - Step 08: Verify Register success message is displayed
+[2022-10-18 17:19:27,344] Register - Step 01: Navigate to 'Register' page
+[2022-10-18 17:19:29,544] Register - Step 02: Enter to Firstname textbox with value is 'quang anh'
+[2022-10-18 17:19:30,757] Register - Step 03: Enter to Lastname textbox with value is 'trinh'
+[2022-10-18 17:19:36,191] Register - Step 04: Enter to Email textbox with value is 'quanganh.plus88532@gmail.com'
+[2022-10-18 17:19:37,436] Register - Step 05: Enter to Password textbox with value is '123456'
+[2022-10-18 17:19:38,608] Register - Step 06: Enter to Confirm Password textbox with value is '123456'
+[2022-10-18 17:19:39,773] Register - Step 07: Click to 'Register' button
+[2022-10-18 17:19:41,669] Register - Step 08: Verify Register success message is displayed
+[2022-10-18 17:19:41,853] Login - Step 01: Navigate to Login page
+[2022-10-18 17:19:45,430] Login - Step 02: Enter to Email textbox with value is 'quanganh.plus88532@gmail.com'
+[2022-10-18 17:19:46,620] Login - Step 03: Enter to Password textbox with value is '123456'
+[2022-10-18 17:19:47,793] Login - Step 04: Click to 'Login' button
+[2022-10-18 17:19:49,530] Login - Step 05: Verify 'My Account' link is displayed
+[2022-10-18 17:19:49,627] MyAccount - Step 01: Navigate to 'My Account' page
+[2022-10-18 17:19:51,288] MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[2022-10-18 17:19:51,366] MyAccount - Step 03: Verify 'Fist Name' value is correctly
+[2022-10-18 17:19:51,748] OS name = windows 10
+[2022-10-18 17:19:51,748] Driver instance name = firefoxdriver: firefox on windows (b219fa64-692e-4d7e-9246-a968fa07461a)
+[2022-10-27 09:45:24,330] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 09:45:24,337] RegisterAndLogin - Step 02: Click To Here Link
+[2022-10-27 09:45:37,993] RegisterAndLogin - Step 03: Input To Email
+[2022-10-27 09:45:38,176] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 09:45:57,344] RegisterAndLogin - Step 05: Get UserID
+[2022-10-27 09:45:57,407] RegisterAndLogin - Step 06: Get Password
+[2022-10-27 09:45:57,471] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 09:45:59,159] RegisterAndLogin - Step 08: Input UserID
+[2022-10-27 09:45:59,520] RegisterAndLogin - Step 09: Input Password
+[2022-10-27 09:45:59,710] RegisterAndLogin - Step 10: Click Login Button
+[2022-10-27 09:46:02,910] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 09:46:03,197]  -------------------------- PASSED -------------------------- 
+[2022-10-27 09:46:03,404] OS name = windows 10
+[2022-10-27 09:46:03,404] Driver instance name = chromedriver: chrome on windows (aa54696db001d3443d1af813d7a63736)
+[2022-10-27 09:53:55,994] OS name = windows 10
+[2022-10-27 09:53:55,995] 
+[2022-10-27 09:54:34,897] OS name = windows 10
+[2022-10-27 09:54:34,899] 
+[2022-10-27 09:55:12,734] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 09:55:12,769] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 09:55:14,062] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 09:55:19,383] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 09:55:22,505] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-27 09:55:22,580] RegisterAndLogin - Step 06: Get Password value
+[2022-10-27 09:55:22,706] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 09:55:23,838] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-27 09:55:24,007] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-27 09:55:24,167] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-27 09:55:29,218] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 09:55:29,282]  -------------------------- PASSED -------------------------- 
+[2022-10-27 09:55:29,500] OS name = windows 10
+[2022-10-27 09:55:29,500] Driver instance name = chromedriver: chrome on windows (1d5566a982fec0fcd1ecc33976f158c2)
+[2022-10-27 10:19:22,422] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 10:19:22,449] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 10:19:27,845] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 10:19:28,032] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 10:19:31,064] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-27 10:19:31,317] RegisterAndLogin - Step 06: Get Password value
+[2022-10-27 10:19:31,416] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 10:19:32,381] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-27 10:19:32,768] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-27 10:19:32,902] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-27 10:19:35,986] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 10:19:36,091]  -------------------------- PASSED -------------------------- 
+[2022-10-27 10:19:36,674] OS name = windows 10
+[2022-10-27 10:19:36,674] Driver instance name = chromedriver: chrome on windows (d0e6b84eb91c4b288d6cfef838521fbf)
+[2022-10-27 10:20:05,615] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 10:20:05,634] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 10:20:11,952] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 10:20:12,256] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 10:20:14,938] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-27 10:20:15,232] RegisterAndLogin - Step 06: Get Password value
+[2022-10-27 10:20:15,304] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 10:20:16,238] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-27 10:20:16,572] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-27 10:20:16,701] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-27 10:20:20,594] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 10:20:20,675]  -------------------------- PASSED -------------------------- 
+[2022-10-27 10:20:21,012] OS name = windows 10
+[2022-10-27 10:20:21,012] Driver instance name = chromedriver: chrome on windows (784252887c4385b5a9de57c7b11c3371)
+[2022-10-27 10:24:02,332] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 10:24:02,338] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 10:24:03,579] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 10:24:53,999] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 10:24:54,008] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 10:25:11,693] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 10:25:11,880] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 10:25:14,615] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-27 10:25:14,671] RegisterAndLogin - Step 06: Get Password value
+[2022-10-27 10:25:14,877] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 10:25:15,887] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-27 10:25:16,058] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-27 10:25:16,199] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-27 10:25:18,513] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 10:25:18,671]  -------------------------- PASSED -------------------------- 
+[2022-10-27 10:25:18,931] OS name = windows 10
+[2022-10-27 10:25:18,931] Driver instance name = chromedriver: chrome on windows (d8df9f7369827af59b957bd51d51df39)
+[2022-10-27 10:31:56,972] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 10:31:57,226] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 10:32:08,452] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 10:32:31,709] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 10:32:34,642] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-27 10:32:34,754] RegisterAndLogin - Step 06: Get Password value
+[2022-10-27 10:32:34,804] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 10:32:35,826] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-27 10:32:36,039] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-27 10:32:36,191] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-27 10:32:39,386] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 10:32:39,998]  -------------------------- PASSED -------------------------- 
+[2022-10-27 10:32:40,325] OS name = windows 10
+[2022-10-27 10:32:40,325] Driver instance name = chromedriver: chrome on windows (5a64af25aae31221fbdb872288600dc3)
+[2022-10-27 10:33:23,696] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 10:33:23,828] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 10:33:30,056] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 10:33:30,621] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 10:33:33,502] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-27 10:33:33,939] RegisterAndLogin - Step 06: Get Password value
+[2022-10-27 10:33:34,030] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 10:33:36,231] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-27 10:33:36,649] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-27 10:33:36,849] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-27 10:33:39,388] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 10:33:39,753]  -------------------------- PASSED -------------------------- 
+[2022-10-27 10:33:40,430] OS name = windows 10
+[2022-10-27 10:33:40,430] Driver instance name = chromedriver: chrome on windows (5bb2fcfd587acbcf3452e9d9af8fa482)
+[2022-10-27 10:36:18,019] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 10:36:18,027] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 10:36:20,599] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 10:36:20,846] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 10:36:29,433] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-27 10:36:29,510] RegisterAndLogin - Step 06: Get Password value
+[2022-10-27 10:36:29,584] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 10:36:44,744] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-27 10:36:44,908] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-27 10:36:45,040] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-27 10:36:48,488] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 10:36:48,586]  -------------------------- PASSED -------------------------- 
+[2022-10-27 10:36:48,889] OS name = windows 10
+[2022-10-27 10:36:48,890] Driver instance name = chromedriver: chrome on windows (12e6eac21864925dc66779cb25b7c58b)
+[2022-10-27 10:58:41,996] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 10:58:42,009] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 10:58:45,940] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 10:58:47,386] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 10:58:49,485] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-27 10:58:50,820] RegisterAndLogin - Step 06: Get Password value
+[2022-10-27 10:58:51,975] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 10:58:53,733] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-27 10:58:54,981] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-27 10:58:56,218] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-27 10:58:59,169] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 10:59:00,399]  -------------------------- PASSED -------------------------- 
+[2022-10-27 10:59:00,808] OS name = windows 10
+[2022-10-27 10:59:00,808] Driver instance name = chromedriver: chrome on windows (b8ae5294153e7cc7c1c0ba211a5d1151)
+[2022-10-27 11:01:17,054] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 11:01:17,066] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 11:01:21,722] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 11:01:23,043] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 11:01:25,600] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-27 11:01:26,758] RegisterAndLogin - Step 06: Get Password value
+[2022-10-27 11:01:27,904] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 11:01:29,775] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-27 11:01:31,055] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-27 11:01:32,280] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-27 11:01:34,973] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 11:01:36,200]  -------------------------- PASSED -------------------------- 
+[2022-10-27 11:01:36,383] OS name = windows 10
+[2022-10-27 11:01:36,383] Driver instance name = chromedriver: chrome on windows (3d1d5a399e091cccea8a256fc9efaf58)
+[2022-10-27 11:02:07,190] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-27 11:02:07,197] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-27 11:02:17,159] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-27 11:02:18,442] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-27 11:02:21,098] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-27 11:02:22,354] RegisterAndLogin - Step 06: Get Password value
+[2022-10-27 11:02:23,548] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-27 11:02:37,285] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-27 11:02:38,579] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-27 11:02:39,812] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-27 11:02:42,918] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-27 11:02:44,270]  -------------------------- PASSED -------------------------- 
+[2022-10-27 11:02:44,469] OS name = windows 10
+[2022-10-27 11:02:44,469] Driver instance name = chromedriver: chrome on windows (5ceba56e658090ef918c1adb0ddeacfd)
+[2022-10-31 09:43:26,069] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 09:43:26,177] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 09:43:30,317] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 09:43:45,888] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 09:43:49,467] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 09:43:50,634] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 09:43:51,782] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 09:43:53,529] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 09:43:54,784] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 09:43:56,002] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 09:43:58,915] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 09:44:00,339]  -------------------------- PASSED -------------------------- 
+[2022-10-31 09:44:03,676]  -------------------------- PASSED -------------------------- 
+[2022-10-31 09:44:35,447] OS name = windows 10
+[2022-10-31 09:44:35,447] Driver instance name = chromedriver: chrome on windows (89a841ca001f20209285e2d5c0552cac)
+[2022-10-31 09:51:40,924] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 09:51:40,949] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 09:51:42,828] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 09:52:13,517] OS name = windows 10
+[2022-10-31 09:52:13,517] Driver instance name = chromedriver: chrome on windows (1f54882fc2bb74f2ef4584a7122f5e1f)
+[2022-10-31 09:52:38,196] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 09:52:38,205] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 09:52:41,586] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 09:52:42,870] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 09:52:45,520] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 09:52:46,660] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 09:52:47,812] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 09:52:49,600] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 09:52:50,877] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 09:52:52,192] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 09:52:55,352] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 09:52:56,510]  -------------------------- PASSED -------------------------- 
+[2022-10-31 09:52:59,618]  -------------------------- PASSED -------------------------- 
+[2022-10-31 09:53:31,190] OS name = windows 10
+[2022-10-31 09:53:31,191] Driver instance name = chromedriver: chrome on windows (5613773e9184ddb74cfe80aae58946fc)
+[2022-10-31 10:43:08,713] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 10:43:08,734] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 10:43:10,314] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 10:43:16,071] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 10:43:18,926] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 10:43:20,204] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 10:43:21,398] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 10:43:24,122] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 10:43:25,423] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 10:43:26,637] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 10:43:29,118] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 10:43:30,396]  -------------------------- PASSED -------------------------- 
+[2022-10-31 10:43:33,581]  -------------------------- PASSED -------------------------- 
+[2022-10-31 10:43:35,093] OS name = windows 10
+[2022-10-31 10:43:35,093] Driver instance name = chromedriver: chrome on windows (3a33578bc8411dba6fd57321d91c572e)
+[2022-10-31 10:45:54,683] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 10:45:54,690] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 10:46:12,581] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 10:46:13,931] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 10:46:27,516] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 10:46:28,868] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 10:46:30,046] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 10:46:33,165] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 10:46:34,378] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 10:46:35,612] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 10:46:38,623] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 10:46:39,910]  -------------------------- PASSED -------------------------- 
+[2022-10-31 10:46:43,158]  -------------------------- PASSED -------------------------- 
+[2022-10-31 10:47:14,711] OS name = windows 10
+[2022-10-31 10:47:14,711] Driver instance name = chromedriver: chrome on windows (8b2e137bff6a0077fff1f8c94cab49a1)
+[2022-10-31 10:57:54,976] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 10:57:54,985] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 10:57:59,648] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 10:58:00,995] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 10:58:03,558] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 10:58:04,749] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 10:58:05,951] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 10:58:07,186] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 10:58:08,413] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 10:58:09,617] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 10:58:12,308] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 10:58:13,514]  -------------------------- PASSED -------------------------- 
+[2022-10-31 10:58:20,283]  -------------------------- PASSED -------------------------- 
+[2022-10-31 10:58:51,818] OS name = windows 10
+[2022-10-31 10:58:51,819] Driver instance name = chromedriver: chrome on windows (d8d2c0a47d9c8d8fb15b2ac0e5dce8e2)
+[2022-10-31 11:49:48,235] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 11:49:48,244] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 11:50:02,909] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 11:50:04,213] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 11:50:07,526] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 11:50:08,778] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 11:50:09,910] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 11:50:11,530] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 11:50:12,882] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 11:50:14,100] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 11:50:16,284] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 11:50:17,510]  -------------------------- PASSED -------------------------- 
+[2022-10-31 11:50:20,477]  -------------------------- PASSED -------------------------- 
+[2022-10-31 11:50:22,099] OS name = windows 10
+[2022-10-31 11:50:22,099] Driver instance name = chromedriver: chrome on windows (e2e440227e6f573e145b2aeece8ecd7e)
+[2022-10-31 11:57:46,989] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 11:57:47,339] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 11:57:51,081] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 11:57:52,342] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 11:57:54,437] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 11:57:55,584] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 11:57:56,758] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 11:57:58,711] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 11:57:59,950] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 11:58:01,208] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 11:58:03,890] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 11:58:05,186]  -------------------------- PASSED -------------------------- 
+[2022-10-31 11:58:08,020]  -------------------------- PASSED -------------------------- 
+[2022-10-31 11:58:22,664]  -------------------------- PASSED -------------------------- 
+[2022-10-31 11:58:22,748] OS name = windows 10
+[2022-10-31 11:58:22,748] Driver instance name = chromedriver: chrome on windows (6a98ed59a6515a7fb3522642c30bfcfa)
+[2022-10-31 13:35:24,539] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 13:35:24,546] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 13:35:28,221] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 13:35:30,232] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 13:35:32,613] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 13:35:33,795] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 13:35:34,938] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 13:35:36,538] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 13:35:37,785] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 13:35:39,014] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 13:35:42,678] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 13:35:43,860]  -------------------------- PASSED -------------------------- 
+[2022-10-31 13:35:47,797]  -------------------------- PASSED -------------------------- 
+[2022-10-31 13:36:02,166]  -------------------------- PASSED -------------------------- 
+[2022-10-31 13:36:02,333] OS name = windows 10
+[2022-10-31 13:36:02,333] Driver instance name = chromedriver: chrome on windows (1d63cc2a1c35459e96a728ec412060b3)
+[2022-10-31 14:20:57,362] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 14:20:57,413] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 14:21:03,778] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 14:21:06,070] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 14:21:09,008] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 14:21:10,240] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 14:21:11,415] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 14:21:13,096] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 14:21:14,521] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 14:21:15,731] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 14:21:18,909] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 14:21:20,109]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:22,780]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,032]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,305]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,385]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,441]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,500]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,562]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,626]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,689]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,754]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,810]  -------------------------- PASSED -------------------------- 
+[2022-10-31 14:21:37,958] OS name = windows 10
+[2022-10-31 14:21:37,958] Driver instance name = chromedriver: chrome on windows (ec06be895caa30040c50fc10e245012e)
+[2022-10-31 15:11:12,591] OS name = windows 10
+[2022-10-31 15:11:12,592] Driver instance name = chromedriver: chrome on windows (fcb6a4ba1a170e812cca10635f7cff2f)
+[2022-10-31 15:11:38,796] OS name = windows 10
+[2022-10-31 15:11:38,797] Driver instance name = chromedriver: chrome on windows (a94aed14556cecb2f97d310fd61257a3)
+[2022-10-31 15:12:53,838] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 15:12:53,851] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 15:12:59,520] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 15:13:01,696] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 15:13:04,416] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 15:13:05,751] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 15:13:06,945] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 15:13:08,572] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 15:13:09,848] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 15:13:11,085] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 15:13:13,821] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 15:13:15,167]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:20,390]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:34,864]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:35,060]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:35,119]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:35,180]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:35,241]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:35,303]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:35,365]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:35,428]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:35,489]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:35,551]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:37,985]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:42,250]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:13:52,360] OS name = windows 10
+[2022-10-31 15:13:52,360] Driver instance name = chromedriver: chrome on windows (8fa7184a03199e7c12ab61cc6d5fc418)
+[2022-10-31 15:40:35,741] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 15:40:35,761] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 15:40:41,404] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 15:40:44,359] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 15:40:47,854] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 15:40:49,236] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 15:40:50,538] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 15:40:52,114] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 15:40:53,551] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 15:40:54,783] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 15:40:57,601] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 15:40:58,775]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:01,824]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:16,404]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:16,471]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:16,527]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:16,590]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:16,649]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:16,710]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:16,786]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:16,847]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:16,911]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:16,972]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:19,977]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:24,303]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:37,613]  -------------------------- PASSED -------------------------- 
+[2022-10-31 15:41:37,669] OS name = windows 10
+[2022-10-31 15:41:37,669] Driver instance name = chromedriver: chrome on windows (d25baeaebc1464b2e46e821449a19675)
+[2022-10-31 17:35:31,368] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 17:35:31,387] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 17:35:36,384] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 17:35:38,114] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 17:35:40,746] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 17:35:42,049] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 17:35:43,542] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 17:35:45,186] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 17:35:46,424] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 17:35:47,631] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 17:35:50,658] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 17:35:51,867]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:36:06,114]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:36:26,679]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:36:30,716]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:36:32,020] OS name = windows 10
+[2022-10-31 17:36:32,020] Driver instance name = chromedriver: chrome on windows (e20541daff83e358ffb666ea31da3ffa)
+[2022-10-31 17:39:04,254] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 17:39:04,275] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 17:39:09,214] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 17:39:10,658] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 17:39:12,755] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 17:39:14,082] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 17:39:15,260] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 17:39:17,071] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 17:39:18,444] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 17:39:19,673] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 17:39:22,459] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 17:39:23,739]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:26,572]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:41,045]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:41,119]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:41,192]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:41,255]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:41,318]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:41,380]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:41,493]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:41,564]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:41,627]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:41,688]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:44,227]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:39:48,478]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:40:00,941]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:40:07,804]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:40:07,886]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:40:07,949]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:40:08,013]  -------------------------- FAILED -------------------------- 
+[2022-10-31 17:40:08,071]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:40:08,200]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:40:08,270]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:40:08,527] OS name = windows 10
+[2022-10-31 17:40:08,527] Driver instance name = chromedriver: chrome on windows (20a8ef57d6e00b1aa8825f68c30e9c1b)
+[2022-10-31 17:43:18,057] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-10-31 17:43:18,174] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-10-31 17:43:19,475] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-10-31 17:43:26,483] RegisterAndLogin - Step 04: Click Submit Button
+[2022-10-31 17:43:28,950] RegisterAndLogin - Step 05: Get UserID value
+[2022-10-31 17:43:30,131] RegisterAndLogin - Step 06: Get Password value
+[2022-10-31 17:43:31,299] RegisterAndLogin - Step 07: Open Login Page
+[2022-10-31 17:43:33,173] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-10-31 17:43:34,570] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-10-31 17:43:35,767] RegisterAndLogin - Step 10: Click to Login Button
+[2022-10-31 17:43:38,565] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-10-31 17:43:39,816]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:42,817]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:57,253]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:57,322]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:57,400]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:57,462]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:57,533]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:57,611]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:57,672]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:57,738]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:57,797]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:43:57,861]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:00,870]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:05,131]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:17,850]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:24,071]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:24,136]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:24,196]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:24,257]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:24,321]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:24,413]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:24,474]  -------------------------- PASSED -------------------------- 
+[2022-10-31 17:44:24,617] OS name = windows 10
+[2022-10-31 17:44:24,617] Driver instance name = chromedriver: chrome on windows (6e4b12164599484cf2c3c47a0733b02b)
+[2022-11-01 09:15:51,077] OS name = windows 10
+[2022-11-01 09:15:51,492] Driver instance name = chromedriver: chrome on windows (1ceef2ba2b43b632e9a4351e1b33effd)
+[2022-11-01 09:16:13,928] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-11-01 09:16:13,938] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-11-01 09:16:18,189] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-11-01 09:16:19,575] RegisterAndLogin - Step 04: Click Submit Button
+[2022-11-01 09:16:22,553] RegisterAndLogin - Step 05: Get UserID value
+[2022-11-01 09:16:24,156] RegisterAndLogin - Step 06: Get Password value
+[2022-11-01 09:16:25,315] RegisterAndLogin - Step 07: Open Login Page
+[2022-11-01 09:16:27,049] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-11-01 09:16:28,320] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-11-01 09:16:29,543] RegisterAndLogin - Step 10: Click to Login Button
+[2022-11-01 09:16:32,071] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-11-01 09:16:33,288]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:36,347]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:50,758]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:50,829]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:50,888]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:50,950]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:50,999]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:51,063]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:51,124]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:51,220]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:51,283]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:51,341]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:54,571]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:16:58,678]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:17:11,062]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:17:17,545]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:17:17,603]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:17:17,658]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:17:17,706]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:17:17,765]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:17:17,911]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:17:17,963]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:17:18,086] OS name = windows 10
+[2022-11-01 09:17:18,086] Driver instance name = chromedriver: chrome on windows (3b3e08e6110539b575e2f5733af807b2)
+[2022-11-01 09:56:25,082] OS name = windows 10
+[2022-11-01 09:56:25,090] Driver instance name = chromedriver: chrome on windows (56875baf755ad722f4642ebabdc4d22a)
+[2022-11-01 09:56:46,592] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-11-01 09:56:46,603] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-11-01 09:56:52,620] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-11-01 09:56:54,051] RegisterAndLogin - Step 04: Click Submit Button
+[2022-11-01 09:56:56,098] RegisterAndLogin - Step 05: Get UserID value
+[2022-11-01 09:56:57,461] RegisterAndLogin - Step 06: Get Password value
+[2022-11-01 09:56:58,634] RegisterAndLogin - Step 07: Open Login Page
+[2022-11-01 09:57:00,373] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-11-01 09:57:01,601] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-11-01 09:57:02,806] RegisterAndLogin - Step 10: Click to Login Button
+[2022-11-01 09:57:05,628] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-11-01 09:57:06,866]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:09,786]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:24,275]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:24,334]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:24,397]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:24,451]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:24,498]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:24,561]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:24,621]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:24,683]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:24,745]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:24,809]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:27,822]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:32,074]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:57:44,852]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:58:02,661]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:58:02,717]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:58:02,839]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:58:02,898]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:58:02,971]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:58:03,089]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:58:03,147]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:58:06,031]  -------------------------- PASSED -------------------------- 
+[2022-11-01 09:58:38,801] OS name = windows 10
+[2022-11-01 09:58:38,801] Driver instance name = chromedriver: chrome on windows (d86931334aeb49be2f1d4a5907beac34)
+[2022-11-01 11:44:14,423] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-11-01 11:44:14,449] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-11-01 11:44:32,473] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-11-01 11:44:33,887] RegisterAndLogin - Step 04: Click Submit Button
+[2022-11-01 11:44:36,038] RegisterAndLogin - Step 05: Get UserID value
+[2022-11-01 11:44:37,306] RegisterAndLogin - Step 06: Get Password value
+[2022-11-01 11:44:38,489] RegisterAndLogin - Step 07: Open Login Page
+[2022-11-01 11:44:40,377] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-11-01 11:44:41,778] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-11-01 11:44:42,989] RegisterAndLogin - Step 10: Click to Login Button
+[2022-11-01 11:44:45,797] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-11-01 11:44:47,007]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:44:50,018]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:04,952]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:05,016]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:05,086]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:05,148]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:05,210]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:05,273]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:05,319]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:05,382]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:05,446]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:05,509]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:08,186]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:12,413]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:26,988]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:33,966]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:34,036]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:34,101]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:34,157]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:34,216]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:34,345]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:34,402]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:45:37,656]  -------------------------- PASSED -------------------------- 
+[2022-11-01 11:46:41,747] OS name = windows 10
+[2022-11-01 11:46:41,747] Driver instance name = chromedriver: chrome on windows (e524e35107926f356ea6c834c657c59e)
+[2022-11-01 14:57:53,958] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-11-01 14:57:54,103] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-11-01 14:58:00,804] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-11-01 14:58:02,138] RegisterAndLogin - Step 04: Click Submit Button
+[2022-11-01 14:58:04,767] RegisterAndLogin - Step 05: Get UserID value
+[2022-11-01 14:58:05,912] RegisterAndLogin - Step 06: Get Password value
+[2022-11-01 14:58:07,072] RegisterAndLogin - Step 07: Open Login Page
+[2022-11-01 14:58:08,845] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-11-01 14:58:10,143] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-11-01 14:58:11,360] RegisterAndLogin - Step 10: Click to Login Button
+[2022-11-01 14:58:14,169] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-11-01 14:58:15,592]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:18,534]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:32,752]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:32,824]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:32,885]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:33,091]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:33,162]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:33,222]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:33,284]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:33,347]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:33,410]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:33,475]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:36,877]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:40,907]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:58:53,342]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:59:00,181]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:59:00,344]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:59:00,397]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:59:00,472]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:59:00,535]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:59:00,745]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:59:00,831]  -------------------------- PASSED -------------------------- 
+[2022-11-01 14:59:01,119] OS name = windows 10
+[2022-11-01 14:59:01,119] Driver instance name = chromedriver: chrome on windows (08d15c9e1e8489d432903169b05ab618)
+[2022-11-01 15:00:53,437] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-11-01 15:00:53,445] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-11-01 15:00:57,355] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-11-01 15:00:58,671] RegisterAndLogin - Step 04: Click Submit Button
+[2022-11-01 15:01:03,222] RegisterAndLogin - Step 05: Get UserID value
+[2022-11-01 15:01:04,405] RegisterAndLogin - Step 06: Get Password value
+[2022-11-01 15:01:05,599] RegisterAndLogin - Step 07: Open Login Page
+[2022-11-01 15:01:07,428] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-11-01 15:01:08,669] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-11-01 15:01:09,883] RegisterAndLogin - Step 10: Click to Login Button
+[2022-11-01 15:01:12,690] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-11-01 15:01:13,969]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:16,864]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:31,382]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:31,629]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:31,699]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:31,762]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:31,826]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:31,883]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:31,948]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:32,009]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:32,069]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:32,133]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:34,879]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:39,248]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:52,853]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:59,716]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:59,769]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:01:59,972]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:02:00,033]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:02:00,095]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:02:00,188]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:02:00,281]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:02:03,367]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:02:42,339] OS name = windows 10
+[2022-11-01 15:02:42,340] Driver instance name = chromedriver: chrome on windows (4056c8cfaef6080546c87a3ea921b31e)
+[2022-11-01 15:04:14,727] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-11-01 15:04:14,735] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-11-01 15:04:16,008] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-11-01 15:04:22,059] RegisterAndLogin - Step 04: Click Submit Button
+[2022-11-01 15:04:25,225] RegisterAndLogin - Step 05: Get UserID value
+[2022-11-01 15:04:26,493] RegisterAndLogin - Step 06: Get Password value
+[2022-11-01 15:04:27,669] RegisterAndLogin - Step 07: Open Login Page
+[2022-11-01 15:04:30,279] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-11-01 15:04:31,532] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-11-01 15:04:32,754] RegisterAndLogin - Step 10: Click to Login Button
+[2022-11-01 15:04:38,161] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-11-01 15:04:39,369]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:04:42,429]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:05:00,472]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:05:04,750]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:05:06,222] OS name = windows 10
+[2022-11-01 15:05:06,222] Driver instance name = chromedriver: chrome on windows (efead601b861e58a4ad0447b8583e28b)
+[2022-11-01 15:05:41,803] RegisterAndLogin - Step 01: Get Login Page Url
+[2022-11-01 15:05:41,828] RegisterAndLogin - Step 02: Click To 'here' Link
+[2022-11-01 15:05:59,554] RegisterAndLogin - Step 03: Input To EmailID textbox
+[2022-11-01 15:06:00,845] RegisterAndLogin - Step 04: Click Submit Button
+[2022-11-01 15:06:15,521] RegisterAndLogin - Step 05: Get UserID value
+[2022-11-01 15:06:16,697] RegisterAndLogin - Step 06: Get Password value
+[2022-11-01 15:06:17,874] RegisterAndLogin - Step 07: Open Login Page
+[2022-11-01 15:06:19,426] RegisterAndLogin - Step 08: Input to UserID textbox
+[2022-11-01 15:06:20,718] RegisterAndLogin - Step 09: Input to Password textbox
+[2022-11-01 15:06:21,969] RegisterAndLogin - Step 10: Click to Login Button
+[2022-11-01 15:06:24,274] RegisterAndLogin - Step 11: Verify Welcome Message Displayed
+[2022-11-01 15:06:25,445]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:28,259]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:42,729]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:42,800]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:42,861]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:42,939]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:43,005]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:43,066]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:43,127]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:43,191]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:43,268]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:43,331]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:46,130]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:06:49,879]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:07:03,316]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:07:10,867]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:07:10,975]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:07:11,033]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:07:11,099]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:07:11,158]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:07:11,299]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:07:11,361]  -------------------------- PASSED -------------------------- 
+[2022-11-01 15:07:11,623] OS name = windows 10
+[2022-11-01 15:07:11,623] Driver instance name = chromedriver: chrome on windows (4456e7c2d64cf40c06f5d276a134f807)
